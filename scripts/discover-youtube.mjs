@@ -45,7 +45,7 @@ const checked=new Set(JSON.parse(await fs.readFile(new URL('../data/dashboard.js
   .videos.filter(v=>v.platform==='YouTube').map(v=>v.id));
 const entries=[...found.values()].map(x=>({...x,already_in_archive:checked.has(x.id)}))
  .sort((a,b)=>(b.views??-1)-(a.views??-1));
-const output={collected_at:new Date().toISOString(),notice:'Keyword-search candidates only, NOT verified OA personal videos or today's hottest videos. Needs manual review.',candidates:entries};
+const output={collected_at:new Date().toISOString(),notice:'Keyword-search candidates only, NOT verified OA personal videos or current hottest videos. Needs manual review.',candidates:entries};
 const dest=new URL('../data/youtube-candidates.json',import.meta.url);
 await fs.writeFile(dest,JSON.stringify(output,null,2)+'\n');
 console.log('Saved '+entries.length+' candidate videos; '+entries.filter(v=>!v.already_in_archive).length+' need review.');
