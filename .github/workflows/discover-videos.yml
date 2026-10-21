@@ -1,7 +1,7 @@
 name: OA New Video Discovery Queue
 on:
   schedule:
-    - cron: '25 3 * * *' # 北京时间每天11:25，新OA视频待审核队列
+    - cron: '25 */2 * * *' # 每2小时，北京时间00:25、02:25...；比指标采集错开15分钟
   workflow_dispatch:
 permissions:
   contents: write
