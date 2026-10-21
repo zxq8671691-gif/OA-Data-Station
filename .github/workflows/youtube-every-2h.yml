@@ -1,0 +1,39 @@
+name: OA YouTube Metrics Every 2 Hours
+on:
+  schedule:
+    - cron: '17 */2 * * *' # UTC偶数小时17分 = 北京时间偶数小时17分；可能延迟
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: oa-metrics-data-write
+  cancel-in-progress: false
+jobs:
+  refresh-youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Validate OA data before reading public video statistics
+        run: npm test
+      - name: Fetch verified public YouTube counts using official API
+        run: node scripts/update.mjs
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Sync counts into GitHub Pages HTML
+        run: node scripts/sync-pages.mjs
+      - name: Validate output
+        run: npm test
+      - name: Commit real public snapshots only
+        run: |
+          git config user.name oa-daily-bot
+          git config user.email oa-daily-bot@users.noreply.github.com
+          git add data/dashboard.json docs/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: two-hour verified OA YouTube snapshots'
+            git push
+          fi
