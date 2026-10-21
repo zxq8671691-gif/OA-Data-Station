@@ -560,14 +560,14 @@
   ],
   "all_kill": {
     "song": "NEON",
-    "rak": "曾达成（历史常用说法）",
+    "rak": "第三方报道2026-10-16曾达成；非iChart官方认证",
     "rak_count": null,
-    "ak": 0,
-    "pak": 0,
+    "ak": null,
+    "pak": null,
     "weekly_rank": null,
     "verified_at": null,
     "source": "https://ichart.kr/",
-    "note": "iChart计数未在本次构建中独立实时核验，请以官方页面为准。"
+    "note": "iChart官方仅可核验AK/PAK；RAK为第三方报道，未核实持续时长。AK/PAK状态为未知，不能写0或臆测达成。"
   },
   "articles": [
     {
@@ -1651,6 +1651,282 @@
         "quality": "reported_approx",
         "time_precision": "date_only",
         "note": "只用作历史参考点，不能算今日实时粉丝/签到，不可当精确数"
+      }
+    ]
+  },
+  "korean_charts": {
+    "title": "A2O LITE / NEON 韩国音源成绩",
+    "song": "NEON",
+    "artist": "A2O, A2O LITE",
+    "asof": "2026-10-21",
+    "timezone": "Asia/Seoul",
+    "refresh_policy": "各平台原榜时间不统一；平台排名不允许跨时刻组合宣称RAK/AK/PAK",
+    "source_method": "韩国平台官方榜页 / 官方iChart综合榜; Spotify Kworb公开历史",
+    "official_ichart": {
+      "url": "https://www.ichart.kr/about/ichart",
+      "platforms": [
+        "melon",
+        "genie",
+        "ytmusic",
+        "flo",
+        "vibe",
+        "bugs"
+      ],
+      "official_ak": "六家平台第1",
+      "official_pak": "AK且iChart实时与周累计第1",
+      "cadence": "每小时30分",
+      "rak_credential": "非iChart官方认证术语"
+    },
+    "achievements": [
+      {
+        "kind": "RAK",
+        "date": "2026-10-16",
+        "status": "reported",
+        "label": "第三方报道曾达成",
+        "source": "https://kpopping.com/community/a2o-lites-neon-achieves-real-time-all-kill-just-two-days-after-debut-mvba8xb3",
+        "note": "2026年10月16日粉丝社区文章称NEON出道约两天四小时达成Realtime All-Kill；该报道不是iChart官方认证。"
+      },
+      {
+        "kind": "AK",
+        "date": null,
+        "status": "unverified",
+        "label": "尚无iChart官方认证记录",
+        "source": "https://www.ichart.kr/record/ichart",
+        "note": "iChart正式AK：6个平台排名第1；不能从几个异时点第一推算。"
+      },
+      {
+        "kind": "PAK",
+        "date": null,
+        "status": "unverified",
+        "label": "尚无iChart官方认证记录",
+        "source": "https://www.ichart.kr/record/ichart",
+        "note": "PAK还须iChart实时与周累计第1，并有官方记录。"
+      }
+    ],
+    "platforms": [
+      {
+        "id": "ichart",
+        "label": "iChart 综合",
+        "name": "iChart实时总榜",
+        "units": "排名",
+        "source": "https://www.ichart.kr/rank",
+        "cadence": "官方每小时约 :30",
+        "notes": "综合加权排名，不代表六个平台同时第一",
+        "snapshots": [
+          {
+            "date": "2026-10-21",
+            "clock_kst": null,
+            "rank": 1,
+            "score": 205,
+            "source": "https://www.ichart.kr/rank",
+            "source_name": "iChart官方实时榜",
+            "quality": "official_page",
+            "time_precision": "date_only",
+            "note": "抓取页面为实时榜，公开摘录未保留精确时分；勿等同于AK或PAK"
+          }
+        ]
+      },
+      {
+        "id": "melon",
+        "label": "Melon TOP100",
+        "name": "Melon TOP100",
+        "units": "排名",
+        "source": "https://www.melon.com/chart/",
+        "cadence": "平台实时/当期",
+        "notes": "TOP100与HOT100、日榜独立；不同榜单不可混算",
+        "snapshots": [
+          {
+            "date": "2026-10-14",
+            "clock_kst": "22:00",
+            "rank": 2,
+            "source": "https://www.melon.com/chart/index.htm?dayTime=2026101300",
+            "source_name": "Melon TOP100历史页面",
+            "quality": "official_page",
+            "note": "原页面显示2026.10.14 22:00, NEON第2"
+          },
+          {
+            "date": "2026-10-21",
+            "clock_kst": "20:00",
+            "rank": 1,
+            "source": "https://www.melon.com/chart/",
+            "source_name": "Melon TOP100官方",
+            "quality": "official_page",
+            "note": "原页面显示2026.10.21 20:00 KST"
+          }
+        ]
+      },
+      {
+        "id": "melonhot",
+        "label": "Melon HOT100",
+        "name": "Melon HOT100",
+        "units": "排名",
+        "source": "https://www.melon.com/chart/hot100/",
+        "cadence": "平台榜单时间",
+        "notes": "Melon HOT100，非TOP100与日榜",
+        "snapshots": [
+          {
+            "date": "2026-10-21",
+            "clock_kst": "20:00",
+            "rank": 1,
+            "source": "https://www.melon.com/chart/hot100/",
+            "source_name": "Melon官方HOT100",
+            "quality": "official_page"
+          }
+        ]
+      },
+      {
+        "id": "genie",
+        "label": "Genie",
+        "name": "Genie实时榜",
+        "units": "排名",
+        "source": "https://www.genie.co.kr/chart/top200",
+        "cadence": "实时榜（历史时段依平台显示）",
+        "notes": "按Genie实时榜记录，非同一时刻六平台汇总",
+        "snapshots": [
+          {
+            "date": "2026-10-21",
+            "clock_kst": "20:00",
+            "rank": 1,
+            "source": "https://www.genie.co.kr/chart/top200",
+            "source_name": "Genie实时榜官方",
+            "quality": "official_page"
+          }
+        ]
+      },
+      {
+        "id": "bugs",
+        "label": "Bugs",
+        "name": "Bugs实时榜",
+        "units": "排名",
+        "source": "https://music.bugs.co.kr/chart/track/realtime/total",
+        "cadence": "小时级（按原榜时间）",
+        "notes": "实时榜单；与Bugs日榜分开",
+        "snapshots": [
+          {
+            "date": "2026-10-14",
+            "clock_kst": "01:00",
+            "rank": 1,
+            "source": "https://music.bugs.co.kr/chart/track/realtime/total?chartdate=20261014&charthour=01",
+            "source_name": "Bugs官方实时历史榜",
+            "quality": "official_page"
+          },
+          {
+            "date": "2026-10-20",
+            "clock_kst": "16:00",
+            "rank": 1,
+            "source": "https://music.bugs.co.kr/chart/track/realtime/total?chartdate=20261020&charthour=16",
+            "source_name": "Bugs官方实时历史榜",
+            "quality": "official_page"
+          },
+          {
+            "date": "2026-10-21",
+            "clock_kst": "18:00",
+            "rank": 1,
+            "source": "https://music.bugs.co.kr/chart/track/realtime/total?chartdate=20261021&charthour=18",
+            "source_name": "Bugs官方实时历史榜",
+            "quality": "official_page"
+          }
+        ]
+      },
+      {
+        "id": "bugsdaily",
+        "label": "Bugs 日榜",
+        "name": "Bugs每日歌曲榜",
+        "units": "排名",
+        "source": "https://music.bugs.co.kr/chart/track/day/kpop",
+        "cadence": "平台按日发布",
+        "notes": "前一结算日结果，不等于当前小时实时榜",
+        "snapshots": [
+          {
+            "date": "2026-10-20",
+            "clock_kst": null,
+            "rank": 1,
+            "source": "https://music.bugs.co.kr/chart/track/day/kpop",
+            "source_name": "Bugs官方日榜",
+            "quality": "official_page"
+          }
+        ]
+      },
+      {
+        "id": "flo",
+        "label": "FLO",
+        "name": "FLO公开榜",
+        "units": "排名",
+        "source": "https://www.music-flo.com/",
+        "cadence": "因站点限制待核",
+        "notes": "已确认iChart纳入FLO，但NEON精确名次本次未核验；暂无日序列",
+        "snapshots": []
+      },
+      {
+        "id": "vibe",
+        "label": "VIBE",
+        "name": "VIBE今日TOP100",
+        "units": "排名",
+        "source": "https://vibe.naver.com/",
+        "cadence": "平台按自有周期发布",
+        "notes": "iChart纳入VIBE；本站尚无当期可核实的NEON原榜排名",
+        "snapshots": []
+      },
+      {
+        "id": "ytmusic",
+        "label": "YouTube Music",
+        "name": "YouTube Music韩国Top Songs",
+        "units": "排名",
+        "source": "https://charts.youtube.com/charts/TopSongs/kr",
+        "cadence": "官方周榜等，非YouTube普通视频观看榜",
+        "notes": "YouTube Music视频排行榜第一≠Top Songs第一；本项暂无同口径核验快照",
+        "snapshots": []
+      },
+      {
+        "id": "spotify",
+        "label": "Spotify韩国",
+        "name": "Spotify韩国日榜",
+        "units": "日播放次数",
+        "source": "https://charts.spotify.com/charts/view/regional-kr-daily/latest",
+        "cadence": "每日结算",
+        "notes": "仅作为国际流媒体补充，不属于iChart六平台AK口径",
+        "snapshots": [
+          {
+            "date": "2026-10-16",
+            "clock_kst": null,
+            "rank": 1,
+            "streams": 299898,
+            "source": "https://kworb.net/spotify/country/kr_daily.html",
+            "source_name": "Spotify 韩国完整日榜 / Kworb日期存档",
+            "quality": "archived_public_chart",
+            "note": "按平台结算日；播放次数≠独立听众"
+          },
+          {
+            "date": "2026-10-17",
+            "clock_kst": null,
+            "rank": 1,
+            "streams": 270600,
+            "source": "https://www.kworb.net/spotify/country/kr_daily.html",
+            "source_name": "Spotify 韩国完整日榜 / Kworb日期存档",
+            "quality": "archived_public_chart",
+            "note": "按平台结算日；播放次数≠独立听众"
+          },
+          {
+            "date": "2026-10-18",
+            "clock_kst": null,
+            "rank": 1,
+            "streams": 249738,
+            "source": "https://kworb.net/spotify/country/kr_daily.html",
+            "source_name": "Spotify 韩国完整日榜 / Kworb日期存档",
+            "quality": "archived_public_chart",
+            "note": "按平台结算日；播放次数≠独立听众"
+          },
+          {
+            "date": "2026-10-19",
+            "clock_kst": null,
+            "rank": 1,
+            "streams": 281156,
+            "source": "https://kworb.net/spotify/country/kr_daily.html",
+            "source_name": "Spotify 韩国完整日榜 / Kworb日期存档",
+            "quality": "archived_public_chart",
+            "note": "按平台结算日；播放次数≠独立听众"
+          }
+        ]
       }
     ]
   }
