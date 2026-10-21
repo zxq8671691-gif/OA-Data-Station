@@ -12,7 +12,7 @@ A2O LITE 成员 OA 的独立中文粉丝数据与视频档案（非官方）。
 
 ## 数据采集状态
 
-- YouTube Data API v3：GitHub Actions 每2小时读取已收录的公开直拍和节目视频，记录真实播放、点赞、评论及采样时间。持续采样后展示约24小时播放量变化；非秒级实时。
+- YouTube Data API v3：GitHub Actions 每日读取已收录的公开直拍和节目视频，记录真实播放、点赞、评论及采样时间。持续采样后展示约24小时播放量变化；非秒级实时。
 - GitHub Actions 成功后会更新 `data/dashboard.json` 并同步 `docs/index.html`；EdgeOne 关联 `main` 后将随每次代码提交自动部署最新版。
 - `scripts/build-cn.mjs` 会把当前源数据注入 HTML，缓存公开 YouTube 封面，并以站内 OA 本地图片作失败回退。已完成生产构建验证。
 - X／微博／Bilibili／抖音／TikTok等指标仅在获得平台授权或可核实的公开值后展示；不会用模拟值填充。
@@ -24,3 +24,5 @@ A2O LITE 成员 OA 的独立中文粉丝数据与视频档案（非官方）。
 `docs/`：GitHub Pages 的历史兼容静态网站；`cn-dist/`：腾讯云 EdgeOne 构建产物（由 `npm run build:cn` 自动生成）；`data/dashboard.json`：最新的核验数据；`scripts/build-cn.mjs`：中国大陆站点构建。
 
 作品及肖像版权归原权利人，网站内容均为非官方独立粉丝档案。
+
+- B站／微博／抖音：每天一轮云浏览器公开页面核验，每个平台最多3条；证据写入 `data/browser-verifications.json`，离线导入 `node scripts/import-browser.mjs`。X暂停。

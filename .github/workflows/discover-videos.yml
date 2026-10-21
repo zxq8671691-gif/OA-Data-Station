@@ -1,7 +1,7 @@
 name: OA New Video Discovery Queue
 on:
   schedule:
-    - cron: '25 */2 * * *' # 每2小时，北京时间00:25、02:25...；比指标采集错开15分钟
+    - cron: '55 0 * * *' # 每日一次，北京时间08:55；仅YouTube官方API发现
   workflow_dispatch:
 permissions:
   contents: write

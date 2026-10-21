@@ -1,7 +1,7 @@
 name: OA Daily Verified Metrics
 on:
   schedule:
-    - cron: '10 */2 * * *' # 每2小时，北京时间 00:10、02:10、...、22:10；GitHub定时任务可能延迟
+    - cron: '10 1 * * *' # 每日一次，北京时间09:10；GitHub可能延迟
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,6 +19,8 @@ jobs:
         run: npm test
       - name: Apply manually audited exact public metrics
         run: node scripts/import-manual.mjs
+      - name: Import verified public browser observations (offline)
+        run: node scripts/import-browser.mjs
       - name: Refresh verified public video statistics
         run: npm run update
         env:

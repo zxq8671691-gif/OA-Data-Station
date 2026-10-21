@@ -3,11 +3,29 @@
     "name": "OA 数据总览",
     "subtitle": "OA 数据实时更新 · 公共档案",
     "edition": "2026-10-21",
-    "updated_at": "2026-10-21T18:48:00+08:00",
-    "verified_at": "2026-10-21T18:48:00+08:00",
+    "updated_at": "2026-10-21T11:19:42.283Z",
+    "verified_at": "2026-10-21T19:17:31.394000+08:00",
     "timezone": "Asia/Shanghai",
-    "notice": "OA个人／双人／团体作品单独归类。YouTube自动采集；其他平台有公开原始入口但未授权的数据保留待核实。社交账号粉丝数不等于OA个人粉丝。",
-    "source_audit_at": "2026-10-21"
+    "notice": "每日一轮公开数据核验；X暂停。播放、帖文浏览及互动分开；K/M/万保留约数，未显示指标为空。快照不代表全网总量。",
+    "source_audit_at": "2026-10-21",
+    "collection_policy": {
+      "timezone": "Asia/Shanghai",
+      "max_runs_per_local_day": 1,
+      "max_items_per_platform": 3,
+      "platforms": [
+        "Bilibili",
+        "微博",
+        "抖音"
+      ],
+      "x_paused": true,
+      "stop_on": [
+        "login_expired",
+        "captcha",
+        "risk_control",
+        "rate_limit"
+      ],
+      "method": "原站公开页面正常浏览；不导出登录凭据，不使用未授权接口；本文件记录观察事实，不代表后台API授权"
+    }
   },
   "spotlight": [
     {
@@ -87,8 +105,8 @@
       "scope": "团体官方 / OA相关单帖",
       "metric": "post-engagement",
       "value": null,
-      "last_updated": null,
-      "status": "已巡检 / 暂无稳定开放接口",
+      "last_updated": "2026-10-21T19:16:07.721000+08:00",
+      "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://weibo.com/u/8428908687",
       "account_scope": "group_or_public"
     },
@@ -98,8 +116,8 @@
       "scope": "官方团体内容及OA二创",
       "metric": "views",
       "value": null,
-      "last_updated": null,
-      "status": "已有可追溯公开视频 · 互动待校验",
+      "last_updated": "2026-10-21T19:16:07.700000+08:00",
+      "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://space.bilibili.com/670061998",
       "account_scope": "group_or_public"
     },
@@ -109,8 +127,8 @@
       "scope": "官方单帖 / OA话题",
       "metric": "engagement",
       "value": null,
-      "last_updated": null,
-      "status": "已巡检 / 待补单帖互动",
+      "last_updated": "2026-10-21T19:17:31.394000+08:00",
+      "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://v.douyin.com/ZzHgu4mfISQ/",
       "account_scope": "group_or_public"
     },
@@ -143,7 +161,7 @@
       "metric": "followers",
       "value": null,
       "last_updated": "2026-10-21T18:48:00+08:00",
-      "status": "已核实 1 条公开帖截图约数，5条原帖已收录",
+      "status": "采集暂停 · 保留既有历史记录",
       "source": "https://x.com/A2O_LITE",
       "account_scope": "group_or_public",
       "api": "X API v2",
@@ -440,16 +458,17 @@
       "thumbnail_source": "OA官宣写真（非视频原封面）",
       "url": "https://www.bilibili.com/video/BV1joJy6rE9C/",
       "views": null,
-      "views_approx": "约16.4万",
+      "views_approx": "约215.2K",
       "likes": null,
-      "comments": null,
+      "comments": 1345,
       "views_24h": null,
-      "updated_at": null,
-      "approx_note": "公开检索页面所示约16.4万播放，约10/18收录；并非今天的实时数值",
-      "metric_source": "B站视频公开页面搜索快照",
+      "updated_at": "2026-10-21T19:15:20.982000+08:00",
+      "approx_note": "播放215.2K；弹幕1093；点赞12.3K；投币3174；收藏3903；分享1277；Comments1345；稿件含两个分P，播放不能归于单一片段",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
       "event_id": "mcountdown",
       "label_nonofficial": true,
-      "content_scope": "fan_edit"
+      "content_scope": "fan_edit",
+      "likes_display": "12.3K"
     },
     {
       "id": "BV1eWJy6PEgH",
@@ -858,6 +877,184 @@
           "evidence_type": "user_provided_public_post_screenshot"
         }
       ]
+    },
+    "browser_posts": {
+      "Bilibili:BV13DJo6PEpw": [
+        {
+          "at": "2026-10-21T19:14:43.771000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 5939,
+            "comments": 495,
+            "reposts": null,
+            "shares": 309,
+            "bookmarks": 1846,
+            "quotes": null,
+            "coins": 1394,
+            "danmaku": 619,
+            "video_views_display": "86.8K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+          "evidence_excerpt": "播放86.8K；弹幕619；点赞5939；投币1394；收藏1846；分享309；Comments495"
+        }
+      ],
+      "Bilibili:BV1joJy6rE9C": [
+        {
+          "at": "2026-10-21T19:15:20.982000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 1345,
+            "reposts": null,
+            "shares": 1277,
+            "bookmarks": 3903,
+            "quotes": null,
+            "coins": 3174,
+            "danmaku": 1093,
+            "video_views_display": "215.2K",
+            "likes_display": "12.3K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+          "evidence_excerpt": "播放215.2K；弹幕1093；点赞12.3K；投币3174；收藏3903；分享1277；Comments1345；稿件含两个分P，播放不能归于单一片段"
+        }
+      ],
+      "Bilibili:BV1ZjJZ6LEDZ": [
+        {
+          "at": "2026-10-21T19:16:07.700000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": 1238,
+            "likes": 33,
+            "comments": 1,
+            "reposts": null,
+            "shares": 1,
+            "bookmarks": 16,
+            "quotes": null,
+            "coins": 3,
+            "danmaku": 0
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+          "evidence_excerpt": "播放1238；弹幕0；点赞33；投币3；收藏16；分享1；Comments1"
+        }
+      ],
+      "微博:Rmo6EhLtD": [
+        {
+          "at": "2026-10-21T19:14:43.790000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 401,
+            "comments": 30,
+            "reposts": 19,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/Rmo6EhLtD",
+          "evidence_excerpt": "原帖转发19、评论30、点赞401；阅读/收藏总数未显示"
+        }
+      ],
+      "微博:RnIJM0IgQ": [
+        {
+          "at": "2026-10-21T19:15:20.965000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 6,
+            "comments": 0,
+            "reposts": 0,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/RnIJM0IgQ",
+          "evidence_excerpt": "操作条可访问标签0,0,6，对应转发、评论、点赞；阅读/收藏总数未显示"
+        }
+      ],
+      "微博:5353331979717055": [
+        {
+          "at": "2026-10-21T19:16:07.721000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 256,
+            "comments": 160,
+            "reposts": 131,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/5353331979717055",
+          "evidence_excerpt": "转发131、评论160、点赞256；抽奖活动帖，互动不可直接视为自然传播；阅读/收藏总数未显示"
+        }
+      ],
+      "抖音:7698376293657627913": [
+        {
+          "at": "2026-10-21T19:17:31.394000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 2149,
+            "reposts": null,
+            "shares": 3363,
+            "bookmarks": 1223,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "4.4万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698376293657627913",
+          "evidence_excerpt": "爱心4.4万、评论2149、星标1223、分享箭头3363；无公开播放量"
+        }
+      ],
+      "抖音:7698740282125225698": [
+        {
+          "at": "2026-10-21T19:17:31.394000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 239,
+            "reposts": null,
+            "shares": 760,
+            "bookmarks": 859,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "1.4万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698740282125225698",
+          "evidence_excerpt": "爱心1.4万、评论239、星标859、分享箭头760；无公开播放量"
+        }
+      ],
+      "抖音:7696902379706289434": [
+        {
+          "at": "2026-10-21T19:16:37.096000+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 2455,
+            "comments": 62,
+            "reposts": null,
+            "shares": 148,
+            "bookmarks": 170,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://www.douyin.com/video/7696902379706289434",
+          "evidence_excerpt": "爱心2455、评论62、星标170、分享箭头148；无公开播放量"
+        }
+      ]
     }
   },
   "platform_sort": {
@@ -953,7 +1150,7 @@
       "group": "社交",
       "scope": "A2O LITE团体账号 + OA关联帖",
       "status": "manual",
-      "status_text": "已核实5条OA公开帖来源，其中1条的浏览、转发、点赞、收藏为截图约数（非自动实时）",
+      "status_text": "采集暂停（用户暂未成功登录）；保留既有来源和历史截图，不尝试登录",
       "metric": "公开帖：浏览、转发、回复、点赞、引用；视频播放量单独核实",
       "url": "https://x.com/A2O_LITE",
       "method": "X公开帖原链+人工核验截图；免登录，不使用付费API"
@@ -963,11 +1160,11 @@
       "platform": "微博",
       "group": "社交",
       "scope": "官方账号 + OA相关微博",
-      "status": "awaiting_api",
-      "status_text": "官方CLI需开发者实名及设备授权",
+      "status": "manual",
+      "status_text": "已核验3条原站公开内容；每日最多一轮，登录失效或风控即停止",
       "metric": "单帖点赞、评论、转发；视频观看待核验",
       "url": "https://weibo.com/u/8428908687",
-      "method": "微博官方CLI (OAuth)"
+      "method": "用户登录的云浏览器只读公开页面（非后台／非API）"
     },
     {
       "id": "bilibili",
@@ -975,10 +1172,10 @@
       "group": "视频",
       "scope": "OA直拍/粉丝二创；原作与转载区分",
       "status": "manual",
-      "status_text": "官方开放平台需UP主授权；现保留原视频链接",
+      "status_text": "已核验3条原站公开内容；每日最多一轮，登录失效或风控即停止",
       "metric": "公开视频可见播放、点赞、评论",
       "url": "https://space.bilibili.com/670061998",
-      "method": "官方开放平台／人工核验"
+      "method": "用户登录的云浏览器只读公开页面（非后台／非API）"
     },
     {
       "id": "douyin",
@@ -986,10 +1183,10 @@
       "group": "短视频",
       "scope": "官方短视频 + OA相关公开作品",
       "status": "manual",
-      "status_text": "非发布者后台数据不能通过本人OAuth获取",
+      "status_text": "已核验3条原站公开内容；每日最多一轮，登录失效或风控即停止",
       "metric": "授权发布者的视频指标；公开互动需人工核实",
       "url": "https://v.douyin.com/ZzHgu4mfISQ/",
-      "method": "抖音开放平台（发布者授权）"
+      "method": "用户登录的云浏览器只读公开页面（非后台／非API）"
     },
     {
       "id": "tiktok",
@@ -1197,6 +1394,240 @@
       "metric_status": "原帖作者与链接已核对；转评赞和浏览数待核验",
       "metadata_source": "X官方公开 oEmbed",
       "metadata_verified_at": "2026-10-21"
+    },
+    {
+      "id": "BV13DJo6PEpw",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "title": "OA NEON SHOW K-POP 4K个人直拍",
+      "author_handle": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:14:43.771000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "播放86.8K；弹幕619；点赞5939；投币1394；收藏1846；分享309；Comments495",
+      "metric_display": {
+        "video_views": "86.8K"
+      },
+      "views": null,
+      "video_views": null,
+      "likes": 5939,
+      "comments": 495,
+      "reposts": null,
+      "shares": 309,
+      "bookmarks": 1846,
+      "quotes": null,
+      "coins": 1394,
+      "danmaku": 619
+    },
+    {
+      "id": "BV1joJy6rE9C",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+      "title": "OA NEON出道舞台4K个人直拍（两分P稿件）",
+      "author_handle": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:15:20.982000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "播放215.2K；弹幕1093；点赞12.3K；投币3174；收藏3903；分享1277；Comments1345；稿件含两个分P，播放不能归于单一片段",
+      "metric_display": {
+        "video_views": "215.2K",
+        "likes": "12.3K"
+      },
+      "views": null,
+      "video_views": null,
+      "likes": null,
+      "comments": 1345,
+      "reposts": null,
+      "shares": 1277,
+      "bookmarks": 3903,
+      "quotes": null,
+      "coins": 3174,
+      "danmaku": 1093
+    },
+    {
+      "id": "BV1ZjJZ6LEDZ",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+      "title": "OA Show Kpop怼脸横版直拍 Neon A2O Lite",
+      "author_handle": "KPOP万事通",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:16:07.700000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "播放1238；弹幕0；点赞33；投币3；收藏16；分享1；Comments1",
+      "metric_display": {},
+      "views": null,
+      "video_views": 1238,
+      "likes": 33,
+      "comments": 1,
+      "reposts": null,
+      "shares": 1,
+      "bookmarks": 16,
+      "quotes": null,
+      "coins": 3,
+      "danmaku": 0
+    },
+    {
+      "id": "Rmo6EhLtD",
+      "platform": "微博",
+      "url": "https://weibo.com/8344619260/Rmo6EhLtD",
+      "title": "OA公主的安利手册",
+      "author_handle": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:14:43.790000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "原帖转发19、评论30、点赞401；阅读/收藏总数未显示",
+      "metric_display": {},
+      "views": null,
+      "video_views": null,
+      "likes": 401,
+      "comments": 30,
+      "reposts": 19,
+      "shares": null,
+      "bookmarks": null,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
+    },
+    {
+      "id": "RnIJM0IgQ",
+      "platform": "微博",
+      "url": "https://weibo.com/8344619260/RnIJM0IgQ",
+      "title": "「20261021」饭绘",
+      "author_handle": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:15:20.965000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "操作条可访问标签0,0,6，对应转发、评论、点赞；阅读/收藏总数未显示",
+      "metric_display": {},
+      "views": null,
+      "video_views": null,
+      "likes": 6,
+      "comments": 0,
+      "reposts": 0,
+      "shares": null,
+      "bookmarks": null,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
+    },
+    {
+      "id": "5353331979717055",
+      "platform": "微博",
+      "url": "https://weibo.com/8344619260/5353331979717055",
+      "title": "开站公告（含抽奖活动）",
+      "author_handle": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:16:07.721000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "转发131、评论160、点赞256；抽奖活动帖，互动不可直接视为自然传播；阅读/收藏总数未显示",
+      "metric_display": {},
+      "views": null,
+      "video_views": null,
+      "likes": 256,
+      "comments": 160,
+      "reposts": 131,
+      "shares": null,
+      "bookmarks": null,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
+    },
+    {
+      "id": "7698376293657627913",
+      "platform": "抖音",
+      "url": "https://www.douyin.com/video/7698376293657627913",
+      "title": "请允许长脸大美女的存在",
+      "author_handle": "我是王炸姐",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:17:31.394000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "爱心4.4万、评论2149、星标1223、分享箭头3363；无公开播放量",
+      "metric_display": {
+        "likes": "4.4万"
+      },
+      "views": null,
+      "video_views": null,
+      "likes": null,
+      "comments": 2149,
+      "reposts": null,
+      "shares": 3363,
+      "bookmarks": 1223,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
+    },
+    {
+      "id": "7698740282125225698",
+      "platform": "抖音",
+      "url": "https://www.douyin.com/video/7698740282125225698",
+      "title": "一眼美女长什么样？A2O让我印象深刻5女",
+      "author_handle": "凉仔",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:17:31.394000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "爱心1.4万、评论239、星标859、分享箭头760；无公开播放量",
+      "metric_display": {
+        "likes": "1.4万"
+      },
+      "views": null,
+      "video_views": null,
+      "likes": null,
+      "comments": 239,
+      "reposts": null,
+      "shares": 760,
+      "bookmarks": 859,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
+    },
+    {
+      "id": "7696902379706289434",
+      "platform": "抖音",
+      "url": "https://www.douyin.com/video/7696902379706289434",
+      "title": "kpop强心针来了！李秀满塑造了多少人的审美",
+      "author_handle": "东方美学树(复仇版",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "updated_at": "2026-10-21T19:16:37.096000+08:00",
+      "metric_source": "云浏览器原站公开页面核验（非API）",
+      "metric_status": "已核验可见指标；未显示指标为空",
+      "evidence_type": "original_public_page_browser",
+      "evidence_excerpt": "爱心2455、评论62、星标170、分享箭头148；无公开播放量",
+      "metric_display": {},
+      "views": null,
+      "video_views": null,
+      "likes": 2455,
+      "comments": 62,
+      "reposts": null,
+      "shares": 148,
+      "bookmarks": 170,
+      "quotes": null,
+      "coins": null,
+      "danmaku": null
     }
   ]
 }
