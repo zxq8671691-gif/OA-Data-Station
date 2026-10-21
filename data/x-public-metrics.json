@@ -1,5 +1,21 @@
 {
   "schema_version": 1,
   "policy": "人工审核原帖公开计数，必须有原帖URL、带时区采集时间和明确可辨的数字。展示为1.2万/1.2K的不精确数值不能当作12000写入。帖子浏览量与视频播放量分开。",
-  "snapshots": []
+  "snapshots": [
+    {
+      "post_id": "2109592401421705508",
+      "evidence_url": "https://x.com/oao2o/status/2109592401421705508",
+      "observed_at": "2026-10-21T18:48:00+08:00",
+      "reviewed_by": "用户提供公开原帖截图",
+      "evidence_type": "user_provided_public_post_screenshot",
+      "observation_note": "时间为用户提交截图的北京时间；非X页面截图内的采样时间",
+      "views_display": "1.8M",
+      "reposts_display": "5.1K",
+      "likes_display": "24K",
+      "bookmarks_display": "1.7K",
+      "comments": null,
+      "quotes": null,
+      "video_views": null
+    }
+  ]
 }
