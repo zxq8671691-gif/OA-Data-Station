@@ -55,8 +55,8 @@ for (let offset = 0; offset < uniqueIds.length; offset += 50) {
       .sort((a,b)=>Math.abs(a.age-86400000)-Math.abs(b.age-86400000))[0];
     video.views_24h = previous && views >= previous.snap.views ? views-previous.snap.views : null;
     history.push({at,date:bjDate,views:video.views,likes:video.likes,comments:video.comments});
-    // Keep at most 45 days of 4x daily snapshots, with room for occasional manual runs.
-    const cutoff = now.valueOf() - 45*86400000;
+    // Keep at most 29 days of 4x daily snapshots, with room for occasional manual runs.
+    const cutoff = now.valueOf() - 29*86400000;
     data.history.videos[item.id] = history.filter(x => x.at && Date.parse(x.at) >= cutoff).slice(-250);
     verifiedCount += 1;
   }
