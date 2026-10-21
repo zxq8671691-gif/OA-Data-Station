@@ -1,65 +1,60 @@
-# OA 数据总览｜中国大陆网站迁移与备案操作指南
+# OA 数据总览｜中国大陆 EdgeOne Pages 正式部署（2026-10-21）
 
-**部署目标**：面向中国大陆用户的公开非官方粉丝作品档案和数据看板。前台品牌「OA 数据总览」。
+> 站点代码和自动更新已准备好。**当前尚未拥有经认证的中国大陆正式生产站点**，不要把 GitHub Pages / Vercel 的 HTTP 200 当作国内上线。
 
-## 1. 推荐域名
+## 已完成：静态站部署准备
 
-- 首选：`oadaily.com`（2026-10-21 第三方注册查询显示可注册，**未预定、未购买**；结算时以腾讯云实际查询结果为准）。
-- 备选：`oa-daily.com`。不推荐再依赖 `vercel.app` 或 `github.io` 做中国大陆公开入口。
-- 建议通过腾讯云境内站 [域名注册](https://dnspod.cloud.tencent.com/) / [域名注册产品页](https://cloud.tencent.com/product/domain) 购买。尽量将域名、备案和后续托管保持在同一账号和主体名下。
-- `.com` 普通标准域名公开价格约为首年 ¥83、续费 ¥90；特殊/溢价域名与实际结算不同。**购买前请确认价格和可用性**。
+- 源码仓库：`zxq8671691-gif/OA-Data-Station`，使用 `main` 分支。
+- 根目录：`./`。构建命令：`npm run build:cn`。输出目录：`cn-dist`，Node.js 22。
+- 项目名：`oa-data-overview`。根目录 `edgeone.json` 已声明构建命令与输出。
+- `scripts/build-cn.mjs` 自动把当下 `data/dashboard.json` 写入静态网站的公开首页，避免数据旧版本。OA 本地图像 `docs/assets/oa-portrait.webp` 必须存在；部署时尽量获取公开 YouTube 视频封面并在同一次构建中缓存，无法获取则回退OA本地图片。
+- 已在隔离环境真实运行 `npm run build:cn`：检查通过，15个视频、12个YouTube封面、OA图像、最新数据时间，全部进入 `cn-dist/`。
+- 现有 GitHub Actions 每6小时调用 Google YouTube Data API 获取公开视频统计，成功则提交 `data/dashboard.json` 和 `docs/index.html` 到 main。将 EdgeOne Pages 项目 Git 连接到 main 后，每次提交自动部署（前提是构建没有被暂停）。
 
-## 2. 必须亲自完成：购买和实名
+## 你需要在腾讯云网页上完成的操作
 
-1. 用自己的腾讯云**中国站**账号登录并完成账号实名认证（个人或企业，与你计划的 ICP 备案主体保持一致）。
-2. 在腾讯云「域名注册 → 信息模板」按界面填写真实域名持有人资料、上传身份证明。**不要把证件、验证码、密码、银行卡发到聊天里**。
-3. 等待信息模板实名审核通过（官方通常指引 1–3 个工作日）。
-4. 在「域名注册」查询并购买 `oadaily.com`，注册 1 年即可开始；选择已实名的域名信息模板，完成付款。
-5. 保存域名订单、域名证书、主体姓名和账户记录。腾讯云注册的域名完成实名后通常需等待 3 个自然日才能提交备案核验。
+### A. 立即建立项目（**不需要等待备案**）
+1. 打开 **[一键带入仓库与构建参数](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**。需要腾讯云登录时使用购买域名的账号。
+2. 选择**导入 Git 仓库**，授权 `EO Makers / EdgeOne Pages` 访问 GitHub；只授权你自己的 `OA-Data-Station` 仓库即可。
+3. 按下表检查：
+   | 参数 | 值 |
+   |---|---|
+   | 仓库 | `zxq8671691-gif/OA-Data-Station` |
+   | Branch | `main` |
+   | 项目名称 | `oa-data-overview` |
+   | 项目根目录 | `./` |
+   | 构建命令 | `npm run build:cn` |
+   | 输出目录 | `cn-dist` |
+   | Node | `22` |
+   | 加速区域 | **中国大陆可用区**（或包含中国大陆的全球区，备案通过后才能绑定长期自定义域名） |
+4. 开始部署。确认生成的生产构建有 `index.html`、`assets/oa-portrait.webp`、`assets/yt_*.jpg`；若没有，在构建日志中查看具体错误。
+5. 此时可以用 EdgeOne 控制台短时预览，但正式长久公开 URL 仍须等待备案和自定义域名接入。
 
-## 3. 必须亲自完成：备案资源与 ICP
+官方进口：
+- 中国站：https://console.cloud.tencent.com/edgeone/pages
+- GitHub 导入：https://edgeone.ai/zh/document/70404
+- Build / root / output：https://edgeone.cloud.tencent.com/pages/document/162936788693114880
 
-为了确保可用中国大陆节点，必须**先完成 ICP 备案，再开通正式网站**。推荐先购买符合备案条件的腾讯云中国大陆 Lighthouse 轻量应用服务器：
+### B. 域名实名和ICP备案
+1. 确认域名实名审核**已通过**（不是只提交），并确保域名注册人真实姓名与备案主体一致。
+2. **腾讯云注册的域名实名通过后等3个自然日**再发起备案（若不是腾讯云购买，则按腾讯云官方条款）。
+3. 打开 https://console.cloud.tencent.com/beian ，按所在地备案。注意可能需要符合条件的腾讯云内地服务器/备案云资源；不要未经提示就购买不匹配的套餐。腾讯云轻量应用服务器通常要求大陆地域、包月累计3个月及以上等。
+4. ICP 网站名称、内容和个人备案类型以当地通信管理局审查为准。OA粉丝媒体资讯以链接索引为主；不设置无资质的新闻发布平台、收费内容或开放式论坛。
+5. 等待审核批准取得ICP备案号。**未获批前不要把域名绑到大陆正式网站发布。**
 
-- 中国内地地域；包年包月；实际购买/续费累计 ≥3 个月；备案期间剩余 ≥1 个月；带公网 IP、非零带宽。
-- 这是支持个人备案的一条清晰路径。只买一个域名不能直接完成首次备案；CloudBase 等资源也有不同的备案资质和时长要求。
-- 官网入口：[腾讯云 ICP 备案](https://console.cloud.tencent.com/beian)；备案服务类型按实际用途和所在地通信管理局规范填写。
-- 内容应准确描述为**个人非商业、非官方的公开作品/影像索引与统计记录**；不要宣传成艺人官方或公司站点，不应未经批准开展新闻资讯服务、经营、论坛或募资。部分省份的个人网站命名要求较严格，备案服务名须以管局最终审核为准。网站显示名称可依审批结果进行合规调整。
-- 实名持有人、账号、备案主体资料要一致。按官方流程上传资料、进行可能要求的人脸/身份核验，**收到备案短信后在 24 小时内完成短信核验**。
-- 腾讯云预计 1–2 工作日完成初审；管局审核最长约 20 工作日，具体视省份及材料情况而定。备案前不要以中国大陆服务器对外开放未备案域名。
-- 网站上线 30 日内按要求完成[公安联网备案](https://beian.mps.gov.cn/)；网站底部展示 ICP 备案号及按要求展示公安备案号。
+官方：https://cloud.tencent.com/document/product/243/19627
 
-## 4. 我已准备的网站源码和迁移路径
+### C. 备案通过后：正式域名与DNS
+1. 进入 EdgeOne Pages 项目 → 域名管理 → 添加域名：`www.<实际购买的域名>`。
+2. 平台会显示验证 TXT（如需）和目标 CNAME；进入腾讯云 DNSPod / 域名解析按**页面给出的具体值**填写，不要猜测。
+3. 开启/申请 HTTPS 免费证书。要启用裸域名 `<实际购买的域名>` 时，再依照平台支持的根域名解析与跳转方式另行配置。
+4. 根域名/WWW 真实中国大陆手机访问通过以后，在网站页脚显示获批 ICP 备案号并核对所在省份的其他要求。
+5. 用移动、联通、电信三种真实大陆网络分别验证：首页 HTTP 200、OA图片、视频封面、数据时间、跳转原始视频链接的可用性。注意 YouTube 原始链接本身在中国大陆不一定可打开，这不应被当成网站首页故障。
 
-现有 GitHub 仓库：`https://github.com/zxq8671691-gif/OA-Data-Station`，可复用**`main` 分支的 `docs` 目录**，它包含单文件 HTML 页面、内嵌脚本和初始公开数据。`docs/assets/oa-portrait.webp` 为站内托管的 OA 个人形象照压缩图，减少对境外图片域名的依赖；部分视频缩略图仍需进一步迁到国内资源存储。
+官方：https://edgeone.cloud.tencent.com/pages/document/162936836982489088
 
-备案获批后：
-
-1. 打开[EdgeOne Pages（中国站）](https://console.cloud.tencent.com/edgeone/pages)；以 GitHub 导入上述仓库。
-2. 配置：部署分支 `main`；根目录 `docs`；无需构建命令；输出目录 `.`（若控制台要求，则用 `./`）；部署在**中国大陆可用区**。
-3. 先验证 HTML 和本地图正常。**不要直接使用 EdgeOne 的临时预览链接作为公开长期网址**。
-4. 在项目「自定义域名」绑定已备案的 `oadaily.com`；按平台生成的 CNAME 添加 DNS 记录；启用 HTTPS 免费证书。
-5. 分别从中国移动、中国联通、中国电信网络（最好同时 Wi-Fi 和 4G/5G）测试 `https://oadaily.com/`，确认响应 HTTP 200、图片可加载、点击跳转可用。
-
-## 5. 每日数据更新（尚需配置）
-
-GitHub 仓库中的 `scripts/update.mjs` 支持用**YouTube 官方 Data API**读取已收录视频的观看、点赞、评论数。要自动更新，需要在你自己的 GitHub 仓库 Settings → Secrets and variables → Actions 设置 `YOUTUBE_API_KEY`，并确认定时工作流能正确触发、更新 `data/dashboard.json` 且生成静态版 `docs/index.html`。不得把 API 密钥直接写进源码。
-
-目前上述自动链条**尚未完成端到端启用**，所以网站不能对外承诺所有平台都实时更新。微博、小红书、抖音、TikTok 等必须逐平台获得许可/可靠数据接口，否则保留「待核实」与实际最后检查时间。禁止虚构播放数与增长量。
-
-## 6. 风险与验收
-
-- 发布前确认 OA 图片、摄影记者照片及视频缩略图的转载使用授权与相应平台条款；不宜未经许可随意复制商业媒体高清摄影图。
-- 个人备案内容是否能覆盖粉丝资料网站，视各省管局审核；不能假报网站性质。必要时调整为本人作品/公开链接收藏类，或改用合规的企业主体备案。
-- 中国大陆 CDN 也不等于所有运营商 100% 成功。最终验收是三家运营商真实手机网络可打开网站、资源不丢失且更新流程正常。
-- 本文件是部署准备和用户操作指引，**不代表域名已购买、实名认证已通过、ICP 备案已下发或国内网站已上线**。
-
-## 官方操作参考
-
-- [腾讯云域名注册及实名认证](https://cloud.tencent.com/document/product/242/39039)
-- [腾讯云备案云资源资格](https://cloud.tencent.com/document/product/243/18908)
-- [腾讯云 ICP 备案快速入门](https://cloud.tencent.com/document/product/243/39038)
-- [腾讯云备案名称要求](https://cloud.tencent.com/document/product/243/11740)
-- [EdgeOne Pages 自定义域名与备案](https://edgeone.cloud.tencent.com/pages/document/162936836982489088)
-- [EdgeOne Pages 构建部署设置](https://edgeone.ai/document/159419364821458944)
-- [公安联网备案](https://cloud.tencent.com/document/product/243/19142)
+## 当前阻塞点
+- 你已经购入域名，但聊天尚未给出**准确的域名字符串**；不能猜测域名并直接改 DNS。
+- 尚未确认该域名的实名认证已通过及ICP备案已获批准。
+- ChatGPT 本次连接拥有 GitHub 与 Vercel，但**没有腾讯云管理账号的直接操作权限**；腾讯云 GitHub App OAuth 和自定义域名绑定必须由账号持有人在腾讯云控制台授权完成，之后提供项目公开ID/预览URL供核验。
+- 不要把身份证、验证码、密钥或域名控制台账号密码发送到聊天。
