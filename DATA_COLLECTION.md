@@ -70,3 +70,43 @@
 - YouTube API： https://developers.google.com/youtube/v3/docs/videos/list
 - 哔哩哔哩开放平台： https://open.bilibili.com/doc
 - TikTok Display API： https://developers.tiktok.com/docs/en/display-api-overview
+
+## 2026-10-21：X 改为免费公开帖转评赞与浏览计数
+
+用户明确选择**只使用公开帖原站可见的互动数字、不购买 X API**。因此，网站的定时工作流已取消 X 付费开发者 API 调用，不需要 X 密钥或任何社交账号登录。
+
+### 已核对原帖入口（不是互动数已核验）
+使用 X 官方公开嵌入元信息 `publish.x.com/oembed` 一次性确认来源／作者／原帖：
+- https://x.com/oao2o/status/2109592401421705508 —— 粉丝 @oao2o，OA相关影像
+- https://x.com/mademoiS2elle/status/2109568327656026150 —— 粉丝 @mademoiS2elle，OA出道相关视频
+- https://x.com/oaspics/status/2110665172343775630 —— OA粉丝图片账号
+- https://x.com/mademoiS2elle/status/2110664769493783034 —— OA相关舞台讨论
+- https://x.com/OmyAngel_/status/2109569383664333283 —— OA相关粉丝帖
+
+**所有上述帖子的点赞、评论、转发、引用、浏览次数仍是null**，直到从X原帖明确核对。第三方韩国论坛上的浏览次数是论坛的，不可混充X帖子的观看量。
+
+### 公共帖核验与更新
+需要在原 X 帖子页面（可以由审核者自己正常打开）记录一张可看清数字的截图、原帖完整URL和观察时点，然后由编辑写入 `data/x-public-metrics.json` 的 `snapshots`，格式示例（字段值仅表示结构，**不要复制示例的任何数字作为实际统计**）：
+
+```json
+{
+  "post_id": "原帖ID",
+  "evidence_url": "https://x.com/作者/status/原帖ID",
+  "observed_at": "带时区的ISO8601时间",
+  "reviewed_by": "编辑",
+  "evidence_type": "original_public_post_screenshot",
+  "views": null,
+  "views_display": "约N万",
+  "reposts": null,
+  "comments": null,
+  "likes": null,
+  "quotes": null,
+  "video_views": null
+}
+```
+
+- 若页面显示精确整数，就在对应 `views`、`reposts`、`comments`、`likes`、`quotes` 或 `video_views` 字段录入整数。
+- 若只显示“3.2万”，则只在 `views_display` 之类字段填写页面原文字样（可保留约数）；**不能写成精确32000**。
+- `views` 指**X帖子被看到多少次**，可能同一人多次；`video_views` 专指若原帖明确单独显示的**视频播放量**。两个不同口径不得混加。
+- 每次经过核验后，GitHub Actions `scripts/import-x-public.mjs` 都会校验原始URL及采样时间，更新网站卡片；数字仍不可用则显示“待核实”。
+- 有 X 登录状态的编辑可人工正常核验公开帖子，但不需要交出密码、session、Cookie；不做未授权抓取、风控绕过或批量账号操作。
