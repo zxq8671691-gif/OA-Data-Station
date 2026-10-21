@@ -3,8 +3,8 @@
     "name": "OA 数据总览",
     "subtitle": "OA 数据实时更新 · 公共档案",
     "edition": "2026-10-21",
-    "updated_at": "2026-10-21T08:35:11.809Z",
-    "verified_at": "2026-10-21T08:35:11.809Z",
+    "updated_at": "2026-10-21T18:48:00+08:00",
+    "verified_at": "2026-10-21T18:48:00+08:00",
     "timezone": "Asia/Shanghai",
     "notice": "OA个人／双人／团体作品单独归类。YouTube自动采集；其他平台有公开原始入口但未授权的数据保留待核实。社交账号粉丝数不等于OA个人粉丝。",
     "source_audit_at": "2026-10-21"
@@ -142,8 +142,8 @@
       "scope": "A2O LITE团体官方账号及公开OA相关粉丝帖（需注明作者）",
       "metric": "followers",
       "value": null,
-      "last_updated": null,
-      "status": "公开帖原链接已核对；精确互动量待人工采样",
+      "last_updated": "2026-10-21T18:48:00+08:00",
+      "status": "已核实 1 条公开帖截图约数，5条原帖已收录",
       "source": "https://x.com/A2O_LITE",
       "account_scope": "group_or_public",
       "api": "X API v2",
@@ -842,7 +842,23 @@
         }
       ]
     },
-    "platforms": {}
+    "platforms": {},
+    "posts": {
+      "2109592401421705508": [
+        {
+          "at": "2026-10-21T18:48:00+08:00",
+          "metrics_display": {
+            "views": "1.8M",
+            "reposts": "5.1K",
+            "likes": "24K",
+            "bookmarks": "1.7K"
+          },
+          "reviewed_by": "用户提供公开原帖截图",
+          "evidence_url": "https://x.com/oao2o/status/2109592401421705508",
+          "evidence_type": "user_provided_public_post_screenshot"
+        }
+      ]
+    }
   },
   "platform_sort": {
     "default": "trending",
@@ -937,10 +953,10 @@
       "group": "社交",
       "scope": "A2O LITE团体账号 + OA关联帖",
       "status": "manual",
-      "status_text": "已通过X公开嵌入信息核实5条OA相关原帖；互动数字等待原帖可见值核验",
+      "status_text": "已核实5条OA公开帖来源，其中1条的浏览、转发、点赞、收藏为截图约数（非自动实时）",
       "metric": "公开帖：浏览、转发、回复、点赞、引用；视频播放量单独核实",
       "url": "https://x.com/A2O_LITE",
-      "method": "X公开原帖 + 官方oEmbed确认来源；互动数字人工核验"
+      "method": "X公开帖原链+人工核验截图；免登录，不使用付费API"
     },
     {
       "id": "weibo",
@@ -1081,11 +1097,18 @@
       "comments": null,
       "reposts": null,
       "quotes": null,
-      "updated_at": null,
-      "metric_source": null,
+      "updated_at": "2026-10-21T18:48:00+08:00",
+      "metric_source": "X原帖公开截图所示约数（用户提供）",
       "metadata_source": "X官方公开 oEmbed",
       "metadata_verified_at": "2026-10-21",
-      "metric_status": "公开原帖已确认；互动数字待直接核对"
+      "metric_status": "截图已核验：数值为平台四舍五入显示，非精确API统计",
+      "metric_display": {
+        "views": "1.8M",
+        "reposts": "5.1K",
+        "likes": "24K",
+        "bookmarks": "1.7K"
+      },
+      "observation_note": "时间为用户提交截图的北京时间；非X页面截图内的采样时间"
     },
     {
       "platform": "X / Twitter",
