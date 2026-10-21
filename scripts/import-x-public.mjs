@@ -1,5 +1,5 @@
 /* Offline-only importer of X public post figures manually verified from original page.
-   Does NOT call X, log in, scrape, or run a paid API. Exact values only.
+   Does NOT call X, log in, scrape, or run a paid API. Exact and faithfully rounded on-screen labels only.
    Source: data/x-public-metrics.json. Post URLs must already be vetted in dashboard.
 */
 import fs from 'node:fs/promises';
@@ -9,7 +9,7 @@ const ledger=JSON.parse(await fs.readFile(input,'utf8'));
 if(ledger.schema_version!==1||!Array.isArray(ledger.snapshots))throw Error('Invalid X public snapshots schema');
 const d=JSON.parse(await fs.readFile(dPath,'utf8'));
 const exact=n=>Number.isSafeInteger(n)&&n>=0;
-const props=['views','reposts','comments','likes','quotes','video_views'];
+const props=['views','reposts','comments','likes','quotes','bookmarks','video_views'];
 const displayProps=Object.fromEntries(props.map(key=>[key,key+'_display']));
 const validDisplay=x=>typeof x==='string' && /^(?:约|≈)?\d+(?:\.\d+)?(?:万|亿|K|M)?$/i.test(x.trim());
 let changes=0;
