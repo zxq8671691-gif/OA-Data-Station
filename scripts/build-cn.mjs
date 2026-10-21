@@ -50,6 +50,18 @@ for(const video of data.videos){
  const exists=await fs.stat(dest).catch(()=>null);
  video.thumbnail=exists && exists.size>1500 ? './assets/yt_'+video.id+'.jpg' : './assets/oa-portrait.webp';
 }
+// Gallery sources must resolve to actual files even if mainland build workers cannot reach YouTube thumbnails.
+for(const item of data.gallery||[]){
+  const match=String(item.image||'').match(/yt_([-_A-Za-z0-9]{11})\.jpg$/);
+  if(match){
+    const file=path.join(imgs,'yt_'+match[1]+'.jpg');
+    const present=await fs.stat(file).catch(()=>null);
+    item.image=present&&present.size>1500?'./assets/yt_'+match[1]+'.jpg':'./assets/oa-portrait.webp';
+  }else if(/oa-portrait\.jpg$/.test(String(item.image||''))){
+    item.image='./assets/oa-portrait.webp';
+  }
+}
+if(data.profile) data.profile.portrait='./assets/oa-portrait.webp';
 const page=path.join(output,'index.html');
 const html=await fs.readFile(page,'utf8');
 const marker=/(<script\s+id="embedded-data"\s+type="application\/json">)([\s\S]*?)(<\/script>)/;
