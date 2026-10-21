@@ -18,13 +18,6 @@ if(!Array.isArray(data.videos) || data.videos.length<5 || !data.meta?.updated_at
   throw new Error('OA data not validated or missing. Refusing empty production deploy.');
 await fs.rm(output,{recursive:true,force:true});
 await fs.cp(original,output,{recursive:true,force:true});
-const page=path.join(output,'index.html');
-const html=await fs.readFile(page,'utf8');
-const marker=/(<script\s+id="embedded-data"\s+type="application\/json">)([\s\S]*?)(<\/script>)/;
-if(!marker.test(html)) throw new Error('Cannot find embedded-data marker in docs/index.html');
-const clean=JSON.stringify(data,null,2).replace(/</g,'\\u003c');
-await fs.writeFile(page,html.replace(marker,(_,start,old,end)=>start+clean+end),'utf8');
-
 const imgs=path.join(output,'assets');
 await fs.mkdir(imgs,{recursive:true});
 const portrait=path.join(imgs,'oa-portrait.webp');
@@ -50,17 +43,21 @@ if(process.env.SKIP_REMOTE_MEDIA!=='1'){
  });
  await Promise.all(workers);
 }
-const fallback=await fs.readFile(portrait);
-for(const id of ids){
- const dest=path.join(imgs,'yt_'+id+'.jpg');
- try{await fs.access(dest);}
- catch{
-  // For blocked video image CDNs, a local portrait fallback keeps layout usable.
-  // Extension differs from encoded type; browsers rely on image MIME sniffing.
-  await fs.writeFile(dest,fallback);
- }
+for(const video of data.videos){
+ if(video.platform!=='YouTube')continue;
+ const dest=path.join(imgs,'yt_'+video.id+'.jpg');
+ const exists=await fs.stat(dest).catch(()=>null);
+ video.thumbnail=exists && exists.size>1500 ? './assets/yt_'+video.id+'.jpg' : './assets/oa-portrait.webp';
 }
-// Prevent caching stale data with an imaginary date. The page shows its real last verification time.
+const page=path.join(output,'index.html');
+const html=await fs.readFile(page,'utf8');
+const marker=/(<script\s+id="embedded-data"\s+type="application\/json">)([\s\S]*?)(<\/script>)/;
+if(!marker.test(html))throw new Error('Cannot find embedded-data marker in docs/index.html');
+const clean=JSON.stringify(data,null,2).replace(/</g,'\\u003c');
+const published=html.replace(marker,(_,start,old,end)=>start+clean+end)
+  .replaceAll('/assets/oa-portrait.jpg','./assets/oa-portrait.webp');
+await fs.writeFile(page,published,'utf8');
+// Do not copy source video images from old docs unknowingly; build-time downloads are refreshed each deploy.
 const built=await fs.readFile(page,'utf8');
 if(!built.includes(data.meta.updated_at)) throw new Error('Missing actual data verification time in static output');
 if(!built.includes('id="videoGrid"')) throw new Error('Video area missing from generated page');
