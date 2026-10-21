@@ -1,0 +1,30 @@
+name: OA New Video Discovery Queue
+on:
+  schedule:
+    - cron: '25 3 * * *' # 北京时间每天11:25，新OA视频待审核队列
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Discover new public videos through approved YouTube search API
+        run: node scripts/discover-youtube.mjs
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Publish only a review queue; never auto-assert candidate is OA
+        run: |
+          git config user.name oa-daily-bot
+          git config user.email oa-daily-bot@users.noreply.github.com
+          git add data/youtube-candidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: update unverified OA video review candidates'
+            git push
+          fi
