@@ -4,7 +4,7 @@ A2O LITE 成员 OA 的独立中文粉丝数据与视频档案（非官方）。
 
 ## 中国大陆生产站部署
 
-**[点击导入 GitHub 仓库到 EdgeOne Pages](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**
+**[点击导入 GitHub 仓库到 EdgeOne Pages](https://console.cloud.tencent.com/edgeone/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**
 
 仓库 `main`，项目 `oa-data-overview`，构建命令 `npm run build:cn`，输出目录 `cn-dist`，节点选择中国大陆可用区。
 
