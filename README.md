@@ -12,10 +12,10 @@ A2O LITE 成员 OA 的独立中文粉丝数据与视频档案（非官方）。
 
 ## 数据采集状态
 
-- YouTube Data API v3：GitHub Actions 每6小时读取已收录的公开直拍和节目视频，记录真实播放、点赞、评论及采样时间。持续采样后展示约24小时播放量变化；非秒级实时。
+- YouTube Data API v3：GitHub Actions 每2小时读取已收录的公开直拍和节目视频，记录真实播放、点赞、评论及采样时间。持续采样后展示约24小时播放量变化；非秒级实时。
 - GitHub Actions 成功后会更新 `data/dashboard.json` 并同步 `docs/index.html`；EdgeOne 关联 `main` 后将随每次代码提交自动部署最新版。
 - `scripts/build-cn.mjs` 会把当前源数据注入 HTML，缓存公开 YouTube 封面，并以站内 OA 本地图片作失败回退。已完成生产构建验证。
-- Bilibili、微博、抖音、TikTok等指标仅在获得平台授权或可核实的公开值后展示；不会用模拟值填充。
+- X／微博／Bilibili／抖音／TikTok等指标仅在获得平台授权或可核实的公开值后展示；不会用模拟值填充。
 
 详见 [采集权限和平台来源](DATA_COLLECTION.md)。
 
