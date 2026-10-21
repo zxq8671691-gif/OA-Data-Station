@@ -1,0 +1,5 @@
+node_modules/
+cn-dist/
+.env
+.env.*
+.DS_Store
