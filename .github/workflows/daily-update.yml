@@ -17,6 +17,8 @@ jobs:
           node-version: '22'
       - name: Validate data
         run: npm test
+      - name: Apply manually audited exact public metrics
+        run: node scripts/import-manual.mjs
       - name: Refresh verified public video statistics
         run: npm run update
         env:
