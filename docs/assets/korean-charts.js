@@ -1,78 +1,123 @@
-// NEON Korean charts selector. Offline, deterministic, no external credentials or fabricated ranks.
-// Official iChart AK and PAK remain unverified until official source evidence is imported.
+/* NEON Korea / compact "C" layout.
+ * Only recorded original chart snapshots are shown. No fabricated live ranks or AK/PAK.
+ * Works as a standalone static component on GitHub Pages and Tencent EdgeOne.
+ */
 (()=>{
-  'use strict';
-  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&#39;'}[c]));
-  const select=(id)=>document.getElementById(id);
-  const timeLabel=s=>{
-    const date=String(s?.date||'').replaceAll('-','.');
-    const hour=s?.clock_kst?' '+s.clock_kst+' KST':'';
-    return date+hour;
-  };
-  const field=x=>Number.isSafeInteger(x)&&x>=0?new Intl.NumberFormat('zh-CN').format(x):'待核实';
-  function launch(){
-    const el=select('koreanChartSelector'),view=select('koreanChartView'),awards=select('koreanAwards'),old=select('spotifyLegacyPanel');
-    if(!el||!view||!awards)return;
-    let data;
-    try{data=JSON.parse(select('embedded-data').textContent).korean_charts;}catch{}
-    if(!data?.platforms?.length){view.textContent='榜单数据尚未载入。';return;}
-    const tabs=data.platforms;
-    const history=platform=>{
-      const arr=(platform.snapshots||[]).filter(s=>Number.isSafeInteger(s.rank)&&s.rank>0);
-      if(!arr.length)return '<div class="korean-graph-empty">该平台尚无可追溯的 NEON 原榜名次，本页仅提供原始榜单入口。不填假排名。</div>';
-      const top=Math.min(...arr.map(s=>s.rank));
-      const scoremax=Math.max(...arr.map(s=>s.streams||0),1);
-      const bars=arr.slice(-12).map(s=>{
-        const isPlay=platform.id==='spotify';
-        const size=isPlay?Math.max(14,Math.round((s.streams||0)/scoremax*116))
-          :Math.max(22,Math.round(116/Math.sqrt(Math.max(1,s.rank))));
-        const v=isPlay?field(s.streams):'#'+field(s.rank);
-        const hint=isPlay?'次播放':'（名次越小越好）';
-        return '<a class="korean-observation" href="'+esc(s.source)+'" target="_blank" rel="noopener noreferrer" title="'+esc(timeLabel(s))+'：'+esc(v)+' '+hint+'">'+
-          '<span class="korean-rank">'+esc(isPlay&&s.streams>=10000?(s.streams/10000).toFixed(1)+'万':v)+'</span>'+
-          '<span class="korean-bar" style="height:'+size+'px"></span>'+
-          '<small>'+esc(s.date.slice(5).replace('-','.'))+'</small></a>';
-      }).join('');
-      return '<div class="korean-bars" role="group" aria-label="已核实日期的韩国音源成绩柱状图">'+bars+'</div><div class="korean-chart-foot">每根柱仅为已核验的独立日期快照；点击可打开原榜。'+(arr.length<2?'目前只有1次样本，不能展示变化趋势。':'缺失日期不补值。')+(platform.id==='spotify'?'高度反映日播放次数。':'排名采用示意高度，不代表名次比例。')+'</div>';
-    };
-    function draw(id){
-      const p=tabs.find(x=>x.id===id)||tabs[0];
-      el.querySelectorAll('button').forEach(b=>{
-        const active=b.dataset.key===p.id;
-        b.classList.toggle('active',active);
-        b.setAttribute('aria-selected',String(active));
-        b.tabIndex=active?0:-1;
-      });
-      const snaps=(p.snapshots||[]).filter(s=>Number.isSafeInteger(s.rank)&&s.rank>0);
-      const latest=snaps.at(-1)||null;
-      const heading=p.id==='spotify'
-       ?(latest?field(latest.streams)+' 次':'尚待核实')
-       :(latest?'#'+field(latest.rank):'待核实');
-      const subtitle=latest?(p.id==='spotify'?'韩国日榜结算':'最近一次可追溯名次'):'暂无可靠原榜数值';
-      const extra=latest&&Number.isSafeInteger(latest.score)?' · iChart '+field(latest.score)+'分':'';
-      view.innerHTML='<div class="korean-feature-head"><div><span class="korean-small">NEON · A2O / A2O LITE · 团体成绩</span><h3>'+esc(p.name)+'</h3></div><span class="korean-observation-tag">'+esc(p.cadence||'依原始平台')+'</span></div>'+
-       '<div class="korean-highlight"><strong>'+esc(heading)+'</strong><div>'+esc(subtitle)+esc(extra)+(latest?'<small>'+esc(timeLabel(latest))+'</small>':'')+'</div></div>'+
-       history(p)+'<p class="korean-info">'+esc(p.notes||'')+'</p>'+((p.media_reports||[]).length?'<div class="korean-media-reports">'+p.media_reports.map(r=>'<div><span>'+esc(r.date)+'</span> · '+esc(r.label)+'（非原榜核验） <a href="'+esc(r.source)+'" target="_blank" rel="noopener noreferrer">报道 ↗</a><p>'+esc(r.detail)+'</p></div>').join('')+'</div>':'')+
-       (latest?'<p class="korean-provenance">最近证据：'+esc(latest.source_name||'原始榜')+' · '+esc(timeLabel(latest))+(latest.time_precision==='date_only'?'（无精确时分）':'')+'</p>':'')+
-       '<a class="korean-origin" href="'+esc(latest?.source||p.source)+'" target="_blank" rel="noopener noreferrer">打开原始榜单 ↗</a>';
-      if(old)old.hidden=p.id!=='spotify';
-    }
-    el.innerHTML=tabs.map((p,i)=>'<button type="button" role="tab" data-key="'+esc(p.id)+'" aria-selected="'+(i===0?'true':'false')+'" class="korean-tab'+(i===0?' active':'')+'">'+esc(p.label)+'</button>').join('');
-    el.addEventListener('click',e=>{const b=e.target.closest('button[data-key]');if(b)draw(b.dataset.key);});
-    function awardsDisplay(id){
-      const achievements=data.achievements||[];
-      const t=achievements.find(x=>x.kind===id)||achievements[0];
-      if(!t)return;
-      awards.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.award===t.kind)));
-      const info=select('koreanAwardInfo');
-      if(info)info.innerHTML='<span class="korean-award-status">'+esc(t.label)+'</span><p>'+esc(t.note)+'</p>'+(t.date?'<small>事件日期：'+esc(t.date)+'</small>':'')+
-       '<a href="'+esc(t.source)+'" target="_blank" rel="noopener noreferrer">查看核验依据 ↗</a>';
-    }
-    const achievements=data.achievements||[];
-    awards.innerHTML=achievements.map(a=>'<button type="button" role="tab" data-award="'+esc(a.kind)+'" aria-selected="false">'+esc(a.kind)+'</button>').join('');
-    awards.addEventListener('click',e=>{const b=e.target.closest('button[data-award]');if(b)awardsDisplay(b.dataset.award);});
-    draw('ichart');awardsDisplay('RAK');
-  }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',launch);
-  else launch();
+'use strict';
+const byId=id=>document.getElementById(id);
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>Number.isFinite(n)?new Intl.NumberFormat('zh-CN').format(n):'待核实';
+const md=s=>String(s||'').slice(5).replace('-','.');
+const clock=s=>(s?.date?md(s.date):'未知日期')+(s?.clock_kst?' · '+s.clock_kst:'');
+const link=s=>/^https:\/\//.test(String(s||''))?s:'#';
+const latest=p=>[...(p?.snapshots||[])].filter(s=>Number.isSafeInteger(s.rank)&&s.rank>0).sort((a,b)=>(a.date+(a.clock_kst||'')).localeCompare(b.date+(b.clock_kst||''))).at(-1);
+const core=['ichart','melon','genie','bugs'];
+const extra=['melonhot','bugsdaily','flo','vibe','ytmusic','spotify'];
+function init(){
+ const overview=byId('koreanSnapshotRow'),insight=byId('koreanInsights'),tabs=byId('koreanChartSelector'),
+       more=byId('koreanChartMore'),view=byId('koreanChartView'),awards=byId('koreanAwards'),
+       info=byId('koreanAwardInfo'),legacy=byId('spotifyLegacyPanel');
+ if(!overview||!tabs||!more||!view||!awards)return;
+ let data;
+ try{data=JSON.parse(byId('embedded-data').textContent).korean_charts;}catch{}
+ if(!data?.platforms?.length){view.textContent='榜单资料暂未载入';return;}
+ const platforms=data.platforms;
+ const find=id=>platforms.find(p=>p.id===id);
+ const title=p=>({ichart:'iChart',melon:'Melon',genie:'Genie',bugs:'Bugs'})[p.id]||p.label;
+ const coreData=core.map(find).filter(Boolean);
+ let selected='melon';
+ let expandedAward=null;
+ function summary(){
+   overview.innerHTML=coreData.map(p=>{
+     const one=latest(p);
+     return '<button type="button" class="korea-snapshot" data-pick="'+safe(p.id)+'" aria-label="查看'+safe(title(p))+'历史名次">'+
+       '<span>'+safe(title(p))+'</span><strong>'+(one?'#'+fmt(one.rank):'—')+'</strong>'+
+       '<small>'+(one?safe(clock(one)):'未核验')+'</small></button>';
+   }).join('');
+   const ranks=coreData.map(p=>latest(p)).filter(Boolean);
+   const leader=ranks.filter(s=>s.rank===1).length;
+   const m=find('melon'),ms=[...(m?.snapshots||[])].filter(x=>Number.isSafeInteger(x.rank)).sort((a,b)=>a.date.localeCompare(b.date));
+   let bits=[];
+   if(ranks.length){
+     bits.push('<span class="korea-insight-tag">观察</span><p>最近存档中，<b>'+leader+'/'+ranks.length+' 个核心榜单</b>位列第1；记录时间不同，不能据此认定同期 All-Kill。</p>');
+   }
+   if(ms.length>=2 && ms[0].rank!==ms.at(-1).rank){
+     const first=ms[0],end=ms.at(-1);
+     bits.push('<span class="korea-insight-tag">变化</span><p>Melon TOP100 从 <b>'+safe(md(first.date))+' #'+fmt(first.rank)+'</b> 到 <b>'+safe(md(end.date))+' #'+fmt(end.rank)+'</b>；仅代表两次可核验记录。</p>');
+   }else{
+     bits.push('<span class="korea-insight-tag">趋势</span><p>部分榜单只有一个历史采样点；证据不足时不绘制虚假的连续走势。</p>');
+   }
+   if(insight)insight.innerHTML=bits.map((v,i)=>'<div class="korea-insight-line">'+v+'</div>').join('');
+ }
+ function history(p){
+   const snaps=[...(p.snapshots||[])].filter(x=>Number.isSafeInteger(x.rank)&&x.rank>0)
+      .sort((a,b)=>(a.date+(a.clock_kst||'')).localeCompare(b.date+(b.clock_kst||''))).slice(-8);
+   if(!snaps.length)return '<div class="korea-no-history">暂未取得可核验的原榜名次。'+
+     ((p.media_reports||[]).length?'<small>有二手榜首报道，但未确认准确榜单类别和时点。</small>':'')+'</div>';
+   if(snaps.length===1)return '<div class="korea-no-history">目前仅有 <b>1次</b> 原榜记录（'+safe(clock(snaps[0]))+'），暂时无法计算排名变化。</div>';
+   const spotify=p.id==='spotify';
+   const scores=snaps.map(s=>spotify?(s.streams||0):s.rank);
+   const maximum=Math.max(...scores,1),worst=Math.max(...scores),best=Math.min(...scores);
+   const bars=snaps.map((s,i)=>{
+     const val=spotify?s.streams:s.rank;
+     let height;
+     if(spotify)height=Math.max(22,Math.round(90*(val/maximum)));
+     else height=best===worst?72:Math.round(35+65*(worst-val)/(worst-best));
+     const label=spotify?(val>=10000?(val/10000).toFixed(1)+'万':fmt(val)):'#'+fmt(val);
+     return '<a class="korea-mini-bar" href="'+safe(link(s.source))+'" target="_blank" rel="noopener noreferrer" title="'+safe(s.date+(s.clock_kst?' '+s.clock_kst+' KST':''))+': '+safe(label)+'"><b>'+safe(label)+'</b><span style="height:'+height+'px"></span><small>'+safe(md(s.date))+'</small></a>';
+   }).join('');
+   return '<div class="korea-chart-graph" role="group" aria-label="真实采样日排名记录">'+bars+'</div>'+
+          '<p class="korea-chart-note">'+(spotify?'柱高表示每日播放次数':'柱高仅示意相对名次（越高排名越靠前）')+' · 点击柱子查看原榜；缺失日期不补值</p>';
+ }
+ function draw(id){
+   const p=find(id)||find('melon')||platforms[0];
+   selected=p.id;
+   tabs.querySelectorAll('button').forEach(b=>{
+     const on=b.dataset.key===selected;
+     b.classList.toggle('active',on);b.setAttribute('aria-selected',String(on));
+   });
+   overview.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.pick===selected));
+   more.value=extra.includes(selected)?selected:'';
+   const one=latest(p),isSpotify=p.id==='spotify';
+   const head=one?(isSpotify?fmt(one.streams)+' 次播放':'#'+fmt(one.rank)):'—';
+   const snapshots=p.snapshots||[];
+   let report='';
+   if(!one&&(p.media_reports||[]).length){
+     const r=p.media_reports.at(-1);
+     report='<p class="korea-media-note">历史媒体整理：'+safe(r.date)+' 曾报道登顶，但榜单类别尚未核验。 <a href="'+safe(link(r.source))+'" target="_blank" rel="noopener noreferrer">报道 ↗</a></p>';
+   }
+   view.innerHTML='<div class="korea-detail-summary"><div><span>当前查看</span><h4>'+safe(p.name)+'</h4>'+
+     '<small>'+(one?'最近记录：'+safe(clock(one))+(one.clock_kst?' KST':'（无准确时分）'):'尚无官方原榜样本')+'</small></div>'+
+     '<strong>'+safe(head)+'</strong></div>'+
+     history(p)+report+
+     '<div class="korea-chart-bottom"><span>'+(one?'已收录 '+snapshots.length+' 次可追溯样本':'暂无可核实名次')+'</span>'+
+     '<a href="'+safe(link(one?.source||p.source))+'" target="_blank" rel="noopener noreferrer">原始榜单 ↗</a></div>';
+   if(legacy)legacy.hidden=true; // Old Spotify graph is retained only for old app data compatibility.
+ }
+ function showAward(kind){
+   if(expandedAward===kind){expandedAward=null;info.hidden=true;}
+   else{
+     expandedAward=kind;info.hidden=false;
+     const a=(data.achievements||[]).find(x=>x.kind===kind);
+     if(a)info.innerHTML='<strong>'+safe(a.kind)+' · '+safe(a.label)+'</strong><p>'+safe(a.note)+'</p>'+
+       '<a href="'+safe(link(a.source))+'" target="_blank" rel="noopener noreferrer">核验来源 ↗</a>';
+   }
+   awards.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.award===expandedAward)));
+ }
+ summary();
+ tabs.innerHTML=coreData.map(p=>'<button type="button" role="tab" data-key="'+safe(p.id)+'" aria-selected="false">'+safe(title(p))+'</button>').join('');
+ more.innerHTML='<option value="">其他榜单</option>'+extra.map(id=>find(id)).filter(Boolean)
+  .map(p=>'<option value="'+safe(p.id)+'">'+safe(p.label)+'</option>').join('');
+ awards.innerHTML=(data.achievements||[]).map(a=>{
+   const label=a.status==='reported'?'报道达成':a.status==='verified'?'已认证':'待核实';
+   return '<button type="button" role="tab" data-award="'+safe(a.kind)+'" aria-selected="false"><b>'+safe(a.kind)+'</b><span>'+safe(label)+'</span></button>';
+ }).join('');
+ overview.addEventListener('click',e=>{const b=e.target.closest('button[data-pick]');if(b)draw(b.dataset.pick);});
+ tabs.addEventListener('click',e=>{const b=e.target.closest('button[data-key]');if(b)draw(b.dataset.key);});
+ more.addEventListener('change',e=>{if(e.target.value)draw(e.target.value);});
+ awards.addEventListener('click',e=>{const b=e.target.closest('button[data-award]');if(b)showAward(b.dataset.award);});
+ draw('melon');
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+else init();
 })();
