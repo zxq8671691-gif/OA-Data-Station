@@ -52,7 +52,7 @@
       const extra=latest&&Number.isSafeInteger(latest.score)?' · iChart '+field(latest.score)+'分':'';
       view.innerHTML='<div class="korean-feature-head"><div><span class="korean-small">NEON · A2O / A2O LITE · 团体成绩</span><h3>'+esc(p.name)+'</h3></div><span class="korean-observation-tag">'+esc(p.cadence||'依原始平台')+'</span></div>'+
        '<div class="korean-highlight"><strong>'+esc(heading)+'</strong><div>'+esc(subtitle)+esc(extra)+(latest?'<small>'+esc(timeLabel(latest))+'</small>':'')+'</div></div>'+
-       history(p)+'<p class="korean-info">'+esc(p.notes||'')+'</p>'+
+       history(p)+'<p class="korean-info">'+esc(p.notes||'')+'</p>'+((p.media_reports||[]).length?'<div class="korean-media-reports">'+p.media_reports.map(r=>'<div><span>'+esc(r.date)+'</span> · '+esc(r.label)+'（非原榜核验） <a href="'+esc(r.source)+'" target="_blank" rel="noopener noreferrer">报道 ↗</a><p>'+esc(r.detail)+'</p></div>').join('')+'</div>':'')+
        (latest?'<p class="korean-provenance">最近证据：'+esc(latest.source_name||'原始榜')+' · '+esc(timeLabel(latest))+(latest.time_precision==='date_only'?'（无精确时分）':'')+'</p>':'')+
        '<a class="korean-origin" href="'+esc(latest?.source||p.source)+'" target="_blank" rel="noopener noreferrer">打开原始榜单 ↗</a>';
       if(old)old.hidden=p.id!=='spotify';
