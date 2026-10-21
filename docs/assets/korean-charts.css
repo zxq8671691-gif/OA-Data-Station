@@ -1,0 +1,37 @@
+/* Korean chart picker in OA data overview */
+.korean-chart-intro{color:#aaa5bd;font-size:12px;line-height:1.7;max-width:850px;margin:0 0 17px}
+.korean-selector{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}
+.korean-tab{cursor:pointer;border:1px solid #443950;background:#201d2e;color:#c5bad5;padding:9px 13px;border-radius:9px;font-size:12px;font-family:inherit;white-space:nowrap}
+.korean-tab[aria-selected="true"]{border-color:#bba3d9;background:#49365e;color:#fff;font-weight:740}
+.korean-tab:focus-visible,.korean-awards button:focus-visible{outline:2px solid #d3baff;outline-offset:3px}
+.korean-panel{background:linear-gradient(142deg,#1d1a2c,#13111c);border:1px solid #393148;border-radius:17px;padding:22px;min-height:290px;margin-bottom:15px}
+.korean-feature-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.korean-small{font-size:10px;letter-spacing:.5px;color:#aa9cb9}
+.korean-feature-head h3{font-size:21px;color:#f6efff;margin:9px 0 2px}
+.korean-observation-tag{background:#342c43;color:#d8bde8;padding:7px 10px;border-radius:13px;font-size:11px;max-width:45%;text-align:right}
+.korean-highlight{display:flex;align-items:baseline;gap:18px;margin:12px 0 22px;flex-wrap:wrap}
+.korean-highlight strong{font-size:36px;letter-spacing:-1px;font-weight:810;line-height:1.1;color:#f6e9ff}
+.korean-highlight>div{font-size:12px;color:#c2b9d1;line-height:1.6}
+.korean-highlight small{display:block;font-size:11px;color:#9f96b0}
+.korean-bars{display:flex;gap:14px;min-height:158px;align-items:flex-end;padding:10px 11px 0;border-bottom:1px solid #494055;overflow-x:auto}
+.korean-observation{flex:1 0 58px;max-width:110px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;text-decoration:none;color:inherit}
+.korean-rank{font-size:11px;color:#e2d5f3;white-space:nowrap;font-variant-numeric:tabular-nums}
+.korean-bar{width:clamp(32px,60%,54px);background:linear-gradient(180deg,#dbb8ff,#755594);border-radius:7px 7px 0 0;min-height:12px}
+.korean-observation small{font-size:10px;color:#a69bba;white-space:nowrap;padding-bottom:5px}
+.korean-chart-foot,.korean-info,.korean-provenance{font-size:11px;color:#a8a0b7;line-height:1.7;margin:10px 0}
+.korean-info{color:#c5b9d0;margin:9px 0}
+.korean-origin{color:#e5c7ff;font-size:12px;font-weight:720;display:inline-block;margin-top:8px}
+.korean-graph-empty{border:1px dashed #54485f;border-radius:11px;padding:32px 12px;text-align:center;font-size:12px;color:#bdb2cc;line-height:1.6}
+.korean-awards-wrap{border:1px solid #352e44;border-radius:16px;background:#161422;padding:17px 19px;margin:12px 0 17px}
+.korean-awards-title{font-size:15px;font-weight:750;color:#eee4f8;margin:0 0 7px}
+.korean-awards-desc{font-size:11px;color:#aaa0ba;margin:0 0 13px;line-height:1.6}
+.korean-awards{display:flex;gap:8px;flex-wrap:wrap}
+.korean-awards button{background:#292538;color:#c8bfd6;border:1px solid #3c314b;border-radius:8px;padding:8px 16px;font-size:12px;font-family:inherit;cursor:pointer}
+.korean-awards button[aria-selected="true"]{background:#47345a;color:#f6e7ff;border-color:#9e83b9}
+.korean-award-info{font-size:12px;color:#b9b0c7;line-height:1.7;margin-top:14px}
+.korean-award-info p{margin:8px 0}
+.korean-award-info small{display:block;font-size:11px;color:#afa4c1}
+.korean-award-info a{color:#e6caff;text-decoration:none;display:inline-block;margin:5px 0}
+.korean-award-status{color:#f1e3fa;font-weight:740}
+#spotifyLegacyPanel[hidden]{display:none!important}
+@media(max-width:650px){.korean-panel{padding:16px}.korean-feature-head h3{font-size:18px}.korean-highlight strong{font-size:31px}.korean-selector{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}.korean-tab{flex:0 0 auto}.korean-awards-wrap{padding:14px}}
