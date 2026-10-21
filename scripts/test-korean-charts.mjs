@@ -28,7 +28,7 @@ assert(fs.statSync('cn-dist/assets/korean-charts.css').size>1000);
 const js=fs.readFileSync('cn-dist/assets/korean-charts.js','utf8');
 new vm.Script(js,{filename:'korean-charts.js'});
 const els=new Map();
-function el(id){if(!els.has(id))els.set(id,{innerHTML:'',hidden:false,querySelectorAll:()=>[],addEventListener:()=>{},querySelector:()=>null});return els.get(id);}
+function el(id){if(!els.has(id))els.set(id,{innerHTML:'',hidden:false,handlers:{},querySelectorAll:()=>[],addEventListener(type,fn){this.handlers[type]=fn;},querySelector:()=>null});return els.get(id);}
 const scope={console,Intl,Map,Set,Date,Math,Number,String,document:{
  readyState:'complete',getElementById:id=>id==='embedded-data'?{textContent:JSON.stringify(data)}:el(id)
 }};
@@ -37,4 +37,15 @@ assert(el('koreanChartSelector').innerHTML.includes('Genie'));
 assert(el('koreanChartSelector').innerHTML.includes('Bugs'));
 assert(el('koreanChartView').innerHTML.includes('iChart实时总榜'));
 assert(el('koreanAwardInfo').innerHTML.includes('第三方'));
+const activate=(id)=>el('koreanChartSelector').handlers.click({target:{closest:()=>({dataset:{key:id}})}});
+activate('genie');
+assert(el('koreanChartView').innerHTML.includes('Genie实时榜'));
+assert(el('koreanChartView').innerHTML.includes('#1'));
+activate('flo');
+assert(el('koreanChartView').innerHTML.includes('媒体汇总曾列第1'));
+assert(el('koreanChartView').innerHTML.includes('非原榜核验'));
+activate('spotify');
+assert(el('spotifyLegacyPanel').hidden===false,'Spotify should reveal existing official daily playback chart');
+el('koreanAwards').handlers.click({target:{closest:()=>({dataset:{award:'AK'}})}});
+assert(el('koreanAwardInfo').innerHTML.includes('尚无iChart官方认证记录'));
 console.log('PASS selectable Korean charts, iChart evidence, status separation, legacy Spotify compatibility');
