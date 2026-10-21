@@ -42,3 +42,31 @@
 - Bilibili开放平台：https://open.bilibili.com/doc
 - 微博官方CLI：https://open.weibo.com/cli
 - 小红书scope：https://openaccount.xiaohongshu.com/docs/scope
+
+## 2026-10-21 平台覆盖改造执行结果
+
+- 已提交源码的 13 个来源：YouTube、X、微博、Bilibili、抖音、TikTok、Instagram、小红书、Spotify、Melon、QQ音乐、iChart、Hanteo。
+- 外网首页增设「X 社媒追踪」区，且可直接查看 `@A2O_LITE`、官方 Linktree 和 X 上的 OA 相关关键词检索。未核验帖子不自动进入作品列表。
+- 「跨平台数据源中心」不再隐藏；公开标记每个平台的可比指标、原始来源、认证方式与获取状态。
+- 新增 `content_scope`，将 3 条 OA 官方单人直拍、1 条双人、1 条预告、团体作品、粉丝转载分开处理。个人直拍 KPI 已改为严格三条。
+- 现有 YouTube 12 个视频的累计观看、点赞和评论基于已成功采集的官方API快照。约24h增量需要两次匹配快照；未产生时显示未知。
+- Bilibili 的单次公开视频读取测试返回 HTTP 412 风控，此后**停止**自动请求，不更换IP、不用账号密码、不绕过验证码。等正式授权或人工核验。
+- `scripts/import-manual.mjs` 与 `data/manual-verifications.json` 为准确的人工核验记录提供可追溯导入机制，初始清单空，不代表已取得任一平台未授权指标。
+- `scripts/update-x.mjs` 已开发并加入GitHub工作流，但默认不执行 X API 请求。启用前须有用户明确确认潜在资费，并在GitHub配置 `X_BEARER_TOKEN` Secret及变量 `ENABLE_X_API_READS=yes`。只有阅读公开帖子与账号数据，不调用写接口。
+- 除 X 之外的微博官方CLI仍需开发者身份核验、开户服务/积分与OAuth；抖音/TikTok创作者统计需要作品发布者账户OAuth，站主个人粉丝账号授权不能代替。
+- 不接受任何第三方平台账号密码、Cookie 或验证码。未核实数据保留 null，并提供直达原帖入口。
+
+### 剩余缺口（必须诚实披露）
+1. X 帖文互动与官方账号粉丝：等待付费开发者 API 授权确认，未启用、不计费。
+2. 微博：等待开发者验证和官方 CLI 授权；未获得稳定视频观看接口。
+3. Bilibili：官方UP主授权不可用，测试出现412风控；由人工查看原视频页面并以准确数字、时间戳录入。
+4. 抖音、TikTok、Instagram、小红书：官方账号主体与普通粉丝不同，不能用站主登录自行读取他人Insights。待原帖/原渠道授权。
+5. 音源与实体销售：Spotify/Melon/QQ音乐/iChart/Hanteo已经收录官方源入口；还缺经过独立核验的完整日序列，不能把独立听众当成播放量、把团体销售当作OA个人成绩。
+6. 外网 GitHub Pages 已确认新UI和13源完整可访问；中国大陆 EdgeOne Pages 项目是否已完成此次Git提交后的自动更新，需要腾讯云控制台的最新部署记录核对。正式域名 `oadaily.com` 仍等待备案通过及生产域名绑定。
+
+平台文档：
+- X 官方API： https://docs.x.com/
+- 微博官方CLI： https://open.weibo.com/cli/quickstart
+- YouTube API： https://developers.google.com/youtube/v3/docs/videos/list
+- 哔哩哔哩开放平台： https://open.bilibili.com/doc
+- TikTok Display API： https://developers.tiktok.com/docs/en/display-api-overview
