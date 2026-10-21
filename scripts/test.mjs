@@ -17,3 +17,8 @@ assert(data.videos.filter(v=>v.content_scope==='solo_fancam').every(v=>v.oa),'So
 assert(data.source_registry.filter(s=>s.status==='api'&&s.id!=='youtube').every(s=>s.method),'Authorized API evidence required');
 assert(Array.isArray(data.social_posts),'X social-post feed should be a truthful empty array until authorized');
 console.log('OA source audit passes: '+data.source_registry.length+' sources including X/Twitter, verified fan-cam scope and source links.');
+
+assert(data.social_posts.filter(p=>p.platform==='X / Twitter').length>=5,'At least five OA public X post links should be source-confirmed');
+assert(data.social_posts.every(p=>!p.metric_source || Boolean(p.updated_at)),'Never show claimed X metrics without snapshot time');
+assert(data.social_posts.every(p=>p.platform!=='X / Twitter' || /^https:\/\/x\.com\/[^/]+\/status\/\d+$/.test(p.url)),'X public post links must be original posts');
+console.log('OA public X engagement registry checked. Metrics without original evidence stay null.');
