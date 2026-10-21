@@ -16,6 +16,20 @@
       "quality": "reported_approx",
       "time_precision": "date_only",
       "note": "只用作历史参考点，不能算今日实时粉丝/签到，不可当精确数"
+    },
+    {
+      "date": "2026-10-21",
+      "observed_at": "2026-10-21T20:17:33.934+08:00",
+      "quality": "original_page",
+      "source": "https://weibo.com/p/100808abf6ea096082e029b4abd37c6cd95060",
+      "source_type": "微博OaAngel超话主页",
+      "reviewed_by": "Work云浏览器公开页核验",
+      "evidence_type": "original_public_page_browser",
+      "fans": null,
+      "fans_display": "4.3万",
+      "checkins": 9325,
+      "checkins_display": null,
+      "note": "OaAngel超话主页实际显示「1.8万 帖子 4.3万 粉丝」及「明星超话 今日签到9325人」。粉丝为超话粉丝约数，非艺人账号粉丝；今日签到每日重置，非累计签到。未点击签到、关注或互动。"
     }
   ]
 }
