@@ -8,6 +8,7 @@ on:
       - 'scripts/build-cn.mjs'
       - 'edgeone.json'
       - 'package.json'
+      - 'scripts/test-platform-pulse.mjs'
   workflow_dispatch:
 permissions:
   contents: read
@@ -40,6 +41,8 @@ jobs:
           assert(fs.statSync('cn-dist/assets/oa-portrait.webp').size>2500);
           console.log('PASS: root index, non-empty OA portrait, latest metrics and 15-video archive');
           NODE
+      - name: Check platform-specific KPI cards and genuine bar charts
+        run: node scripts/test-platform-pulse.mjs
       - name: Validate browser JS and new social coverage
         run: |
           node --input-type=module <<'NODE'
