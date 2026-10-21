@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "name": "OA DATA STATION",
+    "subtitle": "OA 大吧 · 独立粉丝数据档案",
+    "edition": "2026-10-21",
+    "updated_at": "2026-10-21T13:06:00+08:00",
+    "verified_at": "2026-10-21T13:06:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "notice": "独立粉丝站；YouTube及各视频播放、点赞、评论优先使用可核实原始数据；不把站点巡检时间作为统计采集时间。"
+  },
+  "spotlight": [
+    {
+      "label": "OA / 10.21",
+      "title": "广播上班路：韩国媒体集中出图",
+      "detail": "Newsen、Newspim、Sports Chosun发布OA于MBC电台的现场图片报道。",
+      "source": "https://www.newsen.com/news_view.php?code=100100&uid=202610211233533510",
+      "type": "个人·媒体"
+    },
+    {
+      "label": "OA / 10.15",
+      "title": "《NEON》OA首场M2官方4K直拍",
+      "detail": "官方个人直拍已进入追踪清单；播放、点赞等指标等待API实测。",
+      "source": "https://youtu.be/p1JBFI77kWo",
+      "type": "个人·直拍"
+    },
+    {
+      "label": "A2O LITE / 10.20",
+      "title": "《THE SHOW》出道首冠",
+      "detail": "首冠为团体荣誉，不等同于OA个人成绩。",
+      "source": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008807550",
+      "type": "团体·成绩"
+    }
+  ],
+  "kpis": [
+    {
+      "id": "official_fancams",
+      "label": "已归档OA官方个人视频",
+      "value": 2,
+      "unit": "条",
+      "scope": "OA个人",
+      "description": "首批已确认为OA的官方个人视频条目，非全部历史作品。",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_views",
+      "label": "OA直拍累计观看",
+      "value": null,
+      "unit": "次",
+      "scope": "OA个人",
+      "description": "待YouTube Data API验证；不使用第三方截图。",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_likes",
+      "label": "OA直拍累计点赞",
+      "value": null,
+      "unit": "次",
+      "scope": "OA个人",
+      "description": "待YouTube Data API验证。",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_followers",
+      "label": "OA个人官方账号粉丝",
+      "value": null,
+      "unit": "人",
+      "scope": "OA个人",
+      "description": "目前未确认可独立归属OA的官方个人社交账号；不得以团体账户代替。",
+      "source": "https://linktr.ee/a2o.lite"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "YouTube",
+      "icon": "▶",
+      "scope": "OA直拍/官方内容",
+      "metric": "views",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待接入官方 API",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "name": "微博",
+      "icon": "◎",
+      "scope": "团体官方 / OA相关单帖",
+      "metric": "post-engagement",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 暂无稳定开放接口",
+      "source": "https://weibo.com/u/8428908687"
+    },
+    {
+      "name": "Bilibili",
+      "icon": "▣",
+      "scope": "官方团体内容及OA二创",
+      "metric": "views",
+      "value": null,
+      "last_updated": null,
+      "status": "已有可追溯公开视频 · 互动待校验",
+      "source": "https://space.bilibili.com/670061998"
+    },
+    {
+      "name": "抖音",
+      "icon": "♪",
+      "scope": "官方单帖 / OA话题",
+      "metric": "engagement",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补单帖互动",
+      "source": "https://v.douyin.com/ZzHgu4mfISQ/"
+    },
+    {
+      "name": "TikTok",
+      "icon": "♫",
+      "scope": "官方视频 / 音源使用次数",
+      "metric": "sound-usage",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补 sound 使用量",
+      "source": "https://www.tiktok.com/@a2o.lite"
+    },
+    {
+      "name": "Instagram",
+      "icon": "◉",
+      "scope": "团体官方账号",
+      "metric": "followers",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补粉丝数",
+      "source": "https://www.instagram.com/a2o.lite/"
+    },
+    {
+      "name": "X / Twitter",
+      "icon": "𝕏",
+      "scope": "团体官方账号",
+      "metric": "followers",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补粉丝数",
+      "source": "https://x.com/A2O_LITE"
+    },
+    {
+      "name": "小红书",
+      "icon": "✦",
+      "scope": "OA相关公开笔记",
+      "metric": "posts",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补公开笔记量",
+      "source": null
+    }
+  ],
+  "videos": [
+    {
+      "id": "p1JBFI77kWo",
+      "title": "OA · NEON / MPD 4K 个人直拍",
+      "channel": "M2 / M COUNTDOWN",
+      "date": "2026-10-15",
+      "platform": "YouTube",
+      "type": "个人直拍",
+      "oa": true,
+      "verified": true,
+      "thumbnail": "/api/media?kind=youtube&id=p1JBFI77kWo",
+      "url": "https://youtu.be/p1JBFI77kWo",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube Data API（待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube公开视频缩略图"
+    },
+    {
+      "id": "iXQsuYOyvos",
+      "title": "OA · Debut Trailer / 出道预告",
+      "channel": "A2O LITE 官方",
+      "date": "2026-10-08",
+      "platform": "YouTube",
+      "type": "官方OA预告",
+      "oa": true,
+      "verified": true,
+      "thumbnail": "/api/media?kind=youtube&id=iXQsuYOyvos",
+      "url": "https://youtu.be/iXQsuYOyvos",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube Data API（待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube公开视频缩略图"
+    },
+    {
+      "id": "29Bn6d82Qgc",
+      "title": "A2O LITE · MBC FM4U 正午的希望曲",
+      "channel": "MBC RADIO 官方",
+      "date": "2026-10-21",
+      "platform": "YouTube",
+      "type": "团体电台",
+      "oa": false,
+      "verified": true,
+      "thumbnail": "/api/media?kind=youtube&id=29Bn6d82Qgc",
+      "url": "https://www.youtube.com/live/29Bn6d82Qgc",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube Data API（待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube公开视频缩略图"
+    },
+    {
+      "id": "BV1joJy6rE9C",
+      "title": "OA《NEON》4K出道个人直拍｜中文站搬运",
+      "channel": "IdolCrush（非官方转载）",
+      "date": "2026-10-15",
+      "platform": "Bilibili",
+      "type": "OA个人直拍·转载",
+      "oa": true,
+      "verified": true,
+      "source_tier": "非官方转载",
+      "thumbnail": "/api/media?kind=portrait",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1joJy6rE9C/",
+      "views": null,
+      "views_approx": "约16.4万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "公开检索页面所示约16.4万播放，约10/18收录；并非今天的实时数值",
+      "metric_source": "B站视频公开页面搜索快照"
+    },
+    {
+      "id": "BV1eWJy6PEgH",
+      "title": "《NEON》出道舞台+OA个人直拍合集",
+      "channel": "pcyxjy（非官方转载）",
+      "date": "2026-10-15",
+      "platform": "Bilibili",
+      "type": "含OA个人分P",
+      "oa": true,
+      "verified": true,
+      "source_tier": "非官方转载",
+      "thumbnail": "/api/media?kind=portrait",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1eWJy6PEgH/",
+      "views": null,
+      "views_approx": "约148.5万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "该总播放数属于5P合集，不能归因于OA个人直拍；约10/18收录",
+      "metric_source": "B站合集公开搜索快照"
+    },
+    {
+      "id": "BV1VVpo6gEYg",
+      "title": "A2O LITE《NEON》官方音乐视频（含OA）",
+      "channel": "A2O_WORLD 官方",
+      "date": "2026-10-12",
+      "platform": "Bilibili",
+      "type": "团体官方 MV",
+      "oa": false,
+      "verified": true,
+      "source_tier": "官方发布·团体",
+      "thumbnail": "/api/media?kind=portrait",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1VVpo6gEYg/",
+      "views": null,
+      "views_approx": "约280万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "团体官方MV，含OA但并非OA个人视频；约10/18收录",
+      "metric_source": "B站公开搜索快照"
+    }
+  ],
+  "group_charts": [
+    {
+      "date": "2026-10-16",
+      "rank": 1,
+      "streams": 299898,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-17",
+      "rank": 1,
+      "streams": 270600,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://www.kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-18",
+      "rank": 1,
+      "streams": 249738,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-19",
+      "rank": 1,
+      "streams": 281156,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    }
+  ],
+  "all_kill": {
+    "song": "NEON",
+    "rak": "曾达成（历史常用说法）",
+    "rak_count": null,
+    "ak": 0,
+    "pak": 0,
+    "weekly_rank": null,
+    "verified_at": null,
+    "source": "https://ichart.kr/",
+    "note": "iChart计数未在本次构建中独立实时核验，请以官方页面为准。"
+  },
+  "articles": [
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:34",
+      "source_name": "Newsen",
+      "type": "OA个人高清图",
+      "title": "OA亮相MBC广播上班路，个人现场写真",
+      "url": "https://www.newsen.com/news_view.php?code=100100&uid=202610211233533510",
+      "excerpt": "韩国娱乐媒体发布OA当日抵达MBC电台大楼的个人照片。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:47",
+      "source_name": "Newspim",
+      "type": "OA个人新闻图片",
+      "title": "OA在MBC广播现场比心",
+      "url": "https://www.newspim.com/news/view/20261021000707",
+      "excerpt": "现场摄影报道，注明2026年10月21日拍摄。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:43",
+      "source_name": "Sports Chosun",
+      "type": "OA个人图集",
+      "title": "OA广播上班路独立图片报道",
+      "url": "https://www.sportschosun.com/en/celebrity/2026-10-21/202610210100134300008753",
+      "excerpt": "可前往媒体原站查看摄影记者图片。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:28",
+      "source_name": "NewsenTV",
+      "type": "团体上下班视频",
+      "title": "A2O LITE首冠后的广播上班路现场视频",
+      "url": "https://www3.newsen.com/news_view.php?uid=202610211228141310",
+      "excerpt": "团体视频包含OA；个人播放量不可单独拆分。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-20",
+      "time_kst": null,
+      "source_name": "SBS",
+      "type": "团体成就",
+      "title": "《THE SHOW》取得出道首冠",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008807550",
+      "excerpt": "A2O LITE凭《NEON》取得首个音乐节目一位。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-14",
+      "time_kst": null,
+      "source_name": "Soompi",
+      "type": "成员官方写真索引",
+      "title": "A2O LITE九名成员官方形象照发布",
+      "url": "https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos",
+      "excerpt": "OA个人写真位于组合成员公布文章，可通过原站查看。",
+      "verified": true
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-21",
+      "time_bj": "12:00",
+      "time_kst": "13:00",
+      "title": "MBC FM4U《正午的希望曲》",
+      "type": "已到场 · 团体电台",
+      "status": "已确认",
+      "source": "https://www.newsen.com/news_view.php?code=100100&uid=202610211233533510",
+      "note": "广播节目及当天媒体上班路已经核实。"
+    },
+    {
+      "date": "2026-10-21",
+      "time_bj": "16:00",
+      "time_kst": "17:00",
+      "title": "MBC M《Show Champion》节目档期",
+      "type": "团体音放",
+      "status": "节目时段",
+      "source": "https://www.mbcplus.com/",
+      "note": "舞台录制与电视播出时间不同，不提前判定获奖。"
+    }
+  ],
+  "links": [
+    {
+      "label": "A2O LITE 官方 YouTube",
+      "url": "https://www.youtube.com/@A2OLITE"
+    },
+    {
+      "label": "A2O LITE 官方微博",
+      "url": "https://weibo.com/u/8428908687"
+    },
+    {
+      "label": "A2O LITE 官方 TikTok",
+      "url": "https://www.tiktok.com/@a2o.lite"
+    },
+    {
+      "label": "A2O LITE 官方 Instagram",
+      "url": "https://www.instagram.com/a2o.lite/"
+    },
+    {
+      "label": "韩国 iChart",
+      "url": "https://ichart.kr/"
+    },
+    {
+      "label": "Spotify韩国原始榜单索引",
+      "url": "https://charts.spotify.com/charts/view/regional-kr-daily/latest"
+    }
+  ],
+  "history": {
+    "videos": {},
+    "platforms": {}
+  },
+  "platform_sort": {
+    "default": "trending",
+    "notes": "仅在存在同一平台可核实24小时增量时按增量排序；否则降级为累计播放或最近发布，不伪造热度榜。"
+  },
+  "media_photo": {
+    "type": "OA官方公开个人形象照",
+    "image_url": "/api/media?kind=portrait",
+    "credit": "A2O Entertainment官方形象照，经Soompi于2026-10-14刊载",
+    "source": "https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos"
+  }
+}
