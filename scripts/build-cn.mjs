@@ -1,6 +1,7 @@
 /**
  * OA 数据总览 · 中国大陆静态发布构建
  * Produces cn-dist/ for Tencent EdgeOne Pages.
+ * Every deploy recreates the standalone index from the latest checked-in data file.
  * Does not require Google/Tencent credentials: data is collected by GitHub Actions.
  * Public video thumbnails are refreshed from their official URLs at build time,
  * without changing imagery; all actual videos open at their original publisher.
