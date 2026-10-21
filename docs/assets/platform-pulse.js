@@ -116,20 +116,33 @@
    source:qualifying[0]?.url||'https://x.com/search?q=A2O%20LITE%20OA&f=live'
   });
   const wb=data.weibo_supertopic||{},wbObs=wb.observations||[];
-  const approx=wbObs.filter(x=>x.date&&Number.isFinite(x.fans_approx)).sort((a,b)=>a.date.localeCompare(b.date));
-  const sign=wbObs.filter(x=>x.date&&Number.isFinite(x.checkins_floor)).sort((a,b)=>a.date.localeCompare(b.date));
-  const lastFan=approx.at(-1),lastSignin=sign.at(-1);
-  const reported=wb.latest_verified_live;
-  const wbPrimary=reported&&Number.isSafeInteger(reported.fans)?number(reported.fans)+' 人':'实时粉丝待核实';
-  const wbSecondary=reported&&Number.isSafeInteger(reported.checkins)?'今日签到 '+number(reported.checkins):'实时签到待核实';
-  const wbExtra='<div class="pulse-reported">最近历史报道：'+esc(lastFan?.fans_display||'—')+' 粉丝 · '+esc(lastSignin?.checkins_display||'—')+' 日签到'+(lastFan?'（'+esc(lastFan.date)+'）':'')+'</div><div class="pulse-timeline-title">日签到历史参考 · 非实时</div>'+barChart(sign.map(x=>({date:x.date,v:x.checkins_floor,label:x.checkins_display,approx:true})),'人','破万为下限，不是准确签到值');
+  const fanPts=wbObs.filter(x=>x.date&&(Number.isSafeInteger(x.fans)||Number.isFinite(x.fans_approx)))
+     .sort((a,b)=>a.date.localeCompare(b.date));
+  const signPts=wbObs.filter(x=>x.date&&(Number.isSafeInteger(x.checkins)||Number.isFinite(x.checkins_floor)))
+     .sort((a,b)=>a.date.localeCompare(b.date));
+  const lastFan=fanPts.at(-1),lastSignin=signPts.at(-1);
+  const latestExact=wb.latest_verified_live||[...wbObs].filter(x=>
+     x.quality==='original_page'&&x.observed_at&&(Number.isSafeInteger(x.fans)||Number.isSafeInteger(x.checkins))
+   ).sort((a,b)=>String(a.observed_at).localeCompare(String(b.observed_at))).at(-1);
+  const lastDate=latestExact?.observed_at?.slice(0,10)||latestExact?.date;
+  const wbPrimary=latestExact&&Number.isSafeInteger(latestExact.fans)
+      ?'最近实测 '+number(latestExact.fans)+' 人':'当日粉丝待核实';
+  const wbSecondary=latestExact&&Number.isSafeInteger(latestExact.checkins)
+      ?'最近实测签到 '+number(latestExact.checkins)+' 人（'+lastDate+'）':'当日签到待核实';
+  const fanSeries=fanPts.map(x=>({date:x.date,v:Number.isSafeInteger(x.fans)?x.fans:x.fans_approx,
+      label:x.fans_display||(Number.isSafeInteger(x.fans)?number(x.fans):'约'+(x.fans_approx/10000).toFixed(1)+'万'),
+      approx:!Number.isSafeInteger(x.fans)}));
+  const signinSeries=signPts.map(x=>({date:x.date,v:Number.isSafeInteger(x.checkins)?x.checkins:x.checkins_floor,
+      label:x.checkins_display||(Number.isSafeInteger(x.checkins)?number(x.checkins):'破'+number(x.checkins_floor)),
+      approx:!Number.isSafeInteger(x.checkins)}));
+  const wbExtra='<div class="pulse-reported">最近历史报道：'+esc(lastFan?.fans_display||'—')+' 粉丝 · '+esc(lastSignin?.checkins_display||'—')+' 日签到'+(lastFan?'（'+esc(lastFan.date)+'）':'')+'</div><div class="pulse-timeline-title">每日签到 · 历史快照</div>'+barChart(signinSeries,'人','标注“破万”仅代表下限，不是精确签到人数');
   const wout=card({
-   platform:'微博 · OaAngel超话',title:'超话粉丝与当日签到',badge:'等待原站当日核验',
-   primary:wbPrimary,secondary:wbSecondary,
-   historyTitle:'粉丝数历史报道 · 日期快照',chart:barChart(approx.map(x=>({date:x.date,v:x.fans_approx,label:x.fans_display,approx:true})),'人','第三方公开帖子转述；非官方后台'),
-   extra:wbExtra,
-   note:'历史参考≠今日实时。OA超话成员不是A2O官方微博账号粉丝数；后续仅以超话原页截图更新。',
-   source:lastFan?.source||'https://weibo.com/'
+    platform:'微博 · OaAngel超话',title:'超话粉丝与当日签到',badge:latestExact?'已有原站实测':'当日数据待原页核验',
+    primary:wbPrimary,secondary:wbSecondary,
+    historyTitle:'超话粉丝 · 历史快照',chart:barChart(fanSeries,'人','第三方报道与后续原站实测须区分来源'),
+    extra:wbExtra,
+    note:'历史报道≠当前实时；更新只接受带来源与日期的超话粉丝及签到截图。不会把超话粉丝等同于艺人微博账号粉丝。',
+    source:lastFan?.source||'https://weibo.com/'
   });
   return [yout,bout,xout,wout].join('');
  }
