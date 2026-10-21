@@ -29,7 +29,7 @@ new vm.Script(source,{filename:'korean-charts.js'});
 const nodes=new Map();
 function node(id){
  if(!nodes.has(id))nodes.set(id,{
-  innerHTML:'',textContent:'',hidden:false,value:'',listeners:{},
+  innerHTML:'',textContent:'',hidden:(id==='koreanAwardInfo'||id==='spotifyLegacyPanel'),value:'',listeners:{},
   addEventListener(type,fn){this.listeners[type]=fn;},
   querySelectorAll(){return[];}
  });
