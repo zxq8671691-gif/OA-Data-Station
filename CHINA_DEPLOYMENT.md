@@ -6,7 +6,7 @@
 
 - 源码仓库：`zxq8671691-gif/OA-Data-Station`，使用 `main` 分支。
 - 根目录：`./`。构建命令：`npm run build:cn`。输出目录：`cn-dist`，Node.js 22。
-- 项目名：`oa-data-overview`。根目录 `edgeone.json` 已声明构建命令与输出。
+- 项目名：`oadatastation`。根目录 `edgeone.json` 已声明构建命令与输出。
 - `scripts/build-cn.mjs` 自动把当下 `data/dashboard.json` 写入静态网站的公开首页，避免数据旧版本。OA 本地图像 `docs/assets/oa-portrait.webp` 必须存在；部署时尽量获取公开 YouTube 视频封面并在同一次构建中缓存，无法获取则回退OA本地图片。
 - 已在隔离环境真实运行 `npm run build:cn`：检查通过，15个视频、12个YouTube封面、OA图像、最新数据时间，全部进入 `cn-dist/`。
 - 现有 GitHub Actions 每6小时调用 Google YouTube Data API 获取公开视频统计，成功则提交 `data/dashboard.json` 和 `docs/index.html` 到 main。将 EdgeOne Pages 项目 Git 连接到 main 后，每次提交自动部署（前提是构建没有被暂停）。
@@ -14,14 +14,14 @@
 ## 你需要在腾讯云网页上完成的操作
 
 ### A. 立即建立项目（**不需要等待备案**）
-1. 打开 **[一键带入仓库与构建参数](https://console.cloud.tencent.com/edgeone/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**。需要腾讯云登录时使用购买域名的账号。
+1. 打开 **[一键带入仓库与构建参数](https://console.cloud.tencent.com/edgeone/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oadatastation&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**。需要腾讯云登录时使用购买域名的账号。
 2. 选择**导入 Git 仓库**，授权 `EO Makers / EdgeOne Pages` 访问 GitHub；只授权你自己的 `OA-Data-Station` 仓库即可。
 3. 按下表检查：
    | 参数 | 值 |
    |---|---|
    | 仓库 | `zxq8671691-gif/OA-Data-Station` |
    | Branch | `main` |
-   | 项目名称 | `oa-data-overview` |
+   | 项目名称 | `oadatastation` |
    | 项目根目录 | `./` |
    | 构建命令 | `npm run build:cn` |
    | 输出目录 | `cn-dist` |
@@ -53,8 +53,16 @@
 
 官方：https://edgeone.cloud.tencent.com/pages/document/162936836982489088
 
+## 2026年10月21日已核实的正式域名与状态
+
+- 实际购买域名：`oadaily.com`，新注册时间 2026-10-21 08:24:23 UTC，注册商 DNSPod，权威 NS 为 `array.dnspod.net` / `bishop.dnspod.net`。
+- 目前 `oadaily.com` 无公开 A 记录，`www.oadaily.com` 暂无 DNS 解析；购买已完成，但尚未指向 EdgeOne Pages，这是正常的未绑定状态。
+- 已部署的项目：`oadatastation`。中国大陆手机已成功打开 **EdgeOne 限时预览链接**，但还不是正式域名长期上线。
+- 推荐先绑定生产环境的 `www.oadaily.com`，待备案获批后在 EdgeOne Pages → 该项目 → 域名管理 → 添加自定义域名，复制系统给出的唯一 TXT/CNAME，去 DNSPod 配置，不得填猜测的 CNAME。
+- HTTPS 证书需要依照 Pages 项目域名管理步骤单独配置；最后再考虑将裸域名 `oadaily.com` 跳转至 `www.oadaily.com`。
+
 ## 当前阻塞点
-- 你已经购入域名，但聊天尚未给出**准确的域名字符串**；不能猜测域名并直接改 DNS。
-- 尚未确认该域名的实名认证已通过及ICP备案已获批准。
+- 你已经购入域名，但已确认真实域名为 `oadaily.com`，但不具备腾讯云 DNSPod 账户写权限；不可在未取得 Pages 分配的目标记录前改 DNS。
+- 尚未确认域名实名认证状态与ICP备案是否已获批准。腾讯云新注册域名通常需要实名信息同步后才可提交备案。
 - ChatGPT 本次连接拥有 GitHub 与 Vercel，但**没有腾讯云管理账号的直接操作权限**；腾讯云 GitHub App OAuth 和自定义域名绑定必须由账号持有人在腾讯云控制台授权完成，之后提供项目公开ID/预览URL供核验。
 - 不要把身份证、验证码、密钥或域名控制台账号密码发送到聊天。
