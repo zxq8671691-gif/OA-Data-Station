@@ -14,7 +14,7 @@
 ## 你需要在腾讯云网页上完成的操作
 
 ### A. 立即建立项目（**不需要等待备案**）
-1. 打开 **[一键带入仓库与构建参数](https://edgeone.ai/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**。需要腾讯云登录时使用购买域名的账号。
+1. 打开 **[一键带入仓库与构建参数](https://console.cloud.tencent.com/edgeone/pages/new?repository-url=https%3A%2F%2Fgithub.com%2Fzxq8671691-gif%2FOA-Data-Station&project-name=oa-data-overview&build-command=npm%20run%20build%3Acn&output-directory=cn-dist&root-directory=.)**。需要腾讯云登录时使用购买域名的账号。
 2. 选择**导入 Git 仓库**，授权 `EO Makers / EdgeOne Pages` 访问 GitHub；只授权你自己的 `OA-Data-Station` 仓库即可。
 3. 按下表检查：
    | 参数 | 值 |
