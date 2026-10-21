@@ -50,11 +50,13 @@ jobs:
           const scripts=[...page.matchAll(/<script(?:\s+[^>]*)?>([\s\S]*?)<\/script>/g)];
           assert(scripts.length>=2);
           new vm.Script(scripts.at(-1)[1],{filename:'oa-client.js'});
-          for(const term of ['id="xPostFeed"','id="sourceRegistry"','id="sources"','data-platform="X / Twitter"']){
+          for(const term of ['id="socialFeed"','id="sourceRegistry"','id="sources"','data-platform="X / Twitter"']){
             assert(page.includes(term),'Missing '+term);
           }
           const embedded=JSON.parse(page.match(/<script id="embedded-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
           assert(embedded.source_registry.length>=13);
+          assert(embedded.social_posts.length>=5);
+          assert(!page.includes('id="social"'),'Single-platform section must not return');
           assert.equal(embedded.kpis.find(k=>k.id==='official_fancams').value,3);
-          console.log('Verified 13-source dashboard and executable X/social UI.');
+          console.log('Verified 13-source dashboard and integrated cross-platform posts UI.');
           NODE
