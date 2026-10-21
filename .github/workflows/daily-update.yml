@@ -1,10 +1,13 @@
-name: OA Daily Verified Metrics
+name: OA Daily Public Review Merge
 on:
   schedule:
     - cron: '10 1 * * *' # 每日一次，北京时间09:10；GitHub可能延迟
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: oa-metrics-data-write
+  cancel-in-progress: false
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -21,10 +24,6 @@ jobs:
         run: node scripts/import-manual.mjs
       - name: Import verified public browser observations (offline)
         run: node scripts/import-browser.mjs
-      - name: Refresh verified public video statistics
-        run: npm run update
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       - name: Import verified public X post engagement snapshots (no API/login)
         run: node scripts/import-x-public.mjs
       - name: Synchronize published GitHub Pages dashboard
