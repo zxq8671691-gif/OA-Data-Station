@@ -10,6 +10,8 @@ if(ledger.schema_version!==1||!Array.isArray(ledger.snapshots))throw Error('Inva
 const d=JSON.parse(await fs.readFile(dPath,'utf8'));
 const exact=n=>Number.isSafeInteger(n)&&n>=0;
 const props=['views','reposts','comments','likes','quotes','video_views'];
+const displayProps=Object.fromEntries(props.map(key=>[key,key+'_display']));
+const validDisplay=x=>typeof x==='string' && /^(?:约|≈)?\d+(?:\.\d+)?(?:万|亿|K|M)?$/i.test(x.trim());
 let changes=0;
 d.history??={};d.history.posts??={};
 for(const snapshot of ledger.snapshots){
@@ -20,12 +22,20 @@ for(const snapshot of ledger.snapshots){
  if(!snapshot.reviewed_by||!snapshot.evidence_type)throw Error('Missing reviewer or evidence type');
  const post=d.social_posts.find(x=>x.platform==='X / Twitter'&&x.id===String(snapshot.post_id));
  if(!post||post.url!==snapshot.evidence_url)throw Error('X post must be verified in archive, and its original URL must match evidence');
- if(props.every(key=>snapshot[key]===null||snapshot[key]===undefined))throw Error('No observed public numbers supplied');
- for(const key of props)if(snapshot[key]!=null&&!exact(snapshot[key]))throw Error('Unsupported approximate or negative X public metric '+key);
+ if(props.every(key=>snapshot[key]===null||snapshot[key]===undefined) &&
+   props.every(key=>!snapshot[displayProps[key]]))throw Error('No observed public numbers supplied');
+ for(const key of props){
+  if(snapshot[key]!=null&&!exact(snapshot[key]))throw Error('Inexact or negative X numeric metric '+key);
+  if(snapshot[displayProps[key]]!=null&&!validDisplay(snapshot[displayProps[key]]))
+    throw Error('Invalid public display string '+displayProps[key]);
+}
  if(post.updated_at&&Date.parse(snapshot.observed_at)<=Date.parse(post.updated_at))continue;
  for(const key of props)if(exact(snapshot[key]))post[key]=snapshot[key];
+ post.metric_display??={};
+ for(const key of props)if(validDisplay(snapshot[displayProps[key]]) && !exact(snapshot[key]))
+    post.metric_display[key]=snapshot[displayProps[key]].trim();
  post.updated_at=snapshot.observed_at;
- post.metric_source='X原帖公开显示值，人工核验';
+ post.metric_source='X原帖公开显示值（精确或带约数标识），人工核验';
  post.metric_status='人工核验公开计数（非API实时）';
  d.history.posts[post.id]??=[];
  if(!d.history.posts[post.id].some(x=>x.at===snapshot.observed_at)){
