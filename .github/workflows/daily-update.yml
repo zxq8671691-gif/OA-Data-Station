@@ -1,7 +1,13 @@
 name: OA Daily Public Review Merge
 on:
   schedule:
-    - cron: '10 1 * * *' # 每日一次，北京时间09:10；GitHub可能延迟
+    - cron: '10 1 * * *' # 浏览器核验源仅每日合并一次（不执行RPA）
+  push:
+    branches: [main]
+    paths:
+      - 'data/browser-verifications.json'
+      - 'data/x-public-metrics.json'
+      - 'data/weibo-supertopic.json'
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,6 +28,8 @@ jobs:
         run: npm test
       - name: Apply manually audited exact public metrics
         run: node scripts/import-manual.mjs
+      - name: Import dated OA Weibo supertopic fan and daily check-in snapshots
+        run: node scripts/import-weibo-supertopic.mjs
       - name: Import verified public browser observations (offline)
         run: node scripts/import-browser.mjs
       - name: Import verified public X post engagement snapshots (no API/login)
