@@ -1,39 +1,78 @@
-/* Korean chart picker in OA data overview */
-.korean-chart-intro{color:#aaa5bd;font-size:12px;line-height:1.7;max-width:850px;margin:0 0 17px}
-.korean-selector{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}
-.korean-tab{cursor:pointer;border:1px solid #443950;background:#201d2e;color:#c5bad5;padding:9px 13px;border-radius:9px;font-size:12px;font-family:inherit;white-space:nowrap}
-.korean-tab[aria-selected="true"]{border-color:#bba3d9;background:#49365e;color:#fff;font-weight:740}
-.korean-tab:focus-visible,.korean-awards button:focus-visible{outline:2px solid #d3baff;outline-offset:3px}
-.korean-panel{background:linear-gradient(142deg,#1d1a2c,#13111c);border:1px solid #393148;border-radius:17px;padding:22px;min-height:290px;margin-bottom:15px}
-.korean-feature-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
-.korean-small{font-size:10px;letter-spacing:.5px;color:#aa9cb9}
-.korean-feature-head h3{font-size:21px;color:#f6efff;margin:9px 0 2px}
-.korean-observation-tag{background:#342c43;color:#d8bde8;padding:7px 10px;border-radius:13px;font-size:11px;max-width:45%;text-align:right}
-.korean-highlight{display:flex;align-items:baseline;gap:18px;margin:12px 0 22px;flex-wrap:wrap}
-.korean-highlight strong{font-size:36px;letter-spacing:-1px;font-weight:810;line-height:1.1;color:#f6e9ff}
-.korean-highlight>div{font-size:12px;color:#c2b9d1;line-height:1.6}
-.korean-highlight small{display:block;font-size:11px;color:#9f96b0}
-.korean-bars{display:flex;gap:14px;min-height:158px;align-items:flex-end;padding:10px 11px 0;border-bottom:1px solid #494055;overflow-x:auto}
-.korean-observation{flex:1 0 58px;max-width:110px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;text-decoration:none;color:inherit}
-.korean-rank{font-size:11px;color:#e2d5f3;white-space:nowrap;font-variant-numeric:tabular-nums}
-.korean-bar{width:clamp(32px,60%,54px);background:linear-gradient(180deg,#dbb8ff,#755594);border-radius:7px 7px 0 0;min-height:12px}
-.korean-observation small{font-size:10px;color:#a69bba;white-space:nowrap;padding-bottom:5px}
-.korean-chart-foot,.korean-info,.korean-provenance{font-size:11px;color:#a8a0b7;line-height:1.7;margin:10px 0}
-.korean-info{color:#c5b9d0;margin:9px 0}
-.korean-origin{color:#e5c7ff;font-size:12px;font-weight:720;display:inline-block;margin-top:8px}
-.korean-graph-empty{border:1px dashed #54485f;border-radius:11px;padding:32px 12px;text-align:center;font-size:12px;color:#bdb2cc;line-height:1.6}
-.korean-awards-wrap{border:1px solid #352e44;border-radius:16px;background:#161422;padding:17px 19px;margin:12px 0 17px}
-.korean-awards-title{font-size:15px;font-weight:750;color:#eee4f8;margin:0 0 7px}
-.korean-awards-desc{font-size:11px;color:#aaa0ba;margin:0 0 13px;line-height:1.6}
+/* NEON Korean charts · simplified C layout (2026-10-21) */
+.korea-caption{font-size:12px;color:#aaa3ba;line-height:1.6;margin:0 0 14px}
+.korea-board{background:linear-gradient(145deg,#1c1928,#161420);border:1px solid #373042;border-radius:19px;padding:20px 22px 14px;max-width:100%;overflow:hidden}
+.korea-snapshot-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.korea-snapshot{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:7px;min-width:0;border:1px solid #393244;background:#23202e;border-radius:12px;padding:15px 16px;cursor:pointer;font-family:inherit;transition:border-color .18s,background .18s}
+.korea-snapshot:hover,.korea-snapshot.active{background:#2c2638;border-color:#9774b8}
+.korea-snapshot>span{font-weight:650;font-size:12px;color:#c7b5d9}
+.korea-snapshot strong{font-size:29px;letter-spacing:-.8px;line-height:1.1;font-weight:800;color:#f4eafd;font-variant-numeric:tabular-nums}
+.korea-snapshot small{font-size:10px;color:#aaa2b7;line-height:1.4}
+.korea-insight{margin:14px 0 14px;background:#211d2d;border:1px solid #332b40;border-radius:11px;padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+.korea-insight-line{display:flex;align-items:baseline;gap:11px}
+.korea-insight-tag{font-size:10px;color:#c9a6e6;background:#34273e;border-radius:6px;padding:4px 6px;flex:0 0 auto}
+.korea-insight-line p{margin:0;color:#c9bfd5;font-size:12px;line-height:1.65}
+.korea-insight-line b{font-weight:700;color:#ede2f8}
+.korea-milestones{display:flex;align-items:center;gap:13px;padding:0 2px 13px;border-bottom:1px solid #362f42;flex-wrap:wrap}
+.korea-milestones-label{font-size:10px;font-weight:700;letter-spacing:1.1px;color:#b39ec5}
 .korean-awards{display:flex;gap:8px;flex-wrap:wrap}
-.korean-awards button{background:#292538;color:#c8bfd6;border:1px solid #3c314b;border-radius:8px;padding:8px 16px;font-size:12px;font-family:inherit;cursor:pointer}
-.korean-awards button[aria-selected="true"]{background:#47345a;color:#f6e7ff;border-color:#9e83b9}
-.korean-award-info{font-size:12px;color:#b9b0c7;line-height:1.7;margin-top:14px}
-.korean-award-info p{margin:8px 0}
-.korean-award-info small{display:block;font-size:11px;color:#afa4c1}
-.korean-award-info a{color:#e6caff;text-decoration:none;display:inline-block;margin:5px 0}
-.korean-award-status{color:#f1e3fa;font-weight:740}
-#spotifyLegacyPanel[hidden]{display:none!important}
-@media(max-width:650px){.korean-panel{padding:16px}.korean-feature-head h3{font-size:18px}.korean-highlight strong{font-size:31px}.korean-selector{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}.korean-tab{flex:0 0 auto}.korean-awards-wrap{padding:14px}}
-
-.korean-media-reports{margin:12px 0 5px;padding:11px 13px;border:1px dashed #514357;border-radius:11px;color:#d6c2e1;font-size:11px;line-height:1.7}.korean-media-reports a{color:#ecc9ff}.korean-media-reports p{color:#aa9fb9;margin:5px 0 0;font-size:11px}
+.korean-awards button{background:#292536;border:1px solid #44374f;color:#e9e0f3;padding:7px 12px;border-radius:8px;font-size:12px;font-family:inherit;cursor:pointer;display:flex;gap:8px;align-items:center}
+.korean-awards button b{color:#e9cfff}
+.korean-awards button span{color:#a99db6;font-size:11px}
+.korean-awards button[aria-selected=true]{background:#403049;border-color:#aa82c6}
+.korean-awards button:focus-visible,.korea-snapshot:focus-visible,.korean-selector button:focus-visible,.korea-more:focus-visible,#koreanChartMore:focus-visible{outline:2px solid #caa5ed;outline-offset:2px}
+.korean-award-info{font-size:12px;color:#b9acc9;line-height:1.65;padding:10px 13px;border:1px solid #413449;background:#221e2e;border-radius:9px;margin:9px 0 0}
+.korean-award-info[hidden],#spotifyLegacyPanel[hidden]{display:none!important}
+.korean-award-info strong{color:#f1e1f8}
+.korean-award-info p{margin:4px 0}
+.korean-award-info a{color:#dfbbf5;text-decoration:underline}
+.korea-detail{padding-top:15px}
+.korea-detail-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:0 0 10px}
+.korea-detail-top h3{font-size:15px;font-weight:750;color:#eee4f7;margin:0 0 4px}
+.korea-detail-top h3 span{font-size:11px;font-weight:500;color:#a19ab2;margin-left:4px}
+.korea-detail-top p{font-size:11px;color:#9f95b1;margin:0}
+.korea-selector-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.korean-selector{display:flex;gap:5px}
+.korean-selector button{border:1px solid #3f364a;background:#292536;border-radius:7px;padding:7px 10px;color:#bfb3ce;font-family:inherit;font-size:11px;cursor:pointer}
+.korean-selector button[aria-selected=true]{background:#493459;color:#f9ebff;border-color:#a47ac4}
+#koreanChartMore{border:1px solid #44394e;background:#292536;color:#cbb6da;border-radius:7px;padding:7px 9px;font-family:inherit;font-size:11px;max-width:150px}
+.korean-panel{background:#171521;border:1px solid #342c40;border-radius:13px;min-height:0;padding:15px 17px;margin:0}
+.korea-detail-summary{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.korea-detail-summary>div>span{display:block;color:#9b91a8;font-size:10px;margin-bottom:4px}
+.korea-detail-summary h4{font-size:14px;color:#f1e7fa;margin:0 0 5px}
+.korea-detail-summary small{font-size:11px;color:#ada3bc}
+.korea-detail-summary>strong{font-size:27px;letter-spacing:-.8px;color:#e7c9ff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.korea-chart-graph{min-height:140px;display:flex;gap:15px;justify-content:flex-start;align-items:flex-end;border-bottom:1px solid #45364c;padding:11px 8px 4px;margin:13px 0 0;overflow-x:auto}
+.korea-mini-bar{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:5px;min-width:46px;flex:0 1 85px;max-width:110px;text-align:center}
+.korea-mini-bar b{font-size:11px;color:#ded0ed;font-weight:600;white-space:nowrap}
+.korea-mini-bar>span{min-width:31px;width:55%;max-width:49px;background:linear-gradient(180deg,#caace5,#72558a);border-radius:6px 6px 0 0}
+.korea-mini-bar small{color:#a99aaf;font-size:10px;white-space:nowrap}
+.korea-chart-note{margin:7px 0 0;font-size:10px;color:#a89db4;line-height:1.6}
+.korea-no-history{font-size:12px;color:#b4a9c3;background:#201c29;border:1px dashed #3d3448;border-radius:8px;padding:15px 12px;margin-top:12px;line-height:1.6}
+.korea-no-history b{color:#eedafc}
+.korea-no-history small{display:block;color:#b5a5c6;margin-top:5px}
+.korea-chart-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-top:10px}
+.korea-chart-bottom>span{font-size:10px;color:#a69bb5}
+.korea-chart-bottom a,.korea-media-note a{font-size:11px;font-weight:650;color:#dfb7fc}
+.korea-media-note{font-size:11px;color:#c4b8cc;line-height:1.6;margin:11px 0 0}
+.korea-method{margin:12px 1px 0;font-size:11px;color:#a79caf}
+.korea-method summary{cursor:pointer;list-style:none;padding:8px 0;display:flex;align-items:center;justify-content:space-between}
+.korea-method summary::marker{content:""}
+.korea-method summary span{color:#c1a5d0}
+.korea-method p{line-height:1.75;margin:3px 0 8px}
+.korea-method a{color:#d6b4ec}
+@media(max-width:900px){.korea-snapshot{padding:13px}.korea-selector-controls{width:100%}}
+@media(max-width:620px){
+ .korea-board{padding:14px 12px 10px;border-radius:14px}
+ .korea-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .korea-snapshot{padding:12px 13px;gap:6px}
+ .korea-snapshot strong{font-size:25px}
+ .korea-insight{padding:10px 11px}
+ .korea-insight-line{gap:8px}
+ .korea-insight-line p{font-size:11px}
+ .korea-detail-top{align-items:flex-start}
+ .korean-selector{flex-wrap:wrap}
+ #koreanChartMore{max-width:100%}
+ .korean-panel{padding:13px 12px}
+ .korea-detail-summary>strong{font-size:25px}
+ .korea-chart-graph{gap:8px}
+}
