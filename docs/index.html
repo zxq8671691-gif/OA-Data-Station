@@ -77,7 +77,8 @@
     "updated_at": "2026-10-21T08:35:11.809Z",
     "verified_at": "2026-10-21T08:35:11.809Z",
     "timezone": "Asia/Shanghai",
-    "notice": "个人作品、新闻与节目日程每日整理；互动指标只在平台原始数据成功采集时更新。"
+    "notice": "OA个人／双人／团体作品单独归类。YouTube自动采集；其他平台有公开原始入口但未授权的数据保留待核实。社交账号粉丝数不等于OA个人粉丝。",
+    "source_audit_at": "2026-10-21"
   },
   "spotlight": [
     {
@@ -105,11 +106,11 @@
   "kpis": [
     {
       "id": "official_fancams",
-      "label": "已收录OA个人视频",
-      "value": 5,
+      "label": "已收录官方OA单人直拍",
+      "value": 3,
       "unit": "条",
       "scope": "OA个人",
-      "description": "包含个人预告、个人双人镜头及各台官方直拍",
+      "description": "只计一人镜头的官方舞台直拍；双人、预告、搬运不计入",
       "source": "https://youtu.be/p1JBFI77kWo"
     },
     {
@@ -118,7 +119,7 @@
       "value": 1333290,
       "unit": "次",
       "scope": "OA个人",
-      "description": "仅已核验OA个人直拍；首次快照没有24小时增量",
+      "description": "仅官方 OA 单人直拍合计，不含预告、双人及团体视频；记录为最近一次 API 快照",
       "source": "https://youtu.be/p1JBFI77kWo"
     },
     {
@@ -127,7 +128,7 @@
       "value": 25187,
       "unit": "次",
       "scope": "OA个人",
-      "description": "待YouTube Data API验证。",
+      "description": "仅官方 OA 单人直拍合计；已由 YouTube 官方API核验",
       "source": "https://youtu.be/p1JBFI77kWo"
     },
     {
@@ -159,7 +160,8 @@
       "value": null,
       "last_updated": null,
       "status": "已巡检 / 暂无稳定开放接口",
-      "source": "https://weibo.com/u/8428908687"
+      "source": "https://weibo.com/u/8428908687",
+      "account_scope": "group_or_public"
     },
     {
       "name": "Bilibili",
@@ -169,7 +171,8 @@
       "value": null,
       "last_updated": null,
       "status": "已有可追溯公开视频 · 互动待校验",
-      "source": "https://space.bilibili.com/670061998"
+      "source": "https://space.bilibili.com/670061998",
+      "account_scope": "group_or_public"
     },
     {
       "name": "抖音",
@@ -179,7 +182,8 @@
       "value": null,
       "last_updated": null,
       "status": "已巡检 / 待补单帖互动",
-      "source": "https://v.douyin.com/ZzHgu4mfISQ/"
+      "source": "https://v.douyin.com/ZzHgu4mfISQ/",
+      "account_scope": "group_or_public"
     },
     {
       "name": "TikTok",
@@ -189,7 +193,8 @@
       "value": null,
       "last_updated": null,
       "status": "已巡检 / 待补 sound 使用量",
-      "source": "https://www.tiktok.com/@a2o.lite"
+      "source": "https://www.tiktok.com/@a2o.lite",
+      "account_scope": "group_or_public"
     },
     {
       "name": "Instagram",
@@ -199,17 +204,21 @@
       "value": null,
       "last_updated": null,
       "status": "已巡检 / 待补粉丝数",
-      "source": "https://www.instagram.com/a2o.lite/"
+      "source": "https://www.instagram.com/a2o.lite/",
+      "account_scope": "group_or_public"
     },
     {
       "name": "X / Twitter",
       "icon": "𝕏",
-      "scope": "团体官方账号",
+      "scope": "A2O LITE团体官方账号／OA相关公开帖；不等于OA个人粉丝数",
       "metric": "followers",
       "value": null,
       "last_updated": null,
-      "status": "已巡检 / 待补粉丝数",
-      "source": "https://x.com/A2O_LITE"
+      "status": "官方账号入口已收录；帖子互动需X API开发者授权",
+      "source": "https://x.com/A2O_LITE",
+      "account_scope": "group_or_public",
+      "api": "X API v2",
+      "verified_account_via": "https://linktr.ee/a2o.lite"
     },
     {
       "name": "小红书",
@@ -219,7 +228,8 @@
       "value": null,
       "last_updated": null,
       "status": "已巡检 / 待补公开笔记量",
-      "source": null
+      "source": null,
+      "account_scope": "group_or_public"
     }
   ],
   "videos": [
@@ -242,7 +252,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "show-kpop"
+      "event_id": "show-kpop",
+      "content_scope": "solo_fancam"
     },
     {
       "id": "eB6vt-ne3A4",
@@ -263,7 +274,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "show-kpop"
+      "event_id": "show-kpop",
+      "content_scope": "solo_fancam"
     },
     {
       "id": "-TGCURaf8f8",
@@ -284,7 +296,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "show-kpop"
+      "event_id": "show-kpop",
+      "content_scope": "duo_stage"
     },
     {
       "id": "p1JBFI77kWo",
@@ -305,7 +318,8 @@
       "metric_source": "YouTube Data API v3 / videos.list",
       "views_24h": null,
       "thumbnail_source": "YouTube视频封面",
-      "event_id": "mcountdown"
+      "event_id": "mcountdown",
+      "content_scope": "solo_fancam"
     },
     {
       "id": "iXQsuYOyvos",
@@ -326,7 +340,8 @@
       "metric_source": "YouTube Data API v3 / videos.list",
       "views_24h": null,
       "thumbnail_source": "YouTube视频封面",
-      "event_id": "debut"
+      "event_id": "debut",
+      "content_scope": "solo_teaser"
     },
     {
       "id": "zzFt3QY6kC4",
@@ -347,7 +362,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "the-show"
+      "event_id": "the-show",
+      "content_scope": "group_stage"
     },
     {
       "id": "BkaGqUxvN6w",
@@ -368,7 +384,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "the-show"
+      "event_id": "the-show",
+      "content_scope": "group_stage"
     },
     {
       "id": "c7REvlMKFro",
@@ -389,7 +406,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "the-show"
+      "event_id": "the-show",
+      "content_scope": "group_stage"
     },
     {
       "id": "d2TTCQsHZfY",
@@ -410,7 +428,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "the-show"
+      "event_id": "the-show",
+      "content_scope": "group_stage"
     },
     {
       "id": "n9HYtcN6W4w",
@@ -431,7 +450,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "mcountdown"
+      "event_id": "mcountdown",
+      "content_scope": "group_stage"
     },
     {
       "id": "29Bn6d82Qgc",
@@ -452,7 +472,8 @@
       "metric_source": "YouTube Data API v3 / videos.list",
       "views_24h": null,
       "thumbnail_source": "YouTube视频封面",
-      "event_id": "radio"
+      "event_id": "radio",
+      "content_scope": "group_stage"
     },
     {
       "id": "4LSlCfqF7Sc",
@@ -473,7 +494,8 @@
       "updated_at": "2026-10-21T08:35:11.809Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "event_id": "showcase"
+      "event_id": "showcase",
+      "content_scope": "group_stage"
     },
     {
       "id": "BV1joJy6rE9C",
@@ -497,7 +519,8 @@
       "approx_note": "公开检索页面所示约16.4万播放，约10/18收录；并非今天的实时数值",
       "metric_source": "B站视频公开页面搜索快照",
       "event_id": "mcountdown",
-      "label_nonofficial": true
+      "label_nonofficial": true,
+      "content_scope": "fan_edit"
     },
     {
       "id": "BV1eWJy6PEgH",
@@ -521,7 +544,8 @@
       "approx_note": "该总播放数属于5P合集，不能归因于OA个人直拍；约10/18收录",
       "metric_source": "B站合集公开搜索快照",
       "event_id": "mcountdown",
-      "label_nonofficial": true
+      "label_nonofficial": true,
+      "content_scope": "fan_edit"
     },
     {
       "id": "BV1VVpo6gEYg",
@@ -545,7 +569,8 @@
       "approx_note": "团体官方MV，含OA但并非OA个人视频；约10/18收录",
       "metric_source": "B站公开搜索快照",
       "event_id": "debut",
-      "label_nonofficial": false
+      "label_nonofficial": false,
+      "content_scope": "group_stage"
     }
   ],
   "group_charts": [
@@ -747,6 +772,34 @@
     {
       "label": "Spotify韩国原始榜单索引",
       "url": "https://charts.spotify.com/charts/view/regional-kr-daily/latest"
+    },
+    {
+      "label": "A2O LITE 官方 X / Twitter",
+      "url": "https://x.com/A2O_LITE"
+    },
+    {
+      "label": "A2O LITE 官方 Linktree（账号入口核对）",
+      "url": "https://linktr.ee/a2o.lite"
+    },
+    {
+      "label": "Bilibili OA 相关公开视频搜索",
+      "url": "https://search.bilibili.com/all?keyword=A2O%20LITE%20OA"
+    },
+    {
+      "label": "X OA 公开帖关键词搜索",
+      "url": "https://x.com/search?q=A2O%20LITE%20OA&f=live"
+    },
+    {
+      "label": "Melon韩国官方榜单",
+      "url": "https://www.melon.com/chart/index.htm"
+    },
+    {
+      "label": "QQ音乐",
+      "url": "https://y.qq.com/"
+    },
+    {
+      "label": "Hanteo Chart 韩国实体专辑",
+      "url": "https://www.hanteochart.com/"
     }
   ],
   "history": {
@@ -936,7 +989,153 @@
       "kind": "press",
       "caption": "封面为官方写真，点击前往媒体原图"
     }
-  ]
+  ],
+  "source_registry": [
+    {
+      "id": "youtube",
+      "platform": "YouTube",
+      "group": "视频",
+      "scope": "OA单人/双人/团体分开",
+      "status": "api",
+      "status_text": "已接入官方API，每6小时采集",
+      "metric": "视频观看、点赞、评论；24h差分",
+      "url": "https://www.youtube.com/@A2OLITE",
+      "method": "YouTube Data API v3 videos.list"
+    },
+    {
+      "id": "x",
+      "platform": "X / Twitter",
+      "group": "社交",
+      "scope": "A2O LITE团体账号 + OA关联帖",
+      "status": "awaiting_api",
+      "status_text": "官方入口已收录，帖文指标待开发者API授权",
+      "metric": "公开帖点赞/转发/评论/引用；可能含曝光；团体粉丝数",
+      "url": "https://x.com/A2O_LITE",
+      "method": "X API v2；需用户独立批准可能产生的API费用"
+    },
+    {
+      "id": "weibo",
+      "platform": "微博",
+      "group": "社交",
+      "scope": "官方账号 + OA相关微博",
+      "status": "awaiting_api",
+      "status_text": "官方CLI需开发者实名及设备授权",
+      "metric": "单帖点赞、评论、转发；视频观看待核验",
+      "url": "https://weibo.com/u/8428908687",
+      "method": "微博官方CLI (OAuth)"
+    },
+    {
+      "id": "bilibili",
+      "platform": "Bilibili",
+      "group": "视频",
+      "scope": "OA直拍/粉丝二创；原作与转载区分",
+      "status": "manual",
+      "status_text": "官方开放平台需UP主授权；现保留原视频链接",
+      "metric": "公开视频可见播放、点赞、评论",
+      "url": "https://space.bilibili.com/670061998",
+      "method": "官方开放平台／人工核验"
+    },
+    {
+      "id": "douyin",
+      "platform": "抖音",
+      "group": "短视频",
+      "scope": "官方短视频 + OA相关公开作品",
+      "status": "manual",
+      "status_text": "非发布者后台数据不能通过本人OAuth获取",
+      "metric": "授权发布者的视频指标；公开互动需人工核实",
+      "url": "https://v.douyin.com/ZzHgu4mfISQ/",
+      "method": "抖音开放平台（发布者授权）"
+    },
+    {
+      "id": "tiktok",
+      "platform": "TikTok",
+      "group": "短视频",
+      "scope": "官方账号 + OA相关公开作品",
+      "status": "awaiting_api",
+      "status_text": "仅发布账号OAuth授权可稳定读取其数据",
+      "metric": "发布者授权的视频观看、点赞、评论、分享",
+      "url": "https://www.tiktok.com/@a2o.lite",
+      "method": "TikTok Display API"
+    },
+    {
+      "id": "instagram",
+      "platform": "Instagram",
+      "group": "社交",
+      "scope": "A2O LITE官方团体账号",
+      "status": "manual",
+      "status_text": "账号不是OA个人；第三方深入指标需授权",
+      "metric": "公开帖数据／授权业务账号Insights",
+      "url": "https://www.instagram.com/a2o.lite/",
+      "method": "Meta Instagram API"
+    },
+    {
+      "id": "xiaohongshu",
+      "platform": "小红书",
+      "group": "社交",
+      "scope": "OA公开笔记与粉丝二创",
+      "status": "discovery",
+      "status_text": "尚无可核验OA官方独立账号",
+      "metric": "公开笔记原链、人工核验互动",
+      "url": "https://www.xiaohongshu.com/",
+      "method": "人工审校／来源核验"
+    },
+    {
+      "id": "spotify",
+      "platform": "Spotify",
+      "group": "团体音源",
+      "scope": "NEON团体播放，不等于OA个人成绩",
+      "status": "source",
+      "status_text": "韩区日榜以官方结算日为准",
+      "metric": "歌曲日播放、榜单位置",
+      "url": "https://charts.spotify.com/charts/view/regional-kr-daily/latest",
+      "method": "Spotify Charts"
+    },
+    {
+      "id": "melon",
+      "platform": "Melon",
+      "group": "团体音源",
+      "scope": "NEON团体歌曲",
+      "status": "source",
+      "status_text": "官方榜单，日听众不能代替播放量",
+      "metric": "独立听众、收听排名（须单独核验）",
+      "url": "https://www.melon.com/chart/index.htm",
+      "method": "Melon官方网页"
+    },
+    {
+      "id": "qqmusic",
+      "platform": "QQ音乐",
+      "group": "团体音源",
+      "scope": "A2O LITE团体歌",
+      "status": "source",
+      "status_text": "官方曲目与榜单入口已收录",
+      "metric": "榜单、公开热度；不提供臆测的播放数",
+      "url": "https://y.qq.com/",
+      "method": "QQ音乐公开页面"
+    },
+    {
+      "id": "ichart",
+      "platform": "iChart",
+      "group": "团体音源",
+      "scope": "韩国综合榜、AK/PAK",
+      "status": "source",
+      "status_text": "榜单观察，不自动宣称AK/PAK",
+      "metric": "榜单位置和获奖记录",
+      "url": "https://ichart.kr/",
+      "method": "iChart"
+    },
+    {
+      "id": "hanteo",
+      "platform": "Hanteo",
+      "group": "实体专辑",
+      "scope": "A2O LITE团体销售数据",
+      "status": "source",
+      "status_text": "实体销量须按Hanteo原始发布日期核对",
+      "metric": "首日/首周专辑销量（需核验）",
+      "url": "https://www.hanteochart.com/",
+      "method": "Hanteo"
+    }
+  ],
+  "social_posts": []
 }</script><script>const $ = (s) => document.querySelector(s);
 const formatNum = n => Number.isFinite(n) ? new Intl.NumberFormat('zh-CN').format(n) : '待核实';
 const escapeHTML = str => String(str ?? '').replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
