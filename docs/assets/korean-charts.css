@@ -35,3 +35,5 @@
 .korean-award-status{color:#f1e3fa;font-weight:740}
 #spotifyLegacyPanel[hidden]{display:none!important}
 @media(max-width:650px){.korean-panel{padding:16px}.korean-feature-head h3{font-size:18px}.korean-highlight strong{font-size:31px}.korean-selector{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}.korean-tab{flex:0 0 auto}.korean-awards-wrap{padding:14px}}
+
+.korean-media-reports{margin:12px 0 5px;padding:11px 13px;border:1px dashed #514357;border-radius:11px;color:#d6c2e1;font-size:11px;line-height:1.7}.korean-media-reports a{color:#ecc9ff}.korean-media-reports p{color:#aa9fb9;margin:5px 0 0;font-size:11px}
