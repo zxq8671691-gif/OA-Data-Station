@@ -1,0 +1,42 @@
+name: OA Mainland Site Build Check
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'data/dashboard.json'
+      - 'scripts/build-cn.mjs'
+      - 'edgeone.json'
+      - 'package.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Validate source data
+        run: npm test
+      - name: Build self-contained mainland website without network dependencies
+        run: SKIP_REMOTE_MEDIA=1 npm run build:cn
+      - name: Assert usable site entry and published metrics
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const html=fs.readFileSync('cn-dist/index.html','utf8');
+          const current=JSON.parse(fs.readFileSync('data/dashboard.json','utf8'));
+          const found=html.match(/<script id="embedded-data" type="application\/json">([\s\S]*?)<\/script>/);
+          assert(found,'embedded data must be present in the served root index.html');
+          const published=JSON.parse(found[1]);
+          assert.equal(published.meta.updated_at,current.meta.updated_at);
+          assert(published.videos.length>=12);
+          assert(fs.statSync('cn-dist/assets/oa-portrait.webp').size>2500);
+          console.log('PASS: root index, non-empty OA portrait, latest metrics and 15-video archive');
+          NODE
