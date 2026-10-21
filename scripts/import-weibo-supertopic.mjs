@@ -8,6 +8,12 @@ if(source.schema_version!==1||source.topic!=='OaAngel'||!Array.isArray(source.ob
  throw Error('OaAngel supertopic schema mismatch');
 }
 const num=n=>Number.isSafeInteger(n)&&n>=0;
+const parseDisplay=v=>{
+ const m=String(v||'').trim().match(/^(约|≈|破)?(\d+(?:\.\d+)?)(万|亿|K|M)?$/i);
+ if(!m)return null;
+ const factor={万:1e4,亿:1e8,K:1e3,M:1e6}[m[3]]||1;
+ return {value:Number(m[2])*factor,lowerBound:m[1]==='破'};
+};
 for(const obs of source.observations){
  if(!/^20\d\d-\d\d-\d\d$/.test(obs.date)||!/^https:\/\/(?:m\.)?weibo\.com\//.test(obs.source)){
    throw Error('Supertopic data must provide a date and original Weibo source URL');
@@ -19,12 +25,20 @@ for(const obs of source.observations){
    if(!obs.observed_at||!Number.isFinite(Date.parse(obs.observed_at))||!/(Z|[+-]\d\d:\d\d)$/.test(obs.observed_at)){
      throw Error('Actual supertopic page observations require a precise timestamp');
    }
-   if(!num(obs.fans)&&!num(obs.checkins))throw Error('At least one exact original page counter required');
+   const fansReported=parseDisplay(obs.fans_display);
+   const checkinsReported=parseDisplay(obs.checkins_display);
+   if(!num(obs.fans)&&!num(obs.checkins)&&!fansReported&&!checkinsReported)
+     throw Error('Need at least one exact or clearly labeled original-page public count');
+   if(!num(obs.fans)&&fansReported){obs.fans_approx=fansReported.value; }
+   if(!num(obs.checkins)&&checkinsReported){
+     if(checkinsReported.lowerBound)obs.checkins_floor=checkinsReported.value;
+     else obs.checkins_approx=checkinsReported.value;
+   }
    if(!obs.reviewed_by||!obs.evidence_type)throw Error('Original supertopic verification evidence is required');
  }else throw Error('Unknown evidence quality');
 }
 const dashboard=JSON.parse(await fs.readFile(file,'utf8'));
-const verified=[...source.observations].filter(x=>x.quality==='original_page'&&(num(x.fans)||num(x.checkins)))
+const verified=[...source.observations].filter(x=>x.quality==='original_page'&&(num(x.fans)||num(x.checkins)||x.fans_display||x.checkins_display))
  .sort((a,b)=>Date.parse(a.observed_at)-Date.parse(b.observed_at));
 const last=verified.at(-1)||null;
 const replacement={...source,latest_verified_live:last?{...last,quality:'original_page'}:null};
