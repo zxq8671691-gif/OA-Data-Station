@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0c0c16"><meta name="description" content="OA 数据总览 · A2O LITE成员OA的中文独立粉丝数据站：每日数据、个人直拍、媒体动态、公开行程与链接速递。" />
+<meta property="og:title" content="OA 数据总览｜OA 数据实时更新"><meta property="og:description" content="独立粉丝数据站｜每日更新 OA 数据、视频、媒体动态与公开行程。" />
+<title>OA 数据总览｜OA 数据实时更新</title><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2215%22 fill=%22%23201825%22/><text x=%229%22 y=%2244%22 fill=%22%23c8a3e8%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2228%22>OA</text></svg>" type="image/svg+xml"/><style>
+:root{color-scheme:dark;--bg:#0b0b13;--panel:#151520;--panel2:#1b1a29;--border:#292736;--muted:#9c9aaf;--white:#f7f4fe;--lilac:#d8bcff;--lime:#d9fc94;--pink:#ffa4d0;--shadow:0 20px 66px #0004;font-family:'DM Sans','Manrope','PingFang SC','Microsoft YaHei',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--lime);outline-offset:4px}::selection{background:#c69df9;color:#121018}.ambient{position:fixed;pointer-events:none;z-index:-1;filter:blur(95px);opacity:.18}.ambient-a{height:470px;width:490px;background:#6644ad;top:2%;left:22%}.ambient-b{height:480px;width:490px;background:#d26eaa;right:0;top:38%}.shell{min-height:100vh;display:grid;grid-template-columns:240px minmax(0,1fr)}.sidebar{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;background:#0d0d16;border-right:1px solid #252333;padding:30px 19px 24px;z-index:50}.logo-block{display:flex;gap:11px;align-items:center;margin-bottom:55px}.logo-glyph{font-size:39px;font-weight:800;letter-spacing:-6px;line-height:1}.logo-glyph span{font-size:21px;color:var(--lime);letter-spacing:-1px;vertical-align:top;margin-left:-6px}.logo-info{display:flex;flex-direction:column;gap:5px;margin-left:2px}.logo-info strong{letter-spacing:1.1px;font-size:10px}.logo-info small{font-size:8px;letter-spacing:.5px;color:var(--muted)}.side-label{color:#666579;font-weight:800;font-size:10px;letter-spacing:2px;padding:0 12px;margin-bottom:16px}.side-nav{display:flex;flex-direction:column;gap:4px}.nav-link{height:44px;padding:0 12px;display:flex;align-items:center;gap:12px;color:#a6a4b8;font-size:12px;font-weight:600;border-radius:11px;transition:.2s}.nav-link:hover,.nav-link.active{background:#2a263a;color:#fff}.nav-link.active{box-shadow:inset 3px 0 var(--lilac)}.nav-link i{margin-left:auto;font-style:normal;font-size:9px;color:#77758b}.nav-icon{font-size:17px;width:19px;color:var(--lilac);text-align:center}.side-label-second{margin-top:42px}.quick-links{display:flex;flex-direction:column;gap:4px}.quick-links a{display:flex;align-items:center;gap:9px;padding:9px 11px;font-size:11px;color:#aaa7bd;border-radius:9px}.quick-links a:hover{background:#242136;color:#fff}.quick-links a b{margin-left:auto}.social-dot{display:grid;place-items:center;width:21px;height:21px;font-size:11px;border-radius:7px}.yt{background:#5c1c32;color:#ffb6c1}.wb{background:#5b3d1b;color:#ffdea8}.ic{background:#343552;color:#b5bbff}.side-bottom{margin-top:auto;border-top:1px solid #272536;padding:22px 9px 0;color:#b2aaba;font-size:9px;font-weight:800;letter-spacing:1px}.greenpulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px #baff85b7;margin-right:6px}.side-bottom p{font-size:10px;color:#777587;font-weight:400;letter-spacing:0;margin:11px 0 0}.main{padding:0 clamp(20px,3.9vw,66px) 0;min-width:0;max-width:1750px;width:100%;margin:0 auto}.topbar{height:82px;display:flex;justify-content:space-between;align-items:center;gap:10px}.crumb{font-size:10px;letter-spacing:2px;color:#bcb8c8;font-weight:800}.top-spark{color:var(--lime);font-size:15px;margin-right:4px}.chevron{margin:0 8px;color:#545063}.top-actions{display:flex;align-items:center;gap:15px}.live-tiny{font-size:10px;color:#aaa7b8}.date-chip{background:#211f2b;border:1px solid #373443;color:#d4cde1;padding:10px 14px;border-radius:50px;font-size:10px;letter-spacing:.7px}.mobile-menu{display:none;background:transparent;color:white;border:0;font-size:23px}.hero{height:420px;position:relative;border-radius:21px;overflow:hidden;background:radial-gradient(ellipse at 72% 16%,#8d4d98 0%,#482b6c 25%,transparent 58%),linear-gradient(115deg,#272139,#39264e 62%,#9a6f95);border:1px solid #6a518466;box-shadow:var(--shadow)}.hero-photo{position:absolute;inset:0 0 0 47%;background-image:linear-gradient(90deg,#342545 0%,#36244320 30%,#241b351a 80%),url('https://i.ytimg.com/vi/iXQsuYOyvos/hqdefault.jpg');background-position:center,right center;background-size:cover;filter:brightness(.94) saturate(.8);opacity:.84;-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%);mask-image:linear-gradient(90deg,transparent,#000 18%)}.hero::after{content:'';pointer-events:none;position:absolute;inset:0;background:linear-gradient(0deg,#201729d6,transparent 25%),linear-gradient(90deg,#38274ad6 0%,#332448aa 28%,transparent 72%)}.hero-shine{position:absolute;right:-70px;top:-120px;border:1px solid #ffffff29;width:540px;height:540px;transform:rotate(35deg);border-radius:80px;z-index:1}.hero-content{position:relative;z-index:3;padding:36px 44px}.hero-pill{border:1px solid #e9d3ff7a;border-radius:50px;display:inline-flex;align-items:center;gap:12px;padding:9px 15px;font-size:9px;letter-spacing:1.6px;font-weight:800;background:#35264899;backdrop-filter:blur(10px)}.tiny-star{color:var(--lime);font-size:14px}.tiny-dot{font-size:7px;color:var(--pink)}.hero-titling{margin-top:24px}.hero-kicker{font-size:11px;letter-spacing:4px;color:#efe5f3;font-weight:600}.hero h1{font-size:clamp(85px,9vw,131px);letter-spacing:-11px;line-height:.85;font-weight:800;margin:7px 0 10px;text-shadow:0 8px 40px #0003}.hero h1>span:first-child{color:#e2c4ff}.hero-star{font-size:50px;display:inline-block;color:var(--lime);vertical-align:top;line-height:1;margin-left:14px;letter-spacing:0}.hero-chinese{font-size:14px;letter-spacing:3px;font-weight:700;display:flex;align-items:center;gap:12px}.hero-line{height:1px;width:33px;background:#efd6ff8a}.hero-copy{font-size:12px;line-height:1.9;letter-spacing:.1px;color:#f2eaf6;margin:17px 0 21px}.hero-buttons{display:flex;gap:10px}.primary-button,.secondary-button{font-size:11px;padding:12px 16px;border-radius:10px;font-weight:800;display:inline-flex;align-items:center;gap:15px}.primary-button{color:#261c2f;background:#e9d5ff}.secondary-button{background:#ffffff24;border:1px solid #ffffff44;backdrop-filter:blur(5px)}.hero-bottom{z-index:3;position:absolute;bottom:20px;left:44px;right:40px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.7px;color:#eedaf9a6}.hero-bottom b{margin-left:9px;color:#fff}.notice-banner{margin:19px 0 33px;display:flex;gap:18px;align-items:center;justify-content:space-between;background:#1b1926;border:1px solid #343041;border-radius:12px;padding:13px 17px;font-size:11px;color:#c5bdcf;line-height:1.65}.notice-banner b{color:var(--lime);margin-right:7px}.notice-icon{font-size:19px;margin-right:8px;color:var(--lime)}.notice-banner>a{white-space:nowrap;font-weight:700;color:#dfc0ff}.section{padding-top:22px;margin-bottom:51px;scroll-margin-top:30px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}.overline{font-size:9px;color:var(--lime);font-weight:800;letter-spacing:2.7px;margin-bottom:8px}.section-heading h2{margin:0;font-size:24px;letter-spacing:-.7px}.section-heading h2 span{font-family:Georgia,serif;font-size:19px;color:#777488;font-weight:400;font-style:italic;margin-left:9px;letter-spacing:-.4px}.section-meta,.muted{font-size:11px;color:var(--muted)}.kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.kpi-card{background:#191823;border:1px solid #2b2837;border-radius:15px;padding:18px 18px 16px;min-height:145px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.kpi-card::after{content:'✳';position:absolute;right:14px;top:8px;color:#5a486e50;font-size:52px}.kpi-label{font-size:11px;color:#b8b2c6;position:relative;z-index:1}.kpi-value{display:flex;align-items:baseline;gap:7px;font-size:35px;letter-spacing:-1px;font-weight:800;margin-top:18px;position:relative;z-index:1}.kpi-value.empty{font-size:23px;color:#9b96ad}.kpi-unit{font-size:11px;color:#a6a1b6}.kpi-bottom{font-size:10px;color:#a49fb1;line-height:1.5;min-height:28px}.kpi-card a{position:absolute;right:18px;bottom:13px;color:#cbb5df;font-size:13px}.section-subhead{display:flex;justify-content:space-between;align-items:center;margin:27px 0 15px}.section-subhead h3{margin:0;font-size:15px}.section-subhead h3 span{font-size:11px;font-family:Georgia,serif;font-style:italic;color:#898397;margin-left:8px;font-weight:400}.platform-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.platform-card{border:1px solid #2e2a39;background:#14141e;border-radius:13px;padding:16px;min-height:121px;position:relative;transition:.2s}.platform-card:hover{transform:translateY(-2px);background:#1c1a28}.platform-head{display:flex;align-items:center;justify-content:space-between}.platform-symbol{width:33px;height:33px;border-radius:10px;background:#292538;color:#edddff;display:grid;place-items:center;font-size:15px;font-weight:800}.platform-open{font-size:16px;color:#92899c}.platform-name{font-size:13px;margin:12px 0 4px;font-weight:700}.platform-note{color:#858092;font-size:10px;margin-bottom:7px;line-height:1.4}.platform-state{font-size:10px;color:#cfb5ee}.chart-row{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(255px,.75fr);gap:14px}.chart-panel{min-height:344px;background:#171621;border:1px solid #302a3a;border-radius:17px;padding:21px 23px 13px}.chart-panel-head{display:flex;justify-content:space-between;gap:15px}.chart-panel-head h3{font-size:17px;margin:11px 0 7px}.chart-panel-head p{font-size:10px;color:var(--muted);margin:0}.mini-tag{display:inline-block;font-size:9px;letter-spacing:.8px;font-weight:800;color:#b0f5af;background:#283729;border:1px solid #456245;padding:5px 8px;border-radius:5px}.group-tag{color:#d3c1ff;background:#2a243a;border-color:#3c3456}.chart-number{text-align:right;white-space:nowrap}.chart-number strong{font-size:27px;display:block}.chart-number span{font-size:11px;color:var(--lime)}.svg-chart{height:218px;position:relative;width:100%;margin-top:10px}.svg-chart svg{width:100%;height:100%;overflow:visible}.chart-foot{border-top:1px solid #2a2935;padding-top:11px;display:flex;justify-content:space-between;gap:10px;color:#8f8a9e;font-size:9px;line-height:1.6}.chart-foot a{color:#dfc3f9;white-space:nowrap}.chart-side{min-height:344px;border-radius:17px;background:linear-gradient(165deg,#353040,#201c2e 52%,#1b1927);border:1px solid #55435b;display:flex;flex-direction:column;overflow:hidden;padding:21px 22px}.chart-side-top .sparkle{float:right;font-size:35px;color:var(--lime)}.chart-side-top .mini-tag{background:#3a3249;border-color:#695276;color:#e4cbff}.chart-side-top h3{font-size:25px;line-height:1.08;letter-spacing:-.7px;margin:16px 0 7px}.chart-side-top p{font-size:11px;color:#ada4bc;margin:0}.chart-side-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:auto;gap:5px}.chart-side-stats>div{border-right:1px solid #50465b;padding:8px 7px 6px}.chart-side-stats>div:first-child{padding-left:0}.chart-side-stats>div:last-child{border-right:0}.chart-side-stats span{display:block;color:#b1a6c1;font-size:9px;margin-bottom:9px}.chart-side-stats strong{font-size:14px}.chart-side>a{font-size:11px;color:#d6f9a0;border-top:1px solid #55465e;margin-top:14px;padding-top:15px;display:flex;justify-content:space-between}.segmented,.tabs{display:flex;align-items:center;padding:4px;gap:2px;border:1px solid #2b2935;background:#181722;border-radius:10px}.segment,.tab{padding:8px 12px;border:0;border-radius:7px;background:transparent;color:#8e899a;font-size:10px;font-weight:700}.segment.active,.tab.active{background:#342d42;color:#f0ddff}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.video-card{background:#181721;border:1px solid #292737;border-radius:15px;overflow:hidden;display:flex;flex-direction:column}.video-thumb{position:relative;display:block;aspect-ratio:16/9;background:linear-gradient(140deg,#554069,#222135);overflow:hidden}.video-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s;display:block}.video-thumb:hover img{transform:scale(1.04)}.play-circle{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#120f1fbc;border:1px solid #ffffff88;display:grid;place-items:center;color:white;width:45px;height:45px;border-radius:50%;font-size:18px;backdrop-filter:blur(6px)}.thumb-label{position:absolute;left:10px;top:10px;font-size:9px;color:#fff;background:#2d2343c9;padding:6px 9px;border-radius:6px}.video-body{padding:15px;display:flex;flex-direction:column;flex:1}.video-body h3{font-size:13px;line-height:1.6;margin:0 0 9px;min-height:39px}.video-channel{color:#898597;font-size:10px}.video-data{border-top:1px solid #2c2938;display:flex;justify-content:space-between;gap:5px;padding-top:13px;margin-top:auto;font-size:10px;color:#b6acbe}.video-data b{font-weight:700;color:#d7c2e9}.video-footer{color:#7d788c;font-size:10px;margin-top:13px}.news-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:15px}.news-feed{border:1px solid #2f2b3a;background:#171621;border-radius:17px;overflow:hidden}.news-item{padding:15px 20px;display:flex;gap:18px;align-items:start;border-bottom:1px solid #2b2935;transition:background .2s}.news-item:last-child{border-bottom:0}.news-item:hover{background:#211e2d}.news-date{flex:0 0 64px;color:#a69bb3;font-size:10px;font-weight:700;line-height:1.6}.news-date strong{display:block;color:var(--lilac);font-size:22px}.news-data{flex:1;min-width:0}.news-data .news-kicker{font-size:9px;letter-spacing:.7px;color:var(--lime);font-weight:800}.news-data h3{margin:7px 0;font-size:13px;line-height:1.5}.news-data p{margin:0;font-size:10px;line-height:1.7;color:#9892a7}.news-arrow{color:#bda0df;font-size:19px;margin-top:11px}.feature-panel{border:1px solid #48354c;background:#292031;border-radius:17px;overflow:hidden;display:flex;flex-direction:column}.feature-art{min-height:172px;background:linear-gradient(0deg,#2c1c39b9,#5c2b4d21),url('https://i.ytimg.com/vi/iXQsuYOyvos/hqdefault.jpg') center 39%/cover;position:relative;padding:17px;display:flex;justify-content:space-between;align-items:start}.feature-art-label{font-size:9px;letter-spacing:1px;background:#25192c80;padding:6px 7px;border-radius:5px}.feature-art-word{font-size:44px;font-weight:800;text-shadow:0 5px 30px #0009;align-self:end}.feature-art-word span{color:var(--lime);font-size:19px;vertical-align:top}.feature-details{padding:21px}.feature-category{color:var(--pink);font-size:9px;letter-spacing:1px;font-weight:800}.feature-details h3{font-size:24px;line-height:1.35;margin:12px 0}.feature-details p{font-size:11px;color:#b1a7b8;line-height:1.85}.feature-details a{display:inline-block;margin-top:8px;color:#e2c6ff;font-size:11px;font-weight:700}.schedule-list{background:#171620;border:1px solid #2a2835;border-radius:16px;overflow:hidden}.schedule-entry{display:grid;grid-template-columns:76px minmax(0,1fr) 145px;gap:16px;align-items:center;border-bottom:1px solid #2a2736;padding:21px}.schedule-entry:last-child{border-bottom:0}.schedule-day{font-size:28px;font-weight:800;color:var(--lilac)}.schedule-day span{display:block;font-size:9px;letter-spacing:1px;color:#9b94ab}.schedule-main h3{font-size:14px;margin:0 0 6px}.schedule-main p{font-size:10px;color:#8e889b;margin:0;line-height:1.7}.schedule-right{text-align:right}.schedule-right strong{font-size:11px;display:block;margin-bottom:6px}.schedule-right a{font-size:10px;color:var(--lime)}.source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.source-policy{padding:19px 20px;border-radius:14px;background:#16151f;border:1px solid #2a2736}.policy-icon{font-size:21px;color:var(--lilac);font-weight:800}.source-policy h3{font-size:14px;margin:14px 0 8px}.source-policy p{font-size:11px;line-height:1.8;color:#9f98ae;margin:0}.source-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.source-links a{border:1px solid #373144;background:#211d2a;border-radius:8px;padding:9px 12px;font-size:10px;color:#d9cbe6}.footer{border-top:1px solid #282634;min-height:150px;padding:27px 0 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#787286;font-size:9px;flex-wrap:wrap}.footer-brand{color:white;display:flex;align-items:center;gap:10px}.footer-brand>span{font-size:27px;font-weight:800;letter-spacing:-2px}.footer-brand>span span{color:var(--lime);font-size:13px;vertical-align:top}.footer-brand b{letter-spacing:1.8px;font-size:10px}.footer-note{max-width:190px;line-height:1.6;text-align:right}#streamChart .tick{font-family:'DM Sans',sans-serif;font-size:10px;fill:#938b9e}#streamChart .gridline{stroke:#3a3342;stroke-width:1;stroke-dasharray:4 5}#streamChart .chart-dot{fill:#daff9f;stroke:#232136;stroke-width:3}#streamChart .chart-line{stroke:#dcbaff;stroke-width:3;fill:none;stroke-linejoin:round;stroke-linecap:round}#streamChart .hover-area{fill:transparent;cursor:crosshair}#streamChart .tooltip-text{font-size:11px;fill:white;pointer-events:none}#streamChart .tooltip-box{fill:#383244;stroke:#8a6ea1;pointer-events:none}
+@media(max-width:1240px){.shell{grid-template-columns:206px minmax(0,1fr)}.sidebar{padding:25px 13px}.main{padding:0 26px}.logo-info strong{font-size:9px}.hero{height:400px}.hero-content{padding:31px}.hero-bottom{left:31px}.hero h1{font-size:103px}.platform-grid{grid-template-columns:repeat(4,1fr)}.kpi-grid{gap:9px}.chart-row{grid-template-columns:minmax(0,1fr) 260px}}
+@media(max-width:1000px){.sidebar{display:none;position:fixed;top:0;left:0;width:260px;height:100vh;background:#11101b;box-shadow:10px 0 50px #0009}.sidebar.open{display:flex}.shell{display:block}.mobile-menu{display:block}.main{max-width:950px;padding:0 26px}.platform-grid{grid-template-columns:repeat(4,1fr)}.hero-photo{inset:0 0 0 36%}.chart-row{grid-template-columns:minmax(0,1fr) 285px}}
+@media(max-width:730px){.topbar{height:65px}.main{padding:0 17px}.crumb{font-size:8px;letter-spacing:1px}.date-chip{display:none}.live-tiny{font-size:9px}.hero{height:450px}.hero-content{padding:25px 22px}.hero-photo{inset:0 0 0 27%;opacity:.59;background-position:30% center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 28%);mask-image:linear-gradient(90deg,transparent,#000 28%)}.hero::after{background:linear-gradient(0deg,#241a30e8,transparent 33%),linear-gradient(90deg,#2e203ecb 0%,#2b1b3b9c 57%,transparent 100%)}.hero-kicker{font-size:10px}.hero h1{font-size:95px}.hero-pill{font-size:8px}.hero-copy{font-size:11px;margin-top:20px}.hero-chinese{font-size:12px}.hero-buttons{flex-wrap:wrap}.hero-bottom{left:22px;right:22px;font-size:8px}.hero-bottom>span:last-child{display:none}.notice-banner{align-items:start;flex-direction:column;gap:6px}.notice-banner>a{padding-left:30px}.section{margin-bottom:34px}.section-heading{align-items:start;flex-direction:column;gap:12px}.section-heading h2{font-size:22px}.section-heading h2 span{font-size:17px}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.platform-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-row,.news-layout{grid-template-columns:minmax(0,1fr)}.chart-panel{padding:17px 14px}.chart-number strong{font-size:21px}.chart-panel-head h3{font-size:13px}.chart-side{min-height:270px}.chart-side-stats{margin-top:20px}.video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.video-body{padding:12px}.video-body h3{font-size:11px}.source-grid{grid-template-columns:1fr}.feature-panel{max-width:none}.schedule-entry{grid-template-columns:48px minmax(0,1fr);padding:15px;gap:11px}.schedule-right{grid-column:2;text-align:left;display:flex;gap:10px;align-items:center}.schedule-day{font-size:25px}.footer{justify-content:start}.footer-note{text-align:left}.chart-foot{flex-direction:column}.news-item{gap:11px;padding:14px}.news-date{flex-basis:46px;font-size:9px}.news-date strong{font-size:19px}}
+@media(max-width:440px){.video-grid{grid-template-columns:1fr}.kpi-card{min-height:135px;padding:15px}.hero h1{font-size:82px}.hero-star{font-size:38px}.hero-copy{max-width:270px}.section-meta{font-size:10px}.date-chip{display:none}.section-heading h2 span{display:block;margin-left:0;margin-top:6px}.platform-grid{gap:8px}.platform-card{padding:12px}.schedule-entry{align-items:start}}
+
+.logo-avatar{width:56px;height:56px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 10px 30px #0007;border:1px solid #ffffff20}.logo-avatar img{width:100%;height:100%;object-fit:cover;display:block}.hero-photo{inset:0 0 0 42%;background-image:linear-gradient(90deg,#2d1f3b 0%,#2a1c3718 34%,#241b3510 82%),url('https://i.ytimg.com/vi/iXQsuYOyvos/maxresdefault.jpg'),url('https://i.ytimg.com/vi/iXQsuYOyvos/hqdefault.jpg');background-position:center,right center;background-size:cover;filter:brightness(.98) saturate(.95);opacity:.95}.hero-copy{max-width:520px}.hero-thumbs{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}.hero-thumb{display:flex;align-items:center;gap:10px;background:#ffffff1a;border:1px solid #ffffff2d;padding:7px 10px;border-radius:12px;backdrop-filter:blur(8px);min-width:0}.hero-thumb img{width:72px;height:46px;object-fit:cover;border-radius:8px;display:block}.hero-thumb span{font-size:10px;font-weight:700;color:#f4effa;line-height:1.5}.spotlight-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:19px 0 33px}.spotlight-card{display:block;padding:18px 18px 16px;border-radius:15px;background:linear-gradient(180deg,#1c1a27,#15141e);border:1px solid #2f2a3c;transition:.2s;min-height:144px}.spotlight-card:hover{transform:translateY(-2px);background:#211f2c}.spotlight-label{display:inline-flex;align-items:center;gap:8px;font-size:9px;color:#d6f9a0;background:#2a2637;border:1px solid #3b3450;border-radius:999px;padding:6px 10px;font-weight:800;letter-spacing:.8px}.spotlight-card h3{font-size:14px;line-height:1.55;margin:13px 0 8px}.spotlight-card p{font-size:10px;line-height:1.8;color:#a9a4b4;margin:0}.spotlight-foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:10px;color:#d7c2e9}.platform-card{padding:16px 16px 15px;min-height:164px}.platform-head{margin-bottom:10px}.platform-symbol{width:42px;height:42px;border-radius:12px;font-size:19px}.platform-open{font-size:22px;font-weight:800;color:#dcc7ef}.platform-name{font-size:14px;margin:10px 0 4px}.platform-main{font-size:22px;font-weight:800;letter-spacing:-.4px;margin:10px 0 6px;color:#f5ecff}.platform-sub{font-size:10px;line-height:1.55;color:#c9c3d2;min-height:30px}.platform-updated{font-size:9px;color:#8f8a99;margin-top:10px;border-top:1px solid #2a2736;padding-top:10px}.video-thumb{aspect-ratio:16/9.2}.video-body h3{min-height:auto}.video-data{flex-wrap:wrap;row-gap:6px}.video-data span{display:inline-flex;gap:5px;align-items:center}.video-channel{line-height:1.6}.feature-art{background:linear-gradient(0deg,#2c1c39b9,#5c2b4d21),url('https://i.ytimg.com/vi/iXQsuYOyvos/maxresdefault.jpg'),url('https://i.ytimg.com/vi/iXQsuYOyvos/hqdefault.jpg') center 39%/cover}@media(max-width:730px){.spotlight-strip{grid-template-columns:1fr}.hero-thumbs{gap:8px}.hero-thumb{width:100%}.hero-thumb img{width:64px;height:42px}.platform-open{font-size:24px}.platform-card{min-height:156px}}
+/* v3 same-origin portrait, fixed fallback, and platform-specific video views */
+.logo-avatar{flex:0 0 55px;display:block}.logo-avatar img{width:100%;height:100%;object-fit:cover;object-position:center 24%}
+.hero-photo{inset:0 0 0 44%;background-image:linear-gradient(90deg,#20182b 0%,transparent 45%),url('./assets/oa-portrait.jpg');background-position:center,center 25%;background-size:cover;background-repeat:no-repeat;filter:brightness(.95) saturate(.95);opacity:.98}
+.hero-photo-credit{position:absolute;bottom:47px;right:24px;z-index:4;font-size:9px;color:#ffffffd5;text-shadow:0 2px 8px #000;padding:6px 10px;border-radius:20px;background:#120d1999}
+.hero-thumb img{object-fit:cover;object-position:center 22%}.hero-thumb{transition:transform .2s}.hero-thumb:hover{transform:translateY(-2px)}
+.sidebar-video-subnav{padding:2px 0 7px 40px;display:flex;flex-direction:column;gap:2px}.sidebar-video-subnav>a{font-size:11px;color:#a7a1b7;padding:8px 11px;min-height:35px;border-left:1px solid #48405d;border-radius:0 9px 9px 0;transition:.2s}.sidebar-video-subnav>a:hover,.sidebar-video-subnav>a.active{color:#fff;background:#322940;border-left:2px solid #d8bcff}
+.video-controls{display:flex;flex-direction:column;gap:9px;align-items:flex-start;max-width:100%}.video-platform-tabs{max-width:100%;overflow-x:auto;scrollbar-width:thin}.video-filters{display:flex;gap:8px;align-items:center;justify-content:flex-end;flex-wrap:wrap;width:100%}.video-filters select{background:#211d2c;border:1px solid #383247;border-radius:9px;padding:10px 12px;color:#f1e9fc;font-size:11px}.video-sort-note{background:#181621;color:#a9a0b7;font-size:11px;border:1px solid #2e293a;border-radius:10px;padding:10px 14px;margin:0 0 15px;line-height:1.65}.video-data{margin-top:13px;justify-content:space-between}.video-metric-caution{font-size:10px;color:#a4a0af;margin-top:10px;line-height:1.65}.video-linkout{display:inline-flex;align-items:center;gap:9px;color:#d9ff9d;font-size:11px;font-weight:800;margin-top:13px;padding:8px 10px;border:1px solid #506242;border-radius:10px;width:max-content}.video-linkout span{font-size:16px}.video-card .video-source-tier{font-size:10px;color:#e0cbef;margin:7px 0 3px}.video-card .video-thumb-fallback{font-size:10px;color:#ffd7ed;position:absolute;bottom:10px;right:10px;background:#201523ce;padding:5px 8px;border-radius:7px}.video-empty{grid-column:1/-1;min-height:175px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;justify-content:center;padding:27px;border-radius:16px;border:1px dashed #443952;background:#191622}.video-empty a{color:#d7fca2;font-size:12px}.video-empty p{margin:0;color:#a9a0b7;font-size:12px}
+@media(max-width:900px){.hero-photo{inset:0 0 0 36%;background-position:center,center 16%}.hero-photo-credit{right:11px;bottom:9px}.sidebar-video-subnav{padding-left:35px}}
+@media(max-width:730px){.hero-photo{inset:0 0 0 24%;opacity:.55;background-position:center,center 15%}.hero-photo-credit{display:none}.video-controls{align-items:stretch}.video-platform-tabs{width:100%}.video-filters{justify-content:flex-start}}
+
+/* V4: editorial layout & photographic cover */
+:root{--lime:#c9ead3;--lilac:#e9d1ef;--pink:#eeb5cc;--bg:#0f1017;--panel:#191920;--border:#35303c}
+.shell{grid-template-columns:238px minmax(0,1fr)}.main{max-width:1660px}.sidebar{background:#101016}.logo-info strong{font-size:12px;letter-spacing:.3px;line-height:1.4}.logo-avatar{width:58px;height:58px;flex:0 0 58px;border-radius:15px}.hero{min-height:440px;height:auto;background:#221e2e;border:1px solid #695773;isolation:isolate}.hero-content{padding:50px 52px 78px;max-width:67%}.hero-photo{inset:0 0 0 39%;background-image:url('./assets/oa-portrait.jpg');background-size:cover;background-position:center 33%;opacity:1;filter:brightness(.87) saturate(.94);mask-image:none;-webkit-mask-image:none}.hero::after{background:linear-gradient(90deg,#231b30 0%,#231b30fa 30%,#231b30ba 52%,#221a2b12 92%),linear-gradient(0deg,#221b2cdb,transparent 36%)}.hero-shine{pointer-events:none;z-index:2;opacity:.28}.hero h1{font-size:clamp(72px,9vw,124px);letter-spacing:-7px;line-height:1;margin:14px 0 6px;font-weight:800}.hero-star{font-size:44px}.hero-chinese{font-size:13px;letter-spacing:1px}.hero-copy{font-size:13px;max-width:500px;line-height:1.8}.hero-pill{font-size:10px;letter-spacing:1px}.hero-photo-credit{bottom:19px;right:22px;left:auto;z-index:6}.hero-photo-credit a{color:#fff;font-size:10px;background:#221b30a8;padding:9px 13px;border-radius:9px}.hero-bottom{font-size:10px}.primary-button{background:#ead2ed;color:#231827}.secondary-button{background:#ffffff1c}.hero-titling{margin-top:22px}.section-heading h2{letter-spacing:-.4px}.profile-layout{background:linear-gradient(135deg,#201b2a,#19181f);border:1px solid #332d3b;border-radius:20px;padding:20px;display:grid;grid-template-columns:minmax(220px,0.38fr) 1fr;gap:26px;min-height:340px}.profile-photo{position:relative;min-height:280px;border-radius:14px;overflow:hidden;background:#493b4f}.profile-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:55% 30%}.profile-photo::after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#120e18c8)}.profile-photo span{position:absolute;z-index:2;left:20px;bottom:18px;font-size:24px;font-weight:800;letter-spacing:2px}.profile-info{padding:24px 15px 14px 0}.profile-eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#b9e8cb}.profile-info h3{font-size:52px;margin:13px 0 6px;letter-spacing:-2px}.profile-info h3 span{font-size:25px;font-weight:500;color:#e2bcdc;letter-spacing:0}.profile-info p{font-size:12px;line-height:1.9;color:#bcb2c3;margin:0 0 20px}.profile-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.profile-facts div{border-top:1px solid #403648;padding-top:11px}.profile-facts small{font-size:10px;color:#8e8499;display:block;margin-bottom:7px}.profile-facts strong{font-size:13px;font-weight:600}.profile-source{display:inline-block;margin-top:18px;font-size:12px;color:#e8caec;padding:10px 0}.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:215px;gap:13px}.gallery-card{min-width:0;min-height:0;overflow:hidden;background:#1d1b26;border:1px solid #3e3543;border-radius:16px;position:relative;display:flex;flex-direction:column}.gallery-card.gallery-lead{grid-row:span 2;grid-column:span 2}.gallery-image{flex:1;position:relative;min-height:0;overflow:hidden}.gallery-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}.gallery-card:hover img{transform:scale(1.04)}.gallery-image span{position:absolute;top:12px;left:12px;background:#211725ca;border:1px solid #ffffff29;border-radius:999px;padding:7px 11px;font-size:10px;color:#fff}.gallery-description{padding:10px 12px;display:flex;flex-direction:column;gap:4px;background:#1b1822;max-height:74px}.gallery-description strong{font-size:11px;line-height:1.35}.gallery-description small{font-size:9px;color:#a8a0ae}.gallery-lead .gallery-description{padding:14px 18px}.gallery-lead .gallery-description strong{font-size:16px}.event-filter{appearance:none;cursor:pointer;background:#211d2c;color:#e3d5ec;border:1px solid #554460;border-radius:9px;font-size:11px;padding:10px 30px 10px 11px;max-width:200px}.video-controls{flex-wrap:wrap}.video-controls .tabs{overflow-x:auto}.event-video-btn{border:1px solid #605169;background:#382941;color:#f0d9fb;font-size:11px;padding:8px 12px;border-radius:9px;margin:8px 0 0;cursor:pointer}.event-video-btn:hover{background:#4d3356}.schedule-right{min-width:125px}.event-hint{font-size:11px;color:#948a9c;line-height:1.6;margin-top:11px}.video-source-tier{font-size:10px}.footer-brand b{letter-spacing:.8px}.quick-links a b{font-size:17px}.gallery-section{scroll-margin-top:60px}
+@media(max-width:1150px){.hero-content{max-width:74%;padding:38px 36px 65px}.gallery-grid{grid-auto-rows:180px}.profile-layout{grid-template-columns:0.8fr 1.2fr}.profile-info{padding:12px 8px 8px 0}}
+@media(max-width:750px){.hero{min-height:485px}.hero-content{max-width:95%;padding:24px 22px 90px}.hero-photo{inset:0 0 0 28%;background-position:center;opacity:.78}.hero::after{background:linear-gradient(90deg,#231a30e9 0%,#241a2dc0 45%,#22182a30 100%),linear-gradient(0deg,#21182ded,transparent 38%)}.hero h1{font-size:84px}.hero-copy{max-width:340px}.hero-photo-credit{bottom:50px;right:10px}.hero-bottom{bottom:18px}.profile-layout{display:flex;flex-direction:column;padding:13px;gap:10px}.profile-photo{min-height:290px}.profile-info{padding:12px}.profile-info h3{font-size:42px}.profile-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:185px}.gallery-card.gallery-lead{grid-row:span 2;grid-column:span 2}.video-controls{gap:8px}.event-filter{max-width:none;width:100%}}
+@media(max-width:430px){.hero{min-height:470px}.hero h1{font-size:78px}.hero-content{max-width:100%}.hero-copy{max-width:290px}.gallery-grid{grid-auto-rows:165px}.gallery-description strong{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+  <a class="logo-block" href="#home"><span class="logo-avatar"><img src="./assets/oa-portrait.jpg" alt="OA 官方预告图"/></span><span class="logo-info"><strong>OA 数据总览</strong><small>OA · DAILY UPDATE</small></span></a>
+  <div class="side-label">EXPLORE / 探索</div>
+  <nav class="side-nav" aria-label="主导航">
+    <a href="#home" class="nav-link active"><span class="nav-icon">◈</span> 概览总台 <i>01</i></a>
+    <a href="#profile" class="nav-link"><span class="nav-icon">♡</span> OA 个人资料 <i>02</i></a>
+    <a href="#gallery" class="nav-link"><span class="nav-icon">▧</span> 今日美图 <i>03</i></a>
+    <a href="#overview" class="nav-link"><span class="nav-icon">▦</span> 核心数据 <i>04</i></a>
+    <a href="#trends" class="nav-link"><span class="nav-icon">⌁</span> 增长曲线 <i>05</i></a>
+    <a href="#fancams" class="nav-link"><span class="nav-icon">▷</span> OA直拍热榜 <i>06</i></a>
+    <div class="sidebar-video-subnav" aria-label="按平台查看OA视频"><a href="#fancams" data-nav-platform="YouTube">▶ YouTube</a><a href="#fancams" data-nav-platform="Bilibili">▣ Bilibili / B站</a><a href="#fancams" data-nav-platform="Douyin">♪ 抖音</a><a href="#fancams" data-nav-platform="TikTok">♫ TikTok</a><a href="#fancams" data-nav-platform="Weibo">◎ 微博</a></div>
+    <a href="#news" class="nav-link"><span class="nav-icon">✎</span> 媒体快讯 <i>07</i></a>
+    <a href="#schedule" class="nav-link"><span class="nav-icon">◷</span> 官方行程 <i>08</i></a>
+    
+  </nav>
+  <div class="side-label side-label-second">COLLECTIONS / 收藏</div>
+  <div class="quick-links"><a href="https://www.youtube.com/@A2OLITE" target="_blank" rel="noopener noreferrer"><span class="social-dot yt">▶</span> Official YouTube <b>↗</b></a><a href="https://weibo.com/u/8428908687" target="_blank" rel="noopener noreferrer"><span class="social-dot wb">◎</span> Official Weibo <b>↗</b></a><a href="https://ichart.kr/" target="_blank" rel="noopener noreferrer"><span class="social-dot ic">✦</span> iChart <b>↗</b></a></div>
+  <div class="side-bottom"><span class="greenpulse"></span><span>FAN-MADE · SOURCE FIRST</span><p>用真实的数据，记录每一次闪光。</p></div>
+</aside>
+<main class="main" id="home">
+ <header class="topbar"><div class="crumb"><span class="top-spark">✦</span> OA DAILY <span class="chevron">/</span> DAILY DASHBOARD</div><div class="top-actions"><span class="live-tiny"><span class="greenpulse"></span> 独立公开数据站</span><span class="date-chip" id="dateChip">2026.10.21</span><button class="mobile-menu" id="menuBtn" aria-label="展开菜单">☰</button></div></header>
+ <section class="hero" aria-label="OA个人数据站介绍"><div class="hero-photo" role="img" aria-label="OA 官方个人写真"></div><div class="hero-shine"></div><div class="hero-photo-credit"><a href="https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos" target="_blank" rel="noopener noreferrer">OA 官方写真 · 查看来源 ↗</a></div><div class="hero-content"><div class="hero-pill"><span class="tiny-star">✳</span> A2O LITE · MEMBER OA <span class="tiny-dot">●</span> OA</div><div class="hero-titling"><span class="hero-kicker">OA / DAILY VIEW</span><h1>O<span>A</span><span class="hero-star">✧</span></h1><div class="hero-chinese">오아 <span class="hero-line"></span> 个人数据与影像档案</div></div><p class="hero-copy">一站看遍 OA 的舞台、直拍、媒体美图和每日数据。<br/>数据按可核实的公开来源持续更新｜互动量以实际采集时间为准。</p><div class="hero-buttons"><a class="primary-button" href="#overview">探索今日数据 <span>↗</span></a><a class="secondary-button" href="#fancams">查看官方视频 <span>↗</span></a></div></div><div class="hero-bottom"><span>DEBUT ERA <b>NEON / 2026</b></span><span>UPDATED DAILY <b>✦ OA ARCHIVE</b></span></div></section>
+ <section class="spotlight-strip" id="spotlightGrid"></section>
+ <div class="notice-banner" style="display:none"><div><span class="notice-icon">✧</span><b>档案原则</b> 团体成绩不冒充OA个人成绩；未经原始来源核实的数据不会填入数字。</div><a href="#sources">查看统计口径 ↗</a></div>
+ <section class="section profile-section" id="profile"><div class="section-heading"><div><div class="overline">01 / MEET OA</div><h2>关于 OA <span>Member profile</span></h2></div><span class="muted">公开资料 · 信息以原始报道为准</span></div><div class="profile-layout" id="profileLayout"></div></section>
+ <section class="section gallery-section" id="gallery"><div class="section-heading"><div><div class="overline">02 / PHOTO DIARY</div><h2>今日美图 <span>OA visual diary</span></h2></div><span class="muted">官方写真、舞台封面与媒体原图入口</span></div><div class="gallery-grid" id="galleryGrid"></div></section>
+ <section class="section" id="overview"><div class="section-heading"><div><div class="overline">03 / THE NUMBERS</div><h2>今日数据总览 <span>Daily pulse</span></h2></div><div class="section-meta" id="updatedAt">最近核对 · —</div></div><div class="kpi-grid" id="kpiGrid"></div><div class="section-subhead"><h3>跨平台追踪 <span>Platform coverage</span></h3><span class="muted">仅呈现已核验数据</span></div><div class="platform-grid" id="platformGrid"></div></section>
+ <section class="section" id="trends"><div class="section-heading"><div><div class="overline">04 / LISTENING SIGNALS</div><h2>每日增长趋势 <span>Trend monitor</span></h2></div><div class="segmented" role="group" aria-label="时间范围"><button class="segment active" data-range="7">近7日</button><button class="segment" data-range="30">近30日</button><button class="segment" data-range="all">全部</button></div></div><div class="chart-row"><div class="chart-panel"><div class="chart-panel-head"><div><span class="mini-tag group-tag">团体音源 · 非OA个人数据</span><h3>《NEON》 Spotify 韩国完整日榜</h3><p>每日播放次数 · 不等于独立听众 · 日期为平台结算日</p></div><div class="chart-number"><strong id="trendLatest">—</strong><span id="trendChange">—</span></div></div><div class="svg-chart" id="streamChart" aria-label="NEON Spotify 韩国完整日榜历史曲线"></div><div class="chart-foot"><span>只展示有原始依据的历史记录；不会插值伪造缺失日期</span><a href="https://kworb.net/spotify/country/kr_daily.html" target="_blank" rel="noopener noreferrer">查看逐日榜 ↗</a></div></div><div class="chart-side"><div class="chart-side-top"><span class="sparkle">✧</span><span class="mini-tag">MILESTONES</span><h3>NEON<br/>ALL-KILL WATCH</h3><p>韩国音源综合榜追踪</p></div><div class="chart-side-stats"><div><span>iChart AK 累计</span><strong id="akValue">待复核</strong></div><div><span>iChart PAK 累计</span><strong id="pakValue">待复核</strong></div><div><span>iChart 周累计排名</span><strong id="weeklyValue">待复核</strong></div></div><a href="https://ichart.kr/" target="_blank" rel="noopener noreferrer">前往iChart实时查询 <span>↗</span></a></div></div></section>
+ <section class="section" id="fancams"><div class="section-heading"><div><div class="overline">05 / THE VISUAL ARCHIVE</div><h2>OA直拍与作品 <span>By stage &amp; platform</span></h2></div><div class="video-controls"><select class="event-filter" id="eventFilter" aria-label="按节目筛选视频"><option value="all">全部活动</option></select><div class="tabs video-platform-tabs" id="videoPlatformTabs"><button data-platform="all" class="tab active">全部</button><button data-platform="YouTube" class="tab">YouTube</button><button data-platform="Bilibili" class="tab">Bilibili</button><button data-platform="Douyin" class="tab">抖音</button><button data-platform="TikTok" class="tab">TikTok</button><button data-platform="Weibo" class="tab">微博</button></div><div class="video-filters"><div class="tabs" id="videoTabs"><button data-type="solo" class="tab active">OA个人</button><button data-type="group" class="tab">团体相关</button><button data-type="all" class="tab">全部作品</button></div><select id="videoSort" aria-label="视频排序"><option value="trending">今日热度优先</option><option value="views">累计观看</option><option value="newest">最近发布</option></select></div></div></div><div class="video-sort-note" id="videoSortNote"></div><div class="video-grid" id="videoGrid"></div><div class="video-footer">优先展示OA个人公开视频；不存在24小时增量记录的平台会按累计播放或发布时间呈现，不能称作真实日榜。</div></section>
+ <section class="section" id="news"><div class="section-heading"><div><div class="overline">06 / PRESS ROOM</div><h2>OA 最新媒体动态 <span>Newsroom</span></h2></div><span class="muted">原文直达 · 不转载媒体高清摄影原图</span></div><div class="news-layout"><div class="news-feed" id="newsFeed"></div><aside class="feature-panel"><div class="feature-art"><span class="feature-art-label">SPOTLIGHT / 2026</span><span class="feature-art-word">OA<span>✳</span></span></div><div class="feature-details"><span class="feature-category">OFFICIAL DEBUT VISUAL</span><h3>从第一支预告<br/>到第一座奖杯</h3><p>在这里回看OA出道序章。OA个人预告于2026年10月8日发布，10月13日随A2O LITE正式出道。</p><a href="https://youtu.be/iXQsuYOyvos" target="_blank" rel="noopener noreferrer">查看OA官方出道预告 ↗</a></div></aside></div></section>
+ <section class="section" id="schedule"><div class="section-heading"><div><div class="overline">07 / CALENDAR</div><h2>公开行程日历 <span>Official schedule</span></h2></div><span class="muted">仅列公开核实的节目与活动，不追踪私人行程</span></div><div class="schedule-list" id="scheduleList"></div><p class="event-hint">点击“查看本场视频”将自动筛选同场直拍；录制、播出、视频上传日期可能不同。</p></section>
+ <section class="section sources-section" id="sources" style="display:none"><div class="section-heading"><div><div class="overline">06 / OPEN METHODOLOGY</div><h2>数据来源与透明度 <span>Transparency</span></h2></div></div><div class="source-grid"><div class="source-policy"><span class="policy-icon">01</span><h3>逐条追溯</h3><p>每个榜单、视频和新闻均尽量直接关联原始页面，附结算日期或采集时间。</p></div><div class="source-policy"><span class="policy-icon">02</span><h3>空白优于猜测</h3><p>无授权API或可靠公开数据时展示“待核实”，不把截图、播放量和人数相互混淆。</p></div><div class="source-policy"><span class="policy-icon">03</span><h3>尊重版权与隐私</h3><p>作品使用官方视频缩略图并链接原视频；新闻摄影只提供出处，不保存或重发未经授权的图片。</p></div></div><div class="source-links" id="sourceLinks"></div></section>
+ <footer class="footer"><div class="footer-brand"><span>OA<span>✳</span></span><b>DATA OVERVIEW</b></div><div>非官方独立粉丝档案 · NOT AFFILIATED WITH A2O ENTERTAINMENT</div><div class="footer-note">Made with attention. Powered by verified public sources. <span id="footerDate"></span></div></footer>
+ </main>
+</div>
+<script id="embedded-data" type="application/json">{
+  "meta": {
+    "name": "OA 数据总览",
+    "subtitle": "OA 数据实时更新 · 公共档案",
+    "edition": "2026-10-21",
+    "updated_at": "2026-10-21T13:06:00+08:00",
+    "verified_at": "2026-10-21T13:06:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "notice": "个人作品、新闻与节目日程每日整理；互动指标只在平台原始数据成功采集时更新。"
+  },
+  "spotlight": [
+    {
+      "label": "OA / 10.21",
+      "title": "今日美图｜MBC电台上班路",
+      "detail": "OA个人照片及同框图集，点击直达韩国媒体原始摄影报道。",
+      "source": "https://www.sportschosun.com/en/celebrity/2026-10-21/202610210100134300008753",
+      "type": "媒体·写真"
+    },
+    {
+      "label": "OA / 10.19",
+      "title": "新收录｜SHOW K-POP 个人直拍×2",
+      "detail": "竖屏与横屏各一条4K OA专属视频，补足出道首周舞台档案。",
+      "source": "https://www.youtube.com/watch?v=pbmb_TsEugU",
+      "type": "OA·直拍"
+    },
+    {
+      "label": "A2O LITE / 10.20",
+      "title": "THE SHOW｜7,331分出道首冠",
+      "detail": "正式舞台与安可直拍已配对行程；OA单人直拍原链待验证。",
+      "source": "https://www.soompi.com/article/1880111wpp/watch-a2o-lite-takes-1st-ever-win-on-the-show-for-neon",
+      "type": "团体·成绩"
+    }
+  ],
+  "kpis": [
+    {
+      "id": "official_fancams",
+      "label": "已收录OA个人视频",
+      "value": 5,
+      "unit": "条",
+      "scope": "OA个人",
+      "description": "包含个人预告、个人双人镜头及各台官方直拍",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_views",
+      "label": "OA直拍累计观看",
+      "value": null,
+      "unit": "次",
+      "scope": "OA个人",
+      "description": "待YouTube Data API验证；不使用第三方截图。",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_likes",
+      "label": "OA直拍累计点赞",
+      "value": null,
+      "unit": "次",
+      "scope": "OA个人",
+      "description": "待YouTube Data API验证。",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "id": "oa_followers",
+      "label": "OA个人官方账号粉丝",
+      "value": null,
+      "unit": "人",
+      "scope": "OA个人",
+      "description": "目前未确认可独立归属OA的官方个人社交账号；不得以团体账户代替。",
+      "source": "https://linktr.ee/a2o.lite"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "YouTube",
+      "icon": "▶",
+      "scope": "OA直拍/官方内容",
+      "metric": "views",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待接入官方 API",
+      "source": "https://youtu.be/p1JBFI77kWo"
+    },
+    {
+      "name": "微博",
+      "icon": "◎",
+      "scope": "团体官方 / OA相关单帖",
+      "metric": "post-engagement",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 暂无稳定开放接口",
+      "source": "https://weibo.com/u/8428908687"
+    },
+    {
+      "name": "Bilibili",
+      "icon": "▣",
+      "scope": "官方团体内容及OA二创",
+      "metric": "views",
+      "value": null,
+      "last_updated": null,
+      "status": "已有可追溯公开视频 · 互动待校验",
+      "source": "https://space.bilibili.com/670061998"
+    },
+    {
+      "name": "抖音",
+      "icon": "♪",
+      "scope": "官方单帖 / OA话题",
+      "metric": "engagement",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补单帖互动",
+      "source": "https://v.douyin.com/ZzHgu4mfISQ/"
+    },
+    {
+      "name": "TikTok",
+      "icon": "♫",
+      "scope": "官方视频 / 音源使用次数",
+      "metric": "sound-usage",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补 sound 使用量",
+      "source": "https://www.tiktok.com/@a2o.lite"
+    },
+    {
+      "name": "Instagram",
+      "icon": "◉",
+      "scope": "团体官方账号",
+      "metric": "followers",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补粉丝数",
+      "source": "https://www.instagram.com/a2o.lite/"
+    },
+    {
+      "name": "X / Twitter",
+      "icon": "𝕏",
+      "scope": "团体官方账号",
+      "metric": "followers",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补粉丝数",
+      "source": "https://x.com/A2O_LITE"
+    },
+    {
+      "name": "小红书",
+      "icon": "✦",
+      "scope": "OA相关公开笔记",
+      "metric": "posts",
+      "value": null,
+      "last_updated": null,
+      "status": "已巡检 / 待补公开笔记量",
+      "source": null
+    }
+  ],
+  "videos": [
+    {
+      "id": "pbmb_TsEugU",
+      "title": "OA｜SHOW K-POP 4K 个人直拍",
+      "channel": "Arirang TV / SHOW K-POP",
+      "date": "2026-10-19",
+      "platform": "YouTube",
+      "type": "竖版个人直拍",
+      "oa": true,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=pbmb_TsEugU",
+      "thumbnail": "./assets/yt_pbmb_TsEugU.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "show-kpop"
+    },
+    {
+      "id": "eB6vt-ne3A4",
+      "title": "OA｜SHOW K-POP 4K 横屏个人直拍",
+      "channel": "Arirang TV / SHOW K-POP",
+      "date": "2026-10-19",
+      "platform": "YouTube",
+      "type": "横版个人直拍",
+      "oa": true,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=eB6vt-ne3A4",
+      "thumbnail": "./assets/yt_eB6vt-ne3A4.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "show-kpop"
+    },
+    {
+      "id": "-TGCURaf8f8",
+      "title": "OA × AIJING｜SHOW K-POP 双人4K舞台镜头",
+      "channel": "Arirang TV / SHOW K-POP",
+      "date": "2026-10-19",
+      "platform": "YouTube",
+      "type": "双人镜头",
+      "oa": true,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=-TGCURaf8f8",
+      "thumbnail": "./assets/yt_-TGCURaf8f8.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "show-kpop"
+    },
+    {
+      "id": "p1JBFI77kWo",
+      "title": "OA｜M COUNTDOWN 4K 官方个人直拍",
+      "channel": "M2 / M COUNTDOWN",
+      "date": "2026-10-15",
+      "platform": "YouTube",
+      "type": "个人直拍",
+      "oa": true,
+      "verified": true,
+      "thumbnail": "./assets/yt_p1JBFI77kWo.jpg",
+      "url": "https://www.youtube.com/watch?v=p1JBFI77kWo",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube视频封面",
+      "event_id": "mcountdown"
+    },
+    {
+      "id": "iXQsuYOyvos",
+      "title": "OA｜官方出道个人预告",
+      "channel": "A2O LITE Official",
+      "date": "2026-10-08",
+      "platform": "YouTube",
+      "type": "个人预告",
+      "oa": true,
+      "verified": true,
+      "thumbnail": "./assets/yt_iXQsuYOyvos.jpg",
+      "url": "https://www.youtube.com/watch?v=iXQsuYOyvos",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube视频封面",
+      "event_id": "debut"
+    },
+    {
+      "id": "zzFt3QY6kC4",
+      "title": "A2O LITE｜THE SHOW《NEON》正式舞台（OA出镜）",
+      "channel": "THE K-POP / SBS LIFE",
+      "date": "2026-10-20",
+      "platform": "YouTube",
+      "type": "团体舞台",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=zzFt3QY6kC4",
+      "thumbnail": "./assets/yt_zzFt3QY6kC4.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "the-show"
+    },
+    {
+      "id": "BkaGqUxvN6w",
+      "title": "A2O LITE｜THE SHOW 4K 团体直拍（OA出镜）",
+      "channel": "THE K-POP / SBS LIFE",
+      "date": "2026-10-20",
+      "platform": "YouTube",
+      "type": "团体直拍",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=BkaGqUxvN6w",
+      "thumbnail": "./assets/yt_BkaGqUxvN6w.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "the-show"
+    },
+    {
+      "id": "c7REvlMKFro",
+      "title": "A2O LITE｜THE SHOW 初一位及安可舞台",
+      "channel": "THE K-POP / SBS LIFE",
+      "date": "2026-10-20",
+      "platform": "YouTube",
+      "type": "团体安可",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=c7REvlMKFro",
+      "thumbnail": "./assets/yt_c7REvlMKFro.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "the-show"
+    },
+    {
+      "id": "d2TTCQsHZfY",
+      "title": "A2O LITE｜THE SHOW 首冠安可4K直拍",
+      "channel": "THE K-POP / SBS LIFE",
+      "date": "2026-10-20",
+      "platform": "YouTube",
+      "type": "团体安可直拍",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=d2TTCQsHZfY",
+      "thumbnail": "./assets/yt_d2TTCQsHZfY.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "the-show"
+    },
+    {
+      "id": "n9HYtcN6W4w",
+      "title": "A2O LITE｜M COUNTDOWN 8K 团体直拍",
+      "channel": "M2 / M COUNTDOWN",
+      "date": "2026-10-15",
+      "platform": "YouTube",
+      "type": "团体直拍",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=n9HYtcN6W4w",
+      "thumbnail": "./assets/yt_n9HYtcN6W4w.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "mcountdown"
+    },
+    {
+      "id": "29Bn6d82Qgc",
+      "title": "A2O LITE｜MBC FM4U《正午的希望曲》直播回放",
+      "channel": "MBC RADIO Official",
+      "date": "2026-10-21",
+      "platform": "YouTube",
+      "type": "团体电台",
+      "oa": false,
+      "verified": true,
+      "thumbnail": "./assets/yt_29Bn6d82Qgc.jpg",
+      "url": "https://www.youtube.com/watch?v=29Bn6d82Qgc",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "views_24h": null,
+      "thumbnail_source": "YouTube视频封面",
+      "event_id": "radio"
+    },
+    {
+      "id": "4LSlCfqF7Sc",
+      "title": "A2O LITE × A2O SOUL｜Welcome to Soulite 舞台",
+      "channel": "A2O WORLD",
+      "date": "2026-10-12",
+      "platform": "YouTube",
+      "type": "出道演出",
+      "oa": false,
+      "verified": true,
+      "url": "https://www.youtube.com/watch?v=4LSlCfqF7Sc",
+      "thumbnail": "./assets/yt_4LSlCfqF7Sc.jpg",
+      "thumbnail_source": "YouTube视频封面",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "source_tier": "官方发布",
+      "metric_source": "YouTube官方API（尚待接入）",
+      "event_id": "showcase"
+    },
+    {
+      "id": "BV1joJy6rE9C",
+      "title": "OA《NEON》4K出道个人直拍｜中文站搬运",
+      "channel": "IdolCrush（非官方转载）",
+      "date": "2026-10-15",
+      "platform": "Bilibili",
+      "type": "OA个人直拍·转载",
+      "oa": true,
+      "verified": true,
+      "source_tier": "非官方转载",
+      "thumbnail": "./assets/oa-portrait.jpg",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1joJy6rE9C/",
+      "views": null,
+      "views_approx": "约16.4万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "公开检索页面所示约16.4万播放，约10/18收录；并非今天的实时数值",
+      "metric_source": "B站视频公开页面搜索快照",
+      "event_id": "mcountdown",
+      "label_nonofficial": true
+    },
+    {
+      "id": "BV1eWJy6PEgH",
+      "title": "《NEON》出道舞台+OA个人直拍合集",
+      "channel": "pcyxjy（非官方转载）",
+      "date": "2026-10-15",
+      "platform": "Bilibili",
+      "type": "含OA个人分P",
+      "oa": true,
+      "verified": true,
+      "source_tier": "非官方转载",
+      "thumbnail": "./assets/oa-portrait.jpg",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1eWJy6PEgH/",
+      "views": null,
+      "views_approx": "约148.5万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "该总播放数属于5P合集，不能归因于OA个人直拍；约10/18收录",
+      "metric_source": "B站合集公开搜索快照",
+      "event_id": "mcountdown",
+      "label_nonofficial": true
+    },
+    {
+      "id": "BV1VVpo6gEYg",
+      "title": "A2O LITE《NEON》官方音乐视频（含OA）",
+      "channel": "A2O_WORLD 官方",
+      "date": "2026-10-12",
+      "platform": "Bilibili",
+      "type": "团体官方 MV",
+      "oa": false,
+      "verified": true,
+      "source_tier": "官方发布·团体",
+      "thumbnail": "./assets/oa-portrait.jpg",
+      "thumbnail_source": "OA官宣写真（非视频原封面）",
+      "url": "https://www.bilibili.com/video/BV1VVpo6gEYg/",
+      "views": null,
+      "views_approx": "约280万",
+      "likes": null,
+      "comments": null,
+      "views_24h": null,
+      "updated_at": null,
+      "approx_note": "团体官方MV，含OA但并非OA个人视频；约10/18收录",
+      "metric_source": "B站公开搜索快照",
+      "event_id": "debut",
+      "label_nonofficial": false
+    }
+  ],
+  "group_charts": [
+    {
+      "date": "2026-10-16",
+      "rank": 1,
+      "streams": 299898,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-17",
+      "rank": 1,
+      "streams": 270600,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://www.kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-18",
+      "rank": 1,
+      "streams": 249738,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    },
+    {
+      "date": "2026-10-19",
+      "rank": 1,
+      "streams": 281156,
+      "country": "韩国",
+      "type": "Spotify完整日榜",
+      "source": "https://kworb.net/spotify/country/kr_daily.html"
+    }
+  ],
+  "all_kill": {
+    "song": "NEON",
+    "rak": "曾达成（历史常用说法）",
+    "rak_count": null,
+    "ak": 0,
+    "pak": 0,
+    "weekly_rank": null,
+    "verified_at": null,
+    "source": "https://ichart.kr/",
+    "note": "iChart计数未在本次构建中独立实时核验，请以官方页面为准。"
+  },
+  "articles": [
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:34",
+      "source_name": "Newsen",
+      "type": "OA个人高清图",
+      "title": "OA亮相MBC广播上班路，个人现场写真",
+      "url": "https://www.newsen.com/news_view.php?code=100100&uid=202610211233533510",
+      "excerpt": "韩国娱乐媒体发布OA当日抵达MBC电台大楼的个人照片。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:47",
+      "source_name": "Newspim",
+      "type": "OA个人新闻图片",
+      "title": "OA在MBC广播现场比心",
+      "url": "https://www.newspim.com/news/view/20261021000707",
+      "excerpt": "现场摄影报道，注明2026年10月21日拍摄。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:43",
+      "source_name": "Sports Chosun",
+      "type": "OA个人图集",
+      "title": "OA广播上班路独立图片报道",
+      "url": "https://www.sportschosun.com/en/celebrity/2026-10-21/202610210100134300008753",
+      "excerpt": "可前往媒体原站查看摄影记者图片。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-21",
+      "time_kst": "12:28",
+      "source_name": "NewsenTV",
+      "type": "团体上下班视频",
+      "title": "A2O LITE首冠后的广播上班路现场视频",
+      "url": "https://www3.newsen.com/news_view.php?uid=202610211228141310",
+      "excerpt": "团体视频包含OA；个人播放量不可单独拆分。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-20",
+      "time_kst": null,
+      "source_name": "SBS",
+      "type": "团体成就",
+      "title": "《THE SHOW》取得出道首冠",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008807550",
+      "excerpt": "A2O LITE凭《NEON》取得首个音乐节目一位。",
+      "verified": true
+    },
+    {
+      "date": "2026-10-14",
+      "time_kst": null,
+      "source_name": "Soompi",
+      "type": "成员官方写真索引",
+      "title": "A2O LITE九名成员官方形象照发布",
+      "url": "https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos",
+      "excerpt": "OA个人写真位于组合成员公布文章，可通过原站查看。",
+      "verified": true
+    }
+  ],
+  "events": [
+    {
+      "id": "showcase",
+      "date": "2026-10-12",
+      "time_bj": "—",
+      "time_kst": "—",
+      "title": "WELCOME TO SOULITE｜出道Showcase",
+      "type": "公开演出",
+      "status": "已播出",
+      "note": "10月12日KINTEX联合出道Showcase；有官方团体舞台视频",
+      "source": "https://www.youtube.com/watch?v=4LSlCfqF7Sc"
+    },
+    {
+      "id": "mcountdown",
+      "date": "2026-10-15",
+      "time_bj": "17:00",
+      "time_kst": "18:00",
+      "title": "Mnet《M COUNTDOWN》",
+      "type": "电视播出",
+      "status": "已播出",
+      "note": "OA 官方个人4K直拍及团体8K直拍均已收录",
+      "source": "https://www.youtube.com/watch?v=p1JBFI77kWo"
+    },
+    {
+      "id": "show-kpop",
+      "date": "2026-10-19",
+      "time_bj": "17:00",
+      "time_kst": "18:00",
+      "title": "Arirang TV《SHOW K-POP》",
+      "type": "节目播出；当日另有预录",
+      "status": "已播出",
+      "note": "OA纵版／横版4K个人直拍及双人镜头均已收录；预录时间另见官方参与公告",
+      "source": "https://artist.mnetplus.world/main/stg/a2olite/surveys/6ad231112f106676e0570aaa"
+    },
+    {
+      "id": "the-show",
+      "date": "2026-10-20",
+      "time_bj": "17:00",
+      "time_kst": "18:00",
+      "title": "SBS LIFE《THE SHOW》｜NEON出道首冠",
+      "type": "电视播出",
+      "status": "已播出",
+      "note": "团体舞台、团体4K直拍、首冠安可已收录；OA单人版暂未核验到原始链接",
+      "source": "https://www.soompi.com/article/1880111wpp/watch-a2o-lite-takes-1st-ever-win-on-the-show-for-neon"
+    },
+    {
+      "id": "radio",
+      "date": "2026-10-21",
+      "time_bj": "12:00",
+      "time_kst": "13:00",
+      "title": "MBC FM4U《正午的希望曲》",
+      "type": "广播直播",
+      "status": "已播出",
+      "note": "官方电台视频及OA当天媒体图文已收录",
+      "source": "https://www.youtube.com/watch?v=29Bn6d82Qgc"
+    },
+    {
+      "id": "show-champion",
+      "date": "2026-10-21",
+      "time_bj": "16:00",
+      "time_kst": "17:00",
+      "title": "MBC M《Show Champion》",
+      "type": "节目播出；早间预录",
+      "status": "待播出／待发布视频",
+      "note": "官方确认韩国时间09:30预录；尚不冒用预录时间作为播出时间。个人直拍发布后另行建档",
+      "source": "https://www.mbcplus.com/"
+    }
+  ],
+  "links": [
+    {
+      "label": "A2O LITE 官方 YouTube",
+      "url": "https://www.youtube.com/@A2OLITE"
+    },
+    {
+      "label": "A2O LITE 官方微博",
+      "url": "https://weibo.com/u/8428908687"
+    },
+    {
+      "label": "A2O LITE 官方 TikTok",
+      "url": "https://www.tiktok.com/@a2o.lite"
+    },
+    {
+      "label": "A2O LITE 官方 Instagram",
+      "url": "https://www.instagram.com/a2o.lite/"
+    },
+    {
+      "label": "韩国 iChart",
+      "url": "https://ichart.kr/"
+    },
+    {
+      "label": "Spotify韩国原始榜单索引",
+      "url": "https://charts.spotify.com/charts/view/regional-kr-daily/latest"
+    }
+  ],
+  "history": {
+    "videos": {},
+    "platforms": {}
+  },
+  "platform_sort": {
+    "default": "trending",
+    "notes": "仅在存在同一平台可核实24小时增量时按增量排序；否则降级为累计播放或最近发布，不伪造热度榜。"
+  },
+  "media_photo": {
+    "type": "OA官方公开个人形象照",
+    "image_url": "./assets/oa-portrait.jpg",
+    "credit": "A2O Entertainment官方形象照，经Soompi于2026-10-14刊载",
+    "source": "https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos"
+  },
+  "profile": {
+    "stage_name": "OA",
+    "korean_name": "오아",
+    "roman_name": "Oa Angel",
+    "group": "A2O LITE",
+    "birthday": "2013-02-08",
+    "nationality": "日本 · 美国",
+    "debut_date": "2026-10-13",
+    "debut_song": "NEON",
+    "role": "组合成员（媒体常称 Visual / Center，非官方固定分工）",
+    "portrait": "./assets/oa-portrait.jpg",
+    "summary": "A2O LITE 九名成员之一，2026年10月以《NEON》正式出道。站点收录她的公开舞台、个人直拍、正式活动及媒体图集。",
+    "source": "https://www.vogue.com.tw/article/a2o-lite-new-girl-group-intro"
+  },
+  "gallery": [
+    {
+      "title": "OA｜官方个人形象照",
+      "label": "官方写真",
+      "date": "2026-10-14",
+      "image": "./assets/oa-portrait.jpg",
+      "url": "https://www.soompi.com/article/1878391wpp/lee-soo-mans-new-groups-a2o-lite-and-a2o-soul-unveil-profile-photos",
+      "kind": "portrait"
+    },
+    {
+      "title": "OA｜SHOW K-POP 竖版4K直拍",
+      "label": "舞台镜头",
+      "date": "2026-10-19",
+      "image": "./assets/yt_pbmb_TsEugU.jpg",
+      "url": "https://www.youtube.com/watch?v=pbmb_TsEugU",
+      "kind": "video"
+    },
+    {
+      "title": "OA｜SHOW K-POP 横屏4K直拍",
+      "label": "舞台镜头",
+      "date": "2026-10-19",
+      "image": "./assets/yt_eB6vt-ne3A4.jpg",
+      "url": "https://www.youtube.com/watch?v=eB6vt-ne3A4",
+      "kind": "video"
+    },
+    {
+      "title": "OA｜M COUNTDOWN 个人直拍封面",
+      "label": "舞台镜头",
+      "date": "2026-10-15",
+      "image": "./assets/yt_p1JBFI77kWo.jpg",
+      "url": "https://www.youtube.com/watch?v=p1JBFI77kWo",
+      "kind": "video"
+    },
+    {
+      "title": "OA × AIJING｜SHOW K-POP 双人镜头",
+      "label": "同框舞台",
+      "date": "2026-10-19",
+      "image": "./assets/yt_-TGCURaf8f8.jpg",
+      "url": "https://www.youtube.com/watch?v=-TGCURaf8f8",
+      "kind": "video"
+    },
+    {
+      "title": "OA｜10.21 上班路媒体摄影",
+      "label": "媒体原图",
+      "date": "2026-10-21",
+      "image": "./assets/oa-portrait.jpg",
+      "url": "https://www.sportschosun.com/en/celebrity/2026-10-21/202610210100134300008753",
+      "kind": "press",
+      "caption": "封面为官方写真，点击前往媒体原图"
+    }
+  ]
+}
+</script><script>const $ = (s) => document.querySelector(s);
+const formatNum = n => Number.isFinite(n) ? new Intl.NumberFormat('zh-CN').format(n) : '待核实';
+const escapeHTML = str => String(str ?? '').replace(/[&<>"']/g, x => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
+const safeURL = url => /^https:\/\//i.test(String(url||'')) ? String(url) : '#';
+const a = (url, label, css='') => `<a class="${css}" href="${escapeHTML(safeURL(url))}" target="_blank" rel="noopener noreferrer">${escapeHTML(label)}</a>`;
+const monthDay = d => `${d.slice(5,7)}.${d.slice(8,10)}`;
+const fmtTime = iso => {try{return new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(iso))}catch{return '—'}};
+const dateFromISO = iso => iso?.slice(0,10) || '—';
+const base = new URL('./', document.baseURI);
+const VIDEO_CHANNELS = {'Douyin':'https://v.douyin.com/ZzHgu4mfISQ/','TikTok':'https://www.tiktok.com/@a2o.lite','Weibo':'https://weibo.com/u/8428908687','YouTube':'https://www.youtube.com/@A2OLITE','Bilibili':'https://space.bilibili.com/670061998'};
+let currentPlatform='all',currentType='solo',currentSort='trending',currentEvent='all';
+let DATA;
+async function init(){try{DATA=JSON.parse(document.getElementById('embedded-data').textContent);render(DATA);setup()}catch(e){$('.main').insertAdjacentHTML('afterbegin',`<div class="notice-banner">数据加载失败：${escapeHTML(e.message)}。请稍后刷新。</div>`)}}
+function render(data){
+ $('#dateChip').textContent=data.meta.edition.replaceAll('-','.');
+ $('#updatedAt').textContent='最近核对（北京时间） · '+fmtTime(data.meta.verified_at);
+ $('#footerDate').textContent='EDITION '+data.meta.edition;
+ $('#kpiGrid').innerHTML=data.kpis.map(k=>`<article class="kpi-card"><span class="kpi-label">${escapeHTML(k.label)}</span><div class="kpi-value ${k.value===null?'empty':''}">${k.value===null?'待核实':formatNum(k.value)}${k.value===null?'':`<span class="kpi-unit">${escapeHTML(k.unit)}</span>`}</div><div class="kpi-bottom">${escapeHTML(k.scope)} · ${escapeHTML(k.value===null?'暂不展示未经证实数值':k.description)} ${k.source?a(k.source,'↗'):''}</div></article>`).join('');
+ renderSpotlights();renderProfile();renderGallery();
+ $('#platformGrid').innerHTML=data.platforms.map(p=>`<a class="platform-card" ${p.source?`href="${escapeHTML(safeURL(p.source))}" target="_blank" rel="noopener noreferrer"`:'aria-disabled="true"'}><div class="platform-head"><span class="platform-symbol">${escapeHTML(p.icon)}</span><span class="platform-open">↗</span></div><div class="platform-name">${escapeHTML(p.name)}</div><div class="platform-note">${escapeHTML(p.scope)}</div><div class="platform-main">${p.value!=null?formatNum(p.value):'待核实'}</div><div class="platform-sub">${p.value!=null?'最新记录':'当前状态'}：${escapeHTML(p.value!=null?(p.metric||'已更新'):p.status)}</div><div class="platform-updated">核对时间：${p.last_updated?escapeHTML(fmtTime(p.last_updated)):'—'} 北京时间</div></a>`).join('');
+ renderVideos();renderNews();renderEvents();renderSources();renderAK();drawChart(7);
+}
+
+function renderSpotlights(){if(!DATA.spotlight?.length)return;$('#spotlightGrid').innerHTML=DATA.spotlight.map(s=>`<a class="spotlight-card" href="${escapeHTML(safeURL(s.source))}" target="_blank" rel="noopener noreferrer"><span class="spotlight-label">${escapeHTML(s.label)}</span><h3>${escapeHTML(s.title)}</h3><p>${escapeHTML(s.detail)}</p><div class="spotlight-foot"><span>${escapeHTML(s.type)}</span><b>查看 ↗</b></div></a>`).join('')}
+
+function renderProfile(){const p=DATA.profile;if(!p)return;
+ $('#profileLayout').innerHTML=`<div class="profile-photo"><img src="${escapeHTML(p.portrait)}" alt="OA 官方个人形象照" loading="lazy"><span>OA · 오아</span></div><div class="profile-info"><div class="profile-eyebrow">A2O LITE / OFFICIAL MEMBER</div><h3>OA <span>오아</span></h3><p>${escapeHTML(p.summary)}</p><div class="profile-facts"><div><small>姓名</small><strong>${escapeHTML(p.roman_name)}</strong></div><div><small>生日</small><strong>${escapeHTML(p.birthday)}</strong></div><div><small>国籍</small><strong>${escapeHTML(p.nationality)}</strong></div><div><small>出道日</small><strong>${escapeHTML(p.debut_date)}</strong></div><div><small>出道作品</small><strong>NEON</strong></div><div><small>身份</small><strong>A2O LITE 成员</strong></div></div><a class="profile-source" href="${escapeHTML(safeURL(p.source))}" target="_blank" rel="noopener noreferrer">查阅公开资料原文 ↗</a></div>`;
+}
+function renderGallery(){const g=DATA.gallery||[];$('#galleryGrid').innerHTML=g.map((x,i)=>`<a class="gallery-card ${i===0?'gallery-lead':''}" href="${escapeHTML(safeURL(x.url))}" target="_blank" rel="noopener noreferrer"><div class="gallery-image"><img src="${escapeHTML(x.image)}" loading="lazy" alt="${escapeHTML(x.title)}" onerror="this.onerror=null;this.src='./assets/oa-portrait.jpg'" /><span>${escapeHTML(x.label)} ↗</span></div><div class="gallery-description"><strong>${escapeHTML(x.title)}</strong><small>${escapeHTML(x.caption||x.date)}</small></div></a>`).join('')}
+function renderVideos(){
+ const vids=DATA.videos.filter(v=>(currentPlatform==='all'||v.platform===currentPlatform)&&(currentType==='all'||(currentType==='solo'?v.oa:!v.oa))&&(currentEvent==='all'||v.event_id===currentEvent));
+ const isNum=v=>Number.isSafeInteger(v)&&v>=0;
+ const trendingAvailable=vids.some(v=>isNum(v.views_24h));
+ const totalAvailable=vids.some(v=>isNum(v.views));
+ let effectiveSort=currentSort;
+ if(effectiveSort==='trending'&&!trendingAvailable) effectiveSort=totalAvailable?'views':'newest';
+ if(effectiveSort==='views'&&!totalAvailable) effectiveSort='newest';
+ vids.sort((a,b)=>{
+  const metric=effectiveSort==='trending'?'views_24h':effectiveSort==='views'?'views':null;
+  if(metric){const av=isNum(a[metric])?a[metric]:-1,bv=isNum(b[metric])?b[metric]:-1;if(av!==bv)return bv-av;}
+  return (b.date||'').localeCompare(a.date||'');
+ });
+ const sortLabel=effectiveSort==='trending'?'已核验近24小时新增观看':effectiveSort==='views'?'已核验累计观看':'最新发布日期';
+ $('#videoSortNote').textContent=(currentEvent==='all'?'':(DATA.events.find(e=>e.id===currentEvent)?.title||'')+' · ')+(currentPlatform==='all'?'全平台':currentPlatform)+' · '+(currentType==='solo'?'OA个人':currentType==='group'?'团体相关':'所有作品')+' · 当前依据【'+sortLabel+'】排序。'+(effectiveSort!==currentSort?'本平台尚无相应实时数据，已自动降级，绝不伪造今日热门名次。':'');
+ $('#eventFilter').value=currentEvent;
+ const stat=(v,key)=>isNum(v[key])?formatNum(v[key]):key==='views'&&v.views_approx?escapeHTML(v.views_approx)+'*':'—';
+ const html=vids.map(v=>`<article class="video-card"><a class="video-thumb" href="${escapeHTML(safeURL(v.url))}" target="_blank" rel="noopener noreferrer" aria-label="打开原视频：${escapeHTML(v.title)}"><img loading="lazy" alt="${escapeHTML(v.title)}${escapeHTML(v.thumbnail_source||'缩略图')}" src="${escapeHTML(v.thumbnail||'/assets/oa-portrait.jpg')}" onerror="this.onerror=null;this.src='/assets/oa-portrait.jpg';"/><span class="play-circle">▶</span><span class="thumb-label">${escapeHTML(v.platform)} · ${escapeHTML(v.type)}</span>${v.thumbnail_source?.includes('非视频原封面')?'<span class="video-thumb-fallback">OA写真 · 非原封面</span>':''}</a><div class="video-body"><h3>${escapeHTML(v.title)}</h3><div class="video-channel">${escapeHTML(v.channel)} · ${escapeHTML(v.date)} · ${escapeHTML(DATA.events.find(e=>e.id===v.event_id)?.title||'个人资料')}</div><div class="video-source-tier">${escapeHTML(v.source_tier||'已收录公开视频')}</div><div class="video-data"><span>观看 <b>${stat(v,'views')}</b></span><span>点赞 <b>${stat(v,'likes')}</b></span><span>评论 <b>${stat(v,'comments')}</b></span></div><div class="video-metric-caution">${Number.isFinite(v.views_24h)?`近24h新增 ${formatNum(v.views_24h)} 次 · `:''}${v.updated_at?'数据采集 '+escapeHTML(fmtTime(v.updated_at))+' 北京时间':escapeHTML(v.approx_note||'官方互动指标暂未核实')}</div><a class="video-linkout" href="${escapeHTML(safeURL(v.url))}" target="_blank" rel="noopener noreferrer">直达原视频 <span>↗</span></a></div></article>`).join('');
+ const link=VIDEO_CHANNELS[currentPlatform];
+ $('#videoGrid').innerHTML=html||( `<div class="video-empty"><strong>该平台尚无核实通过的 OA 单条视频</strong><p>目前不编造所谓“热门 Top 10”；请从平台官方账号查看公开内容。</p>${link?a(link,'前往'+currentPlatform+'账号 ↗'):''}</div>`);
+ document.querySelectorAll('[data-nav-platform]').forEach(x=>x.classList.toggle('active',x.dataset.navPlatform===currentPlatform));
+ $('#eventFilter').addEventListener('change',e=>{currentEvent=e.target.value;renderVideos()});
+ document.querySelectorAll('#videoPlatformTabs [data-platform]').forEach(x=>x.classList.toggle('active',x.dataset.platform===currentPlatform));
+ document.querySelectorAll('#videoTabs [data-type]').forEach(x=>x.classList.toggle('active',x.dataset.type===currentType));
+}
+function renderNews(){const cards=DATA.articles.filter(n=>n.verified).sort((a,b)=>(b.date+(b.time_kst||'' )).localeCompare(a.date+(a.time_kst||'')));$('#newsFeed').innerHTML=cards.map(n=>`<a class="news-item" target="_blank" rel="noopener noreferrer" href="${escapeHTML(safeURL(n.url))}"><div class="news-date"><strong>${escapeHTML(n.date.slice(8))}</strong>${escapeHTML(n.date.slice(0,7).replace('-','.'))}</div><div class="news-data"><span class="news-kicker">${escapeHTML(n.source_name)} / ${escapeHTML(n.type)}</span><h3>${escapeHTML(n.title)}</h3><p>${escapeHTML(n.excerpt)}${n.time_kst?` · ${escapeHTML(n.time_kst)} KST`:''}</p></div><span class="news-arrow">↗</span></a>`).join('')}
+function renderEvents(){$('#eventFilter').innerHTML='<option value="all">全部活动</option>'+DATA.events.map(e=>`<option value="${escapeHTML(e.id)}">${escapeHTML(e.date+' '+e.title)}</option>`).join('');$('#scheduleList').innerHTML=DATA.events.map(e=>`<article class="schedule-entry"><div class="schedule-day">${escapeHTML(e.date.slice(8))}<span>${escapeHTML(e.date.slice(0,7).replace('-',' / '))}</span></div><div class="schedule-main"><h3>${escapeHTML(e.title)}</h3><p>${escapeHTML(e.type)} · ${escapeHTML(e.note)}</p></div><div class="schedule-right"><strong>${escapeHTML(e.time_bj)} 北京 / ${escapeHTML(e.time_kst)} 首尔</strong>${a(e.source,'原始出处 ↗')}<button class="event-video-btn" data-event="${escapeHTML(e.id)}">本场视频 ↗</button></div></article>`).join('')}
+function renderSources(){const box=$('#sourceLinks'); if(box) box.innerHTML=DATA.links.map(l=>a(l.url,l.label+' ↗')).join('')}
+function renderAK(){let k=DATA.all_kill;$('#akValue').textContent=k.verified_at&&Number.isFinite(k.ak)?formatNum(k.ak):'待复核';$('#pakValue').textContent=k.verified_at&&Number.isFinite(k.pak)?formatNum(k.pak):'待复核';$('#weeklyValue').textContent=k.weekly_rank==null?'待复核':'#'+k.weekly_rank}
+function drawChart(range){let items=DATA.group_charts.filter(d=>Number.isFinite(d.streams)).sort((a,b)=>a.date.localeCompare(b.date));let n=range==='all'?999:Number(range);items=items.slice(-n);let last=items.at(-1),prev=items.at(-2);$('#trendLatest').textContent=last?formatNum(last.streams):'待核实';let delta=(prev&&last)?(last.streams-prev.streams)/prev.streams*100:null;$('#trendChange').textContent=delta==null?'暂无可比前日':`${delta>=0?'↑':'↓'} ${Math.abs(delta).toFixed(1)}% 较上一期`;
+ const el=$('#streamChart'); if(!items.length){el.innerHTML='<p class="muted">没有可验证历史记录。</p>';return;}
+ const w=680,h=210,p={left:60,right:20,top:20,bottom:36};let ys=items.map(d=>d.streams),min=Math.min(...ys),max=Math.max(...ys),margin=Math.max(9000,(max-min)*.24);min=Math.max(0,min-margin);max+=margin;if(min===max)max+=100;
+ const xp=i=>p.left+(w-p.left-p.right)*(items.length===1?.5:i/(items.length-1)),yp=v=>p.top+(h-p.top-p.bottom)*(1-(v-min)/(max-min));let coords=items.map((d,i)=>[xp(i),yp(d.streams)]);let line=coords.map((d,i)=>(i?'L':'M')+d.join(' ')).join(' ');let fill=line+` L${coords.at(-1)[0]} ${h-p.bottom} L${coords[0][0]} ${h-p.bottom} Z`;let ticks=Array.from({length:4},(_,i)=>min+(max-min)*i/3).reverse();let svg=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${items.length}个有源历史数据点的Spotify韩国播放趋势"><defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b885de" stop-opacity=".26"/><stop offset="100%" stop-color="#b885de" stop-opacity="0"/></linearGradient></defs>`;svg+=ticks.map(t=>`<line class="gridline" x1="${p.left}" x2="${w-p.right}" y1="${yp(t)}" y2="${yp(t)}"/><text class="tick" x="${p.left-12}" text-anchor="end" y="${yp(t)+3}">${Math.round(t/1000)}k</text>`).join('');svg+=`<path d="${fill}" fill="url(#areaGrad)"/><path class="chart-line" d="${line}"/>`;svg+=coords.map(([x,y],i)=>`<circle class="chart-dot" cx="${x}" cy="${y}" r="5"/><text class="tick" x="${x}" y="${h-10}" text-anchor="middle">${monthDay(items[i].date)}</text><rect class="hover-area" x="${x-(w-p.left-p.right)/Math.max(2,items.length)/2}" y="0" width="${(w-p.left-p.right)/Math.max(1,items.length-1)}" height="${h}" data-point="${i}" />`).join('');svg+=`<g id="svgTooltip" style="display:none"><rect class="tooltip-box" width="162" height="41" x="0" y="0" rx="7"/><text class="tooltip-text" x="10" y="17" id="tooltipD"></text><text class="tooltip-text" x="10" y="33" id="tooltipN"></text></g></svg>`;el.innerHTML=svg;el.querySelectorAll('[data-point]').forEach(rect=>{rect.addEventListener('mousemove',()=>{const i=Number(rect.dataset.point),[x,y]=coords[i],g=el.querySelector('#svgTooltip');g.style.display='block';g.setAttribute('transform',`translate(${Math.max(5,Math.min(w-170,x-81))},${Math.max(1,y-58)})`);el.querySelector('#tooltipD').textContent=items[i].date;el.querySelector('#tooltipN').textContent=formatNum(items[i].streams)+' 次播放'});rect.addEventListener('mouseleave',()=>el.querySelector('#svgTooltip').style.display='none')})}
+function setup(){
+ document.querySelectorAll('.segment').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.segment').forEach(x=>x.classList.remove('active'));b.classList.add('active');drawChart(b.dataset.range)}));
+ document.querySelectorAll('#videoPlatformTabs [data-platform]').forEach(b=>b.addEventListener('click',()=>{currentPlatform=b.dataset.platform;renderVideos()}));
+ document.querySelectorAll('#videoTabs [data-type]').forEach(b=>b.addEventListener('click',()=>{currentType=b.dataset.type;renderVideos()}));
+ document.querySelectorAll('[data-nav-platform]').forEach(b=>b.addEventListener('click',()=>{currentPlatform=b.dataset.navPlatform;currentEvent='all';currentType='solo';renderVideos();$('#sidebar').classList.remove('open')}));
+ document.querySelectorAll('.event-video-btn').forEach(b=>b.addEventListener('click',()=>{currentEvent=b.dataset.event;currentPlatform='all';currentType='all';renderVideos();$('#fancams').scrollIntoView({behavior:'smooth'});}));
+ $('#videoSort').addEventListener('change',e=>{currentSort=e.target.value;renderVideos()});
+ $('#menuBtn').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
+ document.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{$('#sidebar').classList.remove('open');document.querySelectorAll('.nav-link').forEach(x=>x.classList.remove('active'));l.classList.add('active')}));
+}
+init();
+</script>
+</body>
+</html>
