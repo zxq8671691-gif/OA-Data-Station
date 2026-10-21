@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "description": "Weibo OA supertopic historical public reports only, not a real-time official Weibo endpoint. Preserve quoted precision; do not extrapolate current values.",
+  "topic": "OaAngel",
+  "account_owner": "OA相关粉丝超话，非艺人账号粉丝数",
+  "latest_verified_live": null,
+  "observations": [
+    {
+      "date": "2026-10-14",
+      "fans_display": "约2.3万",
+      "fans_approx": 23000,
+      "checkins_display": "破1万",
+      "checkins_floor": 10000,
+      "source": "https://weibo.com/2/detail/5353706566455524",
+      "source_type": "第三方超话帖子转述",
+      "quality": "reported_approx",
+      "time_precision": "date_only",
+      "note": "只用作历史参考点，不能算今日实时粉丝/签到，不可当精确数"
+    }
+  ]
+}
