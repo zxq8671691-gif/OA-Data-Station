@@ -32,3 +32,11 @@
 `fans`/`checkins` 必须是精确非负整数或null；`fans_display`/`checkins_display` 只能填原站可见的「约2.5万」「破1万」等数值标签或null。一次快照至少有一个真实可见指标。
 
 **其他任务不要改变：X仍保持暂停，B站/微博/抖音普通帖沿用原有每日最多1次、每个平台最多3条的安全上限。**
+
+## 韩国榜单原站排名（可选的同一 Work 任务第二部分）
+
+1. 依次查看 [iChart NEON官方歌曲页](https://ichart.kr/song/52712)、[iChart官方实时榜](https://ichart.kr/rank)、[Melon Top100](https://www.melon.com/chart/)、[Genie实时榜](https://www.genie.co.kr/chart/top200)、[Bugs实时榜](https://music.bugs.co.kr/chart/track/realtime/total)。FLO、VIBE和YouTube Music若可正常查看，同样记录**对应准确榜单类别**；不要把 YouTube 公开视频播放榜混进 YouTube Music Top Songs。
+2. 每个平台只按原站正常浏览读取《NEON》准确名次、原页面显示的韩国时间、榜单类别、原始URL和本次核验时点。不通过重复刷新、非授权接口或代理绕过风控。
+3. 把有完整来源的快照追加到 GitHub `data/dashboard.json` → `korean_charts.platforms` 对应 `id` 的 `snapshots`，保留旧快照；不要覆盖全部历史。每条至少 `date`、`clock_kst`（未知则null）、`rank`、`source`、`source_name`、`quality:"official_page"`。
+4. RAK 属于报道或实时榜描述，除非有同一时点各实时平台证明，否则不自动宣称达成；iChart AK、PAK 只有在官方记录明确出现时才把 `achievements` 的状态改为 `verified`。**不同平台不同时段名次全是第1也不能组合成同一时刻的 RAK/AK。**
+5. 运行 `node scripts/sync-pages.mjs` 并提交修改到 `main`，让 GitHub Pages 与 EdgeOne 自动收到最新快照。
