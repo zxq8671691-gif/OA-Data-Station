@@ -23,12 +23,8 @@ jobs:
         run: npm run update
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-      - name: Refresh X official public account and OA-related posts (opt-in only)
-        run: node scripts/update-x.mjs
-        continue-on-error: true
-        env:
-          ENABLE_X_API_READS: ${{ vars.ENABLE_X_API_READS }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      - name: Import verified public X post engagement snapshots (no API/login)
+        run: node scripts/import-x-public.mjs
       - name: Synchronize published GitHub Pages dashboard
         run: node scripts/sync-pages.mjs
       - name: Validate refreshed data
