@@ -1,0 +1,25 @@
+/* OA unified platform-specific analytics */
+.pulse-intro{color:#b6b0c6;font-size:13px;line-height:1.7;margin:-1px 0 20px;max-width:850px}
+.pulse-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:16px 0 18px}
+.pulse-card{background:linear-gradient(155deg,#201c2d,#14131e);border:1px solid #3b3448;border-radius:20px;padding:22px;min-width:0;display:flex;flex-direction:column;gap:9px;box-shadow:0 8px 35px #0002}
+.pulse-card-head{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.pulse-tag{font-weight:730;color:#eddcfb;font-size:13px;letter-spacing:.2px}
+.pulse-status{font-size:10px;color:#aca5bd;background:#302a3b;padding:5px 8px;border-radius:20px;text-align:right}
+.pulse-card h3{font-size:19px;font-weight:750;line-height:1.35;margin:7px 0 0;color:#f7f2ff}
+.pulse-number{font-size:29px;font-weight:810;color:#f1e8ff;letter-spacing:-1px;line-height:1.2;font-variant-numeric:tabular-nums}
+.pulse-secondary{font-size:12px;color:#cfbedb;line-height:1.6}
+.pulse-timeline-title{font-size:12px;color:#d7c8e9;font-weight:650;margin-top:15px}
+.pulse-chart{background:#161422;border:1px solid #2b2737;border-radius:13px;padding:15px 14px 10px}
+.pulse-bars{min-height:124px;display:flex;align-items:flex-end;justify-content:center;gap:12px;border-bottom:1px solid #403648;padding:0 6px 0;overflow-x:auto}
+.pulse-bar-unit{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;flex:0 1 65px;min-width:44px;height:125px;gap:5px}
+.pulse-bar{width:clamp(26px,70%,48px);min-height:8px;background:linear-gradient(180deg,#d9b7ff,#8769ad);border-radius:7px 7px 0 0}
+.pulse-bar-top{font-size:10px;white-space:nowrap;color:#dfd0ec;overflow:hidden;text-overflow:ellipsis;max-width:88px;font-variant-numeric:tabular-nums}
+.pulse-bar-date{font-size:10px;color:#aba2b9;height:18px;white-space:nowrap}
+.pulse-chart-foot,.pulse-history-empty{font-size:11px;color:#aaa2b7;line-height:1.5;margin-top:9px}
+.pulse-history-empty{border:1px dashed #413749;padding:21px 12px;border-radius:12px}
+.pulse-reported{background:#282334;border-left:2px solid #b38ad4;border-radius:4px;padding:11px 12px;font-size:12px;color:#e5d7f3;line-height:1.65;margin-top:10px}
+.pulse-provenance{font-size:11px;color:#b7aec4;line-height:1.7;margin-top:auto;padding-top:11px}
+.pulse-source{font-size:12px;color:#e0bcff;font-weight:700;margin-top:5px}
+.pulse-source:hover{text-decoration:underline}
+@media(max-width:850px){.pulse-grid{grid-template-columns:1fr}.pulse-card{padding:18px}}
+@media(max-width:520px){.pulse-number{font-size:26px}.pulse-card h3{font-size:18px}.pulse-bar-unit{min-width:42px}.pulse-grid{gap:12px}}
