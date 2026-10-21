@@ -1,14 +1,15 @@
 {
-  "name": "oa-data-station",
+  "name": "oa-data-overview",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A2O LITE OA independent fan data dashboard",
+  "description": "OA 数据总览 / Mainland-China-ready independent fan video metrics dashboard",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "update": "node scripts/update.mjs",
     "test": "node scripts/test.mjs",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "build:cn": "node scripts/build-cn.mjs"
   },
   "engines": {
     "node": ">=20"
