@@ -248,6 +248,159 @@
         "danmaku": null
       },
       "evidence_excerpt": "爱心2455、评论62、星标170、分享箭头148；无公开播放量"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV13DJo6PEpw",
+      "url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "observed_at": "2026-10-22T08:46:04.408+08:00",
+      "title": "OA NEON SHOW K-POP 4K个人直拍",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 6349,
+        "comments": 514,
+        "reposts": null,
+        "shares": 320,
+        "bookmarks": 1975,
+        "quotes": null,
+        "coins": 1429,
+        "danmaku": 641,
+        "video_views_display": "93K"
+      },
+      "evidence_excerpt": "播放93K；弹幕641；点赞6349；投币1429；收藏1975；分享320；Comments514"
+    },
+    {
+      "platform": "微博",
+      "id": "Rmo6EhLtD",
+      "url": "https://weibo.com/8344619260/Rmo6EhLtD",
+      "observed_at": "2026-10-22T08:46:24.193+08:00",
+      "title": "OA公主的安利手册",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 444,
+        "comments": 31,
+        "reposts": 21,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "原帖操作条21,31,444：转发21、评论31、点赞444；阅读/收藏总数未显示"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1joJy6rE9C",
+      "url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+      "observed_at": "2026-10-22T08:46:39.553+08:00",
+      "title": "OA NEON出道舞台4K个人直拍（两分P稿件）",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": null,
+        "comments": 1354,
+        "reposts": null,
+        "shares": 1299,
+        "bookmarks": 3995,
+        "quotes": null,
+        "coins": 3213,
+        "danmaku": 1099,
+        "video_views_display": "219.2K",
+        "likes_display": "12.5K"
+      },
+      "evidence_excerpt": "播放219.2K；弹幕1099；点赞12.5K；投币3213；收藏3995；分享1299；Comments1354；稿件含两个分P，播放不能归于单一片段"
+    },
+    {
+      "platform": "微博",
+      "id": "RnIJM0IgQ",
+      "url": "https://weibo.com/8344619260/RnIJM0IgQ",
+      "observed_at": "2026-10-22T08:46:39.553+08:00",
+      "title": "「20261021」饭绘",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 20,
+        "comments": 1,
+        "reposts": 1,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "操作条1,1,20，对应转发1、评论1、点赞20；阅读/收藏总数未显示"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1ZjJZ6LEDZ",
+      "url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+      "observed_at": "2026-10-22T08:47:06.179+08:00",
+      "title": "OA Show Kpop怼脸横版直拍 Neon A2O Lite",
+      "author": "KPOP万事通",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": 1302,
+        "likes": 35,
+        "comments": 1,
+        "reposts": null,
+        "shares": 1,
+        "bookmarks": 19,
+        "quotes": null,
+        "coins": 3,
+        "danmaku": 0
+      },
+      "evidence_excerpt": "播放1302；弹幕0；点赞35；投币3；收藏19；分享1；Comments1"
+    },
+    {
+      "platform": "微博",
+      "id": "5353331979717055",
+      "url": "https://weibo.com/8344619260/5353331979717055",
+      "observed_at": "2026-10-22T08:47:15.677+08:00",
+      "title": "开站公告（含抽奖活动）",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 263,
+        "comments": 160,
+        "reposts": 130,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "转发130、评论160、点赞263；抽奖活动帖，互动不可直接视为自然传播；阅读/收藏总数未显示"
     }
   ],
   "runs": [
@@ -268,6 +421,32 @@
       "platform": "抖音",
       "status": "completed",
       "sample_count": 3
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "Bilibili",
+      "status": "completed",
+      "sample_count": 3,
+      "observed_at": "2026-10-22T08:47:06.179+08:00"
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "微博",
+      "status": "completed",
+      "sample_count": 3,
+      "observed_at": "2026-10-22T08:47:15.677+08:00"
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "抖音",
+      "status": "stopped_unexpected_redirect",
+      "sample_count": 0,
+      "attempted_count": 1,
+      "observed_at": "2026-10-22T08:47:15.680+08:00",
+      "attempted_url": "https://www.douyin.com/video/7698376293657627913",
+      "returned_url": "https://www.douyin.com/jingxuan?modal_id=7699094431647010082",
+      "reason": "原链接跳转至精选页其他作品，无法确认目标作者和内容；停止本平台，不重试、不采集替代内容，保留历史快照。不能据此推断风控或登录失效。"
     }
   ]
 }
+

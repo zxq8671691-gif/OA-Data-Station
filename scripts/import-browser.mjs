@@ -66,6 +66,18 @@ for (const platform of ledger.policy.platforms) {
   const source = d.source_registry.find(s=>s.platform===platform);
   if (source) Object.assign(source,{status:'manual',status_text:'已核验3条原站公开内容；每日最多一轮，登录失效或风控即停止',method:'用户登录的云浏览器只读公开页面（非后台／非API）'});
 }
+// Report the latest attempted round without advancing the last successful observation.
+for (const platform of ledger.policy.platforms) {
+  const latest = (ledger.runs || []).filter(r => r.platform === platform)
+    .sort((a,b) => (b.observed_at || b.date).localeCompare(a.observed_at || a.date))[0];
+  if (latest && latest.status !== 'completed') {
+    const p = d.platforms.find(p=>p.name===platform);
+    const source = d.source_registry.find(s=>s.platform===platform);
+    const status = latest.date + ' 本轮未更新：' + (latest.reason || latest.status);
+    if (p) { p.status = status; p.last_attempt_at = latest.observed_at || null; }
+    if (source) source.status_text = status;
+  }
+}
 const x = d.source_registry.find(s=>s.id==='x');
 if (x) x.status_text = '采集暂停（用户暂未成功登录）；保留既有来源和历史截图，不尝试登录';
 const xp = d.platforms.find(p=>p.name==='X / Twitter');
@@ -78,3 +90,4 @@ if (changed) {
 }
 await fs.writeFile(new URL('../data/dashboard.json',import.meta.url), JSON.stringify(d,null,2)+'\n');
 console.log('Browser public observations applied:', changed);
+
