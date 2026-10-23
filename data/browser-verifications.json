@@ -401,6 +401,159 @@
         "danmaku": null
       },
       "evidence_excerpt": "转发130、评论160、点赞263；抽奖活动帖，互动不可直接视为自然传播；阅读/收藏总数未显示"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV13DJo6PEpw",
+      "url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "observed_at": "2026-10-23T08:45:01.349+08:00",
+      "title": "OA NEON SHOW K-POP 4K个人直拍",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 6641,
+        "comments": 528,
+        "reposts": null,
+        "shares": 337,
+        "bookmarks": 2090,
+        "quotes": null,
+        "coins": 1486,
+        "danmaku": 654,
+        "video_views_display": "97.9K"
+      },
+      "evidence_excerpt": "播放97.9K；弹幕654；点赞6641；投币1486；收藏2090；分享337；Comments528"
+    },
+    {
+      "platform": "微博",
+      "id": "Rmo6EhLtD",
+      "url": "https://weibo.com/8344619260/Rmo6EhLtD",
+      "observed_at": "2026-10-23T08:45:01.349+08:00",
+      "title": "OA公主的安利手册",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 496,
+        "comments": 32,
+        "reposts": 24,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "原帖操作条24,32,496：转发24、评论32、点赞496；阅读/收藏总数未显示"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1joJy6rE9C",
+      "url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+      "observed_at": "2026-10-23T08:46:52.388+08:00",
+      "title": "OA NEON出道舞台4K个人直拍（两分P稿件）",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": null,
+        "comments": 1365,
+        "reposts": null,
+        "shares": 1337,
+        "bookmarks": 4091,
+        "quotes": null,
+        "coins": 3273,
+        "danmaku": 1103,
+        "video_views_display": "225.1K",
+        "likes_display": "12.8K"
+      },
+      "evidence_excerpt": "稿件播放225.1K；弹幕1103；点赞12.8K；投币3273；收藏4091；分享1337；Comments1365。两分P稿件合计，不视为OA单段播放。"
+    },
+    {
+      "platform": "微博",
+      "id": "RnIJM0IgQ",
+      "url": "https://weibo.com/8344619260/RnIJM0IgQ",
+      "observed_at": "2026-10-23T08:46:52.388+08:00",
+      "title": "「20261021」饭绘",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 21,
+        "comments": 1,
+        "reposts": 1,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "原帖操作条1,1,21：转发1、评论1、点赞21；阅读/收藏总数未显示"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1ZjJZ6LEDZ",
+      "url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+      "observed_at": "2026-10-23T08:47:32.279+08:00",
+      "title": "OA Show Kpop怼脸横版直拍 Neon A2O Lite",
+      "author": "KPOP万事通",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": 1347,
+        "likes": 39,
+        "comments": 1,
+        "reposts": null,
+        "shares": 1,
+        "bookmarks": 20,
+        "quotes": null,
+        "coins": 3,
+        "danmaku": 0
+      },
+      "evidence_excerpt": "播放1347；弹幕0；点赞39；投币3；收藏20；分享1；Comments1"
+    },
+    {
+      "platform": "微博",
+      "id": "5353331979717055",
+      "url": "https://weibo.com/8344619260/5353331979717055",
+      "observed_at": "2026-10-23T08:47:32.279+08:00",
+      "title": "开站公告（含抽奖活动）",
+      "author": "OA_Angelism",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 269,
+        "comments": 161,
+        "reposts": 128,
+        "shares": null,
+        "bookmarks": null,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "原帖操作条128,161,269：转发128、评论161、点赞269；开站公告含抽奖活动，互动口径受活动影响；阅读/收藏总数未显示"
     }
   ],
   "runs": [
@@ -446,7 +599,33 @@
       "attempted_url": "https://www.douyin.com/video/7698376293657627913",
       "returned_url": "https://www.douyin.com/jingxuan?modal_id=7699094431647010082",
       "reason": "原链接跳转至精选页其他作品，无法确认目标作者和内容；停止本平台，不重试、不采集替代内容，保留历史快照。不能据此推断风控或登录失效。"
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "Bilibili",
+      "status": "completed",
+      "sample_count": 3,
+      "attempted_count": 3,
+      "observed_at": "2026-10-23T08:47:32.279+08:00"
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "微博",
+      "status": "completed",
+      "sample_count": 3,
+      "attempted_count": 3,
+      "observed_at": "2026-10-23T08:47:32.279+08:00"
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "抖音",
+      "status": "stopped_unexpected_redirect",
+      "sample_count": 0,
+      "attempted_count": 1,
+      "observed_at": "2026-10-23T08:46:39.845+08:00",
+      "attempted_url": "https://www.douyin.com/video/7698376293657627913",
+      "returned_url": "https://www.douyin.com/jingxuan?modal_id=7699472704004508964",
+      "reason": "原链接跳转至精选页其他作品，无法确认目标作者和内容；停止本平台，不重试、不采集替代内容，保留历史快照。不能据此推断风控或登录失效。"
     }
   ]
 }
-
