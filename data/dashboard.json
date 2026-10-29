@@ -3,8 +3,8 @@
     "name": "OA 数据总览",
     "subtitle": "OA 数据实时更新 · 公共档案",
     "edition": "2026-10-29",
-    "updated_at": "2026-10-28T22:45:49.538Z",
-    "verified_at": "2026-10-28T22:45:49.538Z",
+    "updated_at": "2026-10-29T00:39:22.723Z",
+    "verified_at": "2026-10-29T08:38:37.246+08:00",
     "timezone": "Asia/Shanghai",
     "notice": "每日一轮公开数据核验；X暂停。播放、帖文浏览及互动分开；K/M/万保留约数，未显示指标为空。快照不代表全网总量。",
     "source_audit_at": "2026-10-21",
@@ -109,9 +109,10 @@
       "metric": "post-engagement",
       "value": null,
       "last_updated": "2026-10-28T08:47:38.622+08:00",
-      "status": "原站核验 3 条公开内容 · 每日一轮",
+      "status": "2026-10-29 本轮未更新：原帖跳转至passport.weibo.com的Sina Visitor System访客页面，跳转地址包含登录页路径，未显示原帖及计数；无法确认现有会话有效，停止本平台，不重试、不重新登录，保留历史快照。不能据此认定平台风控。",
       "source": "https://weibo.com/u/8428908687",
-      "account_scope": "group_or_public"
+      "account_scope": "group_or_public",
+      "last_attempt_at": "2026-10-29T08:37:18.246+08:00"
     },
     {
       "name": "Bilibili",
@@ -119,7 +120,7 @@
       "scope": "官方团体内容及OA二创",
       "metric": "views",
       "value": null,
-      "last_updated": "2026-10-28T08:47:38.622+08:00",
+      "last_updated": "2026-10-29T08:38:13.412+08:00",
       "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://space.bilibili.com/670061998",
       "account_scope": "group_or_public"
@@ -130,7 +131,7 @@
       "scope": "官方单帖 / OA话题",
       "metric": "engagement",
       "value": null,
-      "last_updated": "2026-10-28T08:48:05.261+08:00",
+      "last_updated": "2026-10-29T08:38:37.246+08:00",
       "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://v.douyin.com/ZzHgu4mfISQ/",
       "account_scope": "group_or_public",
@@ -462,17 +463,17 @@
       "thumbnail_source": "OA官宣写真（非视频原封面）",
       "url": "https://www.bilibili.com/video/BV1joJy6rE9C/",
       "views": null,
-      "views_approx": "约242K",
+      "views_approx": "约243.8K",
       "likes": null,
-      "comments": 1393,
+      "comments": 1380,
       "views_24h": null,
-      "updated_at": "2026-10-28T08:47:17.603+08:00",
-      "approx_note": "稿件播放242K；弹幕1116；点赞13.5K；投币3402；收藏4417；分享1462；Comments1393。两分P稿件合计，不视为OA单段播放。",
+      "updated_at": "2026-10-29T08:37:43.799+08:00",
+      "approx_note": "稿件播放243.8K；弹幕1116；点赞13.6K；投币3418；收藏4450；分享1480；Comments1380。两分P稿件合计，不视为OA单段播放。",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "event_id": "mcountdown",
       "label_nonofficial": true,
       "content_scope": "fan_edit",
-      "likes_display": "13.5K"
+      "likes_display": "13.6K"
     },
     {
       "id": "BV1eWJy6PEgH",
@@ -8503,6 +8504,24 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
           "evidence_excerpt": "播放108.9K；弹幕664；点赞7486；投币1571；收藏2436；分享363；Comments547"
+        },
+        {
+          "at": "2026-10-29T08:37:01.369+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 7589,
+            "comments": 553,
+            "reposts": null,
+            "shares": 367,
+            "bookmarks": 2468,
+            "quotes": null,
+            "coins": 1582,
+            "danmaku": 665,
+            "video_views_display": "110K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+          "evidence_excerpt": "播放110K；弹幕665；点赞7589；投币1582；收藏2468；分享367；Comments553"
         }
       ],
       "Bilibili:BV1joJy6rE9C": [
@@ -8657,6 +8676,25 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
           "evidence_excerpt": "稿件播放242K；弹幕1116；点赞13.5K；投币3402；收藏4417；分享1462；Comments1393。两分P稿件合计，不视为OA单段播放。"
+        },
+        {
+          "at": "2026-10-29T08:37:43.799+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 1380,
+            "reposts": null,
+            "shares": 1480,
+            "bookmarks": 4450,
+            "quotes": null,
+            "coins": 3418,
+            "danmaku": 1116,
+            "video_views_display": "243.8K",
+            "likes_display": "13.6K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+          "evidence_excerpt": "稿件播放243.8K；弹幕1116；点赞13.6K；投币3418；收藏4450；分享1480；Comments1380。两分P稿件合计，不视为OA单段播放。"
         }
       ],
       "Bilibili:BV1ZjJZ6LEDZ": [
@@ -8795,6 +8833,23 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
           "evidence_excerpt": "播放1506；弹幕0；点赞45；投币3；收藏22；分享1；Comments1"
+        },
+        {
+          "at": "2026-10-29T08:38:13.412+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": 1514,
+            "likes": 46,
+            "comments": 1,
+            "reposts": null,
+            "shares": 1,
+            "bookmarks": 22,
+            "quotes": null,
+            "coins": 3,
+            "danmaku": 0
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+          "evidence_excerpt": "播放1514；弹幕0；点赞46；投币3；收藏22；分享1；Comments1"
         }
       ],
       "微博:Rmo6EhLtD": [
@@ -9283,6 +9338,24 @@
           },
           "evidence_url": "https://www.douyin.com/video/7698376293657627913",
           "evidence_excerpt": "作者我是王炸姐，标题请允许长脸大美女的存在；爱心6.0万、评论2614、星标1607、分享箭头4252；未公开播放量"
+        },
+        {
+          "at": "2026-10-29T08:37:44.085+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 2646,
+            "reposts": null,
+            "shares": 4334,
+            "bookmarks": 1638,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "6.1万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698376293657627913",
+          "evidence_excerpt": "作者我是王炸姐，标题请允许长脸大美女的存在；爱心6.1万、评论2646、星标1638、分享箭头4334；未公开播放量"
         }
       ],
       "抖音:7698740282125225698": [
@@ -9357,6 +9430,24 @@
           },
           "evidence_url": "https://www.douyin.com/video/7698740282125225698",
           "evidence_excerpt": "作者凉仔，标题一眼美女长什么样？A2O让我印象深刻5女，含多位成员，不归因于OA单人；爱心4.6万、评论414、星标2981、分享箭头2377；未公开播放量"
+        },
+        {
+          "at": "2026-10-29T08:38:13.773+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 417,
+            "reposts": null,
+            "shares": 2410,
+            "bookmarks": 3082,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "4.7万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698740282125225698",
+          "evidence_excerpt": "作者凉仔，标题一眼美女长什么样？A2O让我印象深刻5女，含多位成员，不归因于OA单人；爱心4.7万、评论417、星标3082、分享箭头2410；未公开播放量"
         }
       ],
       "抖音:7696902379706289434": [
@@ -9427,6 +9518,23 @@
           },
           "evidence_url": "https://www.douyin.com/video/7696902379706289434",
           "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3124、评论88、星标214、分享箭头180；未公开播放量"
+        },
+        {
+          "at": "2026-10-29T08:38:37.246+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 3207,
+            "comments": 93,
+            "reposts": null,
+            "shares": 183,
+            "bookmarks": 222,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://www.douyin.com/video/7696902379706289434",
+          "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3207、评论93、星标222、分享箭头183；未公开播放量"
         }
       ]
     }
@@ -9535,7 +9643,7 @@
       "group": "社交",
       "scope": "官方账号 + OA相关微博",
       "status": "manual",
-      "status_text": "已核验3条原站公开内容；每日最多一轮，登录失效或风控即停止",
+      "status_text": "2026-10-29 本轮未更新：原帖跳转至passport.weibo.com的Sina Visitor System访客页面，跳转地址包含登录页路径，未显示原帖及计数；无法确认现有会话有效，停止本平台，不重试、不重新登录，保留历史快照。不能据此认定平台风控。",
       "metric": "单帖点赞、评论、转发；视频观看待核验",
       "url": "https://weibo.com/u/8428908687",
       "method": "用户登录的云浏览器只读公开页面（非后台／非API）"
@@ -9777,24 +9885,24 @@
       "author_handle": "IdolCrush",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:46:36.502+08:00",
+      "updated_at": "2026-10-29T08:37:01.369+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "播放108.9K；弹幕664；点赞7486；投币1571；收藏2436；分享363；Comments547",
+      "evidence_excerpt": "播放110K；弹幕665；点赞7589；投币1582；收藏2468；分享367；Comments553",
       "metric_display": {
-        "video_views": "108.9K"
+        "video_views": "110K"
       },
       "views": null,
       "video_views": null,
-      "likes": 7486,
-      "comments": 547,
+      "likes": 7589,
+      "comments": 553,
       "reposts": null,
-      "shares": 363,
-      "bookmarks": 2436,
+      "shares": 367,
+      "bookmarks": 2468,
       "quotes": null,
-      "coins": 1571,
-      "danmaku": 664
+      "coins": 1582,
+      "danmaku": 665
     },
     {
       "id": "BV1joJy6rE9C",
@@ -9804,24 +9912,24 @@
       "author_handle": "IdolCrush",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:47:17.603+08:00",
+      "updated_at": "2026-10-29T08:37:43.799+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "稿件播放242K；弹幕1116；点赞13.5K；投币3402；收藏4417；分享1462；Comments1393。两分P稿件合计，不视为OA单段播放。",
+      "evidence_excerpt": "稿件播放243.8K；弹幕1116；点赞13.6K；投币3418；收藏4450；分享1480；Comments1380。两分P稿件合计，不视为OA单段播放。",
       "metric_display": {
-        "video_views": "242K",
-        "likes": "13.5K"
+        "video_views": "243.8K",
+        "likes": "13.6K"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 1393,
+      "comments": 1380,
       "reposts": null,
-      "shares": 1462,
-      "bookmarks": 4417,
+      "shares": 1480,
+      "bookmarks": 4450,
       "quotes": null,
-      "coins": 3402,
+      "coins": 3418,
       "danmaku": 1116
     },
     {
@@ -9832,15 +9940,15 @@
       "author_handle": "KPOP万事通",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:47:38.622+08:00",
+      "updated_at": "2026-10-29T08:38:13.412+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "播放1506；弹幕0；点赞45；投币3；收藏22；分享1；Comments1",
+      "evidence_excerpt": "播放1514；弹幕0；点赞46；投币3；收藏22；分享1；Comments1",
       "metric_display": {},
       "views": null,
-      "video_views": 1506,
-      "likes": 45,
+      "video_views": 1514,
+      "likes": 46,
       "comments": 1,
       "reposts": null,
       "shares": 1,
@@ -9932,21 +10040,21 @@
       "author_handle": "我是王炸姐",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:47:17.868+08:00",
+      "updated_at": "2026-10-29T08:37:44.085+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者我是王炸姐，标题请允许长脸大美女的存在；爱心6.0万、评论2614、星标1607、分享箭头4252；未公开播放量",
+      "evidence_excerpt": "作者我是王炸姐，标题请允许长脸大美女的存在；爱心6.1万、评论2646、星标1638、分享箭头4334；未公开播放量",
       "metric_display": {
-        "likes": "6.0万"
+        "likes": "6.1万"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 2614,
+      "comments": 2646,
       "reposts": null,
-      "shares": 4252,
-      "bookmarks": 1607,
+      "shares": 4334,
+      "bookmarks": 1638,
       "quotes": null,
       "coins": null,
       "danmaku": null
@@ -9959,21 +10067,21 @@
       "author_handle": "凉仔",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:47:48.466+08:00",
+      "updated_at": "2026-10-29T08:38:13.773+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者凉仔，标题一眼美女长什么样？A2O让我印象深刻5女，含多位成员，不归因于OA单人；爱心4.6万、评论414、星标2981、分享箭头2377；未公开播放量",
+      "evidence_excerpt": "作者凉仔，标题一眼美女长什么样？A2O让我印象深刻5女，含多位成员，不归因于OA单人；爱心4.7万、评论417、星标3082、分享箭头2410；未公开播放量",
       "metric_display": {
-        "likes": "4.6万"
+        "likes": "4.7万"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 414,
+      "comments": 417,
       "reposts": null,
-      "shares": 2377,
-      "bookmarks": 2981,
+      "shares": 2410,
+      "bookmarks": 3082,
       "quotes": null,
       "coins": null,
       "danmaku": null
@@ -9986,19 +10094,19 @@
       "author_handle": "东方美学树(复仇版",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-10-28T08:48:05.261+08:00",
+      "updated_at": "2026-10-29T08:38:37.246+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3124、评论88、星标214、分享箭头180；未公开播放量",
+      "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3207、评论93、星标222、分享箭头183；未公开播放量",
       "metric_display": {},
       "views": null,
       "video_views": null,
-      "likes": 3124,
-      "comments": 88,
+      "likes": 3207,
+      "comments": 93,
       "reposts": null,
-      "shares": 180,
-      "bookmarks": 214,
+      "shares": 183,
+      "bookmarks": 222,
       "quotes": null,
       "coins": null,
       "danmaku": null

@@ -1550,6 +1550,161 @@
         "danmaku": null
       },
       "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3124、评论88、星标214、分享箭头180；未公开播放量"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV13DJo6PEpw",
+      "url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "observed_at": "2026-10-29T08:37:01.369+08:00",
+      "title": "OA NEON SHOW K-POP 4K个人直拍",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 7589,
+        "comments": 553,
+        "reposts": null,
+        "shares": 367,
+        "bookmarks": 2468,
+        "quotes": null,
+        "coins": 1582,
+        "danmaku": 665,
+        "video_views_display": "110K"
+      },
+      "evidence_excerpt": "播放110K；弹幕665；点赞7589；投币1582；收藏2468；分享367；Comments553"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1joJy6rE9C",
+      "url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+      "observed_at": "2026-10-29T08:37:43.799+08:00",
+      "title": "OA NEON出道舞台4K个人直拍（两分P稿件）",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": null,
+        "comments": 1380,
+        "reposts": null,
+        "shares": 1480,
+        "bookmarks": 4450,
+        "quotes": null,
+        "coins": 3418,
+        "danmaku": 1116,
+        "video_views_display": "243.8K",
+        "likes_display": "13.6K"
+      },
+      "evidence_excerpt": "稿件播放243.8K；弹幕1116；点赞13.6K；投币3418；收藏4450；分享1480；Comments1380。两分P稿件合计，不视为OA单段播放。"
+    },
+    {
+      "platform": "抖音",
+      "id": "7698376293657627913",
+      "url": "https://www.douyin.com/video/7698376293657627913",
+      "observed_at": "2026-10-29T08:37:44.085+08:00",
+      "title": "请允许长脸大美女的存在",
+      "author": "我是王炸姐",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": null,
+        "comments": 2646,
+        "reposts": null,
+        "shares": 4334,
+        "bookmarks": 1638,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null,
+        "likes_display": "6.1万"
+      },
+      "evidence_excerpt": "作者我是王炸姐，标题请允许长脸大美女的存在；爱心6.1万、评论2646、星标1638、分享箭头4334；未公开播放量"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV1ZjJZ6LEDZ",
+      "url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+      "observed_at": "2026-10-29T08:38:13.412+08:00",
+      "title": "OA Show Kpop怼脸横版直拍 Neon A2O Lite",
+      "author": "KPOP万事通",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": 1514,
+        "likes": 46,
+        "comments": 1,
+        "reposts": null,
+        "shares": 1,
+        "bookmarks": 22,
+        "quotes": null,
+        "coins": 3,
+        "danmaku": 0
+      },
+      "evidence_excerpt": "播放1514；弹幕0；点赞46；投币3；收藏22；分享1；Comments1"
+    },
+    {
+      "platform": "抖音",
+      "id": "7698740282125225698",
+      "url": "https://www.douyin.com/video/7698740282125225698",
+      "observed_at": "2026-10-29T08:38:13.773+08:00",
+      "title": "一眼美女长什么样？A2O让我印象深刻5女",
+      "author": "凉仔",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": null,
+        "comments": 417,
+        "reposts": null,
+        "shares": 2410,
+        "bookmarks": 3082,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null,
+        "likes_display": "4.7万"
+      },
+      "evidence_excerpt": "作者凉仔，标题一眼美女长什么样？A2O让我印象深刻5女，含多位成员，不归因于OA单人；爱心4.7万、评论417、星标3082、分享箭头2410；未公开播放量"
+    },
+    {
+      "platform": "抖音",
+      "id": "7696902379706289434",
+      "url": "https://www.douyin.com/video/7696902379706289434",
+      "observed_at": "2026-10-29T08:38:37.246+08:00",
+      "title": "kpop强心针来了！李秀满塑造了多少人的审美",
+      "author": "东方美学树(复仇版",
+      "author_scope": "粉丝／公众账号（非艺人官方）",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 3207,
+        "comments": 93,
+        "reposts": null,
+        "shares": 183,
+        "bookmarks": 222,
+        "quotes": null,
+        "coins": null,
+        "danmaku": null
+      },
+      "evidence_excerpt": "作者东方美学树(复仇版，标题kpop强心针来了！李秀满塑造了多少人的审美，含团体及多人内容，不归因于OA单人；爱心3207、评论93、星标222、分享箭头183；未公开播放量"
     }
   ],
   "runs": [
@@ -1748,6 +1903,33 @@
       "sample_count": 3,
       "attempted_count": 3,
       "observed_at": "2026-10-28T08:48:05.261+08:00"
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "Bilibili",
+      "status": "completed",
+      "sample_count": 3,
+      "attempted_count": 3,
+      "observed_at": "2026-10-29T08:38:13.412+08:00"
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "抖音",
+      "status": "completed",
+      "sample_count": 3,
+      "attempted_count": 3,
+      "observed_at": "2026-10-29T08:38:37.246+08:00"
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "微博",
+      "status": "stopped_visitor_redirect",
+      "sample_count": 0,
+      "attempted_count": 1,
+      "observed_at": "2026-10-29T08:37:18.246+08:00",
+      "attempted_url": "https://weibo.com/8344619260/Rmo6EhLtD",
+      "page_title": "Sina Visitor System",
+      "reason": "原帖跳转至passport.weibo.com的Sina Visitor System访客页面，跳转地址包含登录页路径，未显示原帖及计数；无法确认现有会话有效，停止本平台，不重试、不重新登录，保留历史快照。不能据此认定平台风控。"
     }
   ]
 }
