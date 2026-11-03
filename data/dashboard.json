@@ -3,8 +3,8 @@
     "name": "OA 数据总览",
     "subtitle": "OA 数据实时更新 · 公共档案",
     "edition": "2026-11-03",
-    "updated_at": "2026-11-02T22:48:25.784Z",
-    "verified_at": "2026-11-02T22:48:25.784Z",
+    "updated_at": "2026-11-03T00:43:04.508Z",
+    "verified_at": "2026-11-03T08:42:35.047+08:00",
     "timezone": "Asia/Shanghai",
     "notice": "每日一轮公开数据核验；X暂停。播放、帖文浏览及互动分开；K/M/万保留约数，未显示指标为空。快照不代表全网总量。",
     "source_audit_at": "2026-10-21",
@@ -108,7 +108,7 @@
       "scope": "团体官方 / OA相关单帖",
       "metric": "post-engagement",
       "value": null,
-      "last_updated": "2026-11-02T09:09:14.912+08:00",
+      "last_updated": "2026-11-03T08:42:33.996+08:00",
       "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://weibo.com/u/8428908687",
       "account_scope": "group_or_public",
@@ -120,7 +120,7 @@
       "scope": "官方团体内容及OA二创",
       "metric": "views",
       "value": null,
-      "last_updated": "2026-11-02T09:09:06.940+08:00",
+      "last_updated": "2026-11-03T08:42:25.377+08:00",
       "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://space.bilibili.com/670061998",
       "account_scope": "group_or_public"
@@ -131,7 +131,7 @@
       "scope": "官方单帖 / OA话题",
       "metric": "engagement",
       "value": null,
-      "last_updated": "2026-11-02T09:09:16.766+08:00",
+      "last_updated": "2026-11-03T08:42:35.047+08:00",
       "status": "原站核验 3 条公开内容 · 每日一轮",
       "source": "https://v.douyin.com/ZzHgu4mfISQ/",
       "account_scope": "group_or_public",
@@ -463,12 +463,12 @@
       "thumbnail_source": "OA官宣写真（非视频原封面）",
       "url": "https://www.bilibili.com/video/BV1joJy6rE9C/",
       "views": null,
-      "views_approx": "约250.1K",
+      "views_approx": "约251.2K",
       "likes": null,
-      "comments": 1393,
+      "comments": 1395,
       "views_24h": null,
-      "updated_at": "2026-11-02T09:08:47.932+08:00",
-      "approx_note": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放250.1K；弹幕1138；点赞13.9K；投币3451；收藏4572；分享1517；评论1393；两分P稿件合计，不视为OA单段播放",
+      "updated_at": "2026-11-03T08:42:06.057+08:00",
+      "approx_note": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放251.2K；弹幕1139；点赞13.9K；投币3458；收藏4589；分享1521；评论1395；两分P稿件合计，不视为OA单段播放",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "event_id": "mcountdown",
       "label_nonofficial": true,
@@ -13634,6 +13634,24 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
           "evidence_excerpt": "作者IdolCrush；OA NEON SHOW K-POP 4K个人直拍；播放112.1K；弹幕669；点赞7723；投币1606；收藏2518；分享375；评论558"
+        },
+        {
+          "at": "2026-11-03T08:41:33.504+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 7735,
+            "comments": 523,
+            "reposts": null,
+            "shares": 378,
+            "bookmarks": 2522,
+            "quotes": null,
+            "coins": 1610,
+            "danmaku": 669,
+            "video_views_display": "112.4K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+          "evidence_excerpt": "作者IdolCrush；OA NEON SHOW K-POP 4K个人直拍；播放112.4K；弹幕669；点赞7735；投币1610；收藏2522；分享378；评论523"
         }
       ],
       "Bilibili:BV1joJy6rE9C": [
@@ -13883,6 +13901,25 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
           "evidence_excerpt": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放250.1K；弹幕1138；点赞13.9K；投币3451；收藏4572；分享1517；评论1393；两分P稿件合计，不视为OA单段播放"
+        },
+        {
+          "at": "2026-11-03T08:42:06.057+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 1395,
+            "reposts": null,
+            "shares": 1521,
+            "bookmarks": 4589,
+            "quotes": null,
+            "coins": 3458,
+            "danmaku": 1139,
+            "video_views_display": "251.2K",
+            "likes_display": "13.9K"
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1joJy6rE9C/",
+          "evidence_excerpt": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放251.2K；弹幕1139；点赞13.9K；投币3458；收藏4589；分享1521；评论1395；两分P稿件合计，不视为OA单段播放"
         }
       ],
       "Bilibili:BV1ZjJZ6LEDZ": [
@@ -14106,6 +14143,23 @@
           },
           "evidence_url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
           "evidence_excerpt": "作者KPOP万事通；OA Show Kpop怼脸横版直拍 Neon A2O Lite；播放1599；弹幕0；点赞51；投币5；收藏22；分享1；评论2"
+        },
+        {
+          "at": "2026-11-03T08:42:25.377+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": 1619,
+            "likes": 51,
+            "comments": 2,
+            "reposts": null,
+            "shares": 1,
+            "bookmarks": 22,
+            "quotes": null,
+            "coins": 5,
+            "danmaku": 0
+          },
+          "evidence_url": "https://www.bilibili.com/en/video/BV1ZjJZ6LEDZ/",
+          "evidence_excerpt": "作者KPOP万事通；OA Show Kpop怼脸横版直拍 Neon A2O Lite；播放1619；弹幕0；点赞51；投币5；收藏22；分享1；评论2"
         }
       ],
       "微博:Rmo6EhLtD": [
@@ -14312,6 +14366,23 @@
           },
           "evidence_url": "https://weibo.com/8344619260/Rmo6EhLtD",
           "evidence_excerpt": "作者OA_Angelism；OA公主的安利手册；转发24；评论33；点赞563；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示"
+        },
+        {
+          "at": "2026-11-03T08:41:42.283+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 565,
+            "comments": 33,
+            "reposts": 24,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/Rmo6EhLtD",
+          "evidence_excerpt": "作者OA_Angelism；OA公主的安利手册；转发24；评论33；点赞565；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示"
         }
       ],
       "微博:RnIJM0IgQ": [
@@ -14504,6 +14575,23 @@
         },
         {
           "at": "2026-11-02T09:08:57.528+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 21,
+            "comments": 1,
+            "reposts": 0,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/RnIJM0IgQ",
+          "evidence_excerpt": "作者OA_Angelism；「20261021」饭绘；转发0；评论1；点赞21；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示"
+        },
+        {
+          "at": "2026-11-03T08:42:15.561+08:00",
           "metrics": {
             "views": null,
             "video_views": null,
@@ -14724,6 +14812,23 @@
           },
           "evidence_url": "https://weibo.com/8344619260/5353331979717055",
           "evidence_excerpt": "作者OA_Angelism；开站公告（含抽奖活动）；转发122；评论160；点赞275；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示；抽奖活动帖，互动口径受活动影响"
+        },
+        {
+          "at": "2026-11-03T08:42:33.996+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 275,
+            "comments": 160,
+            "reposts": 122,
+            "shares": null,
+            "bookmarks": null,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://weibo.com/8344619260/5353331979717055",
+          "evidence_excerpt": "作者OA_Angelism；开站公告（含抽奖活动）；转发122；评论160；点赞275；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示；抽奖活动帖，互动口径受活动影响"
         }
       ],
       "抖音:7698376293657627913": [
@@ -14888,6 +14993,24 @@
           },
           "evidence_url": "https://www.douyin.com/video/7698376293657627913",
           "evidence_excerpt": "作者我是王炸姐；请允许长脸大美女的存在；点赞6.7万；评论2710；收藏1747；分享4619；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享"
+        },
+        {
+          "at": "2026-11-03T08:41:54.344+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 2711,
+            "reposts": null,
+            "shares": 4629,
+            "bookmarks": 1760,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "6.7万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698376293657627913",
+          "evidence_excerpt": "作者我是王炸姐；请允许长脸大美女的存在；点赞6.7万；评论2711；收藏1760；分享4629；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享"
         }
       ],
       "抖音:7698740282125225698": [
@@ -15052,6 +15175,24 @@
           },
           "evidence_url": "https://www.douyin.com/video/7698740282125225698",
           "evidence_excerpt": "作者凉仔；一眼美女长什么样？A2O让我印象深刻5女；点赞5.2万；评论432；收藏3392；分享2556；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人"
+        },
+        {
+          "at": "2026-11-03T08:42:15.945+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": null,
+            "comments": 434,
+            "reposts": null,
+            "shares": 2574,
+            "bookmarks": 3436,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null,
+            "likes_display": "5.2万"
+          },
+          "evidence_url": "https://www.douyin.com/video/7698740282125225698",
+          "evidence_excerpt": "作者凉仔；一眼美女长什么样？A2O让我印象深刻5女；点赞5.2万；评论434；收藏3436；分享2574；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人"
         }
       ],
       "抖音:7696902379706289434": [
@@ -15207,6 +15348,23 @@
           },
           "evidence_url": "https://www.douyin.com/video/7696902379706289434",
           "evidence_excerpt": "作者东方美学树(复仇版；kpop强心针来了！李秀满塑造了多少人的审美；点赞3417；评论97；收藏237；分享192；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人"
+        },
+        {
+          "at": "2026-11-03T08:42:35.047+08:00",
+          "metrics": {
+            "views": null,
+            "video_views": null,
+            "likes": 3444,
+            "comments": 97,
+            "reposts": null,
+            "shares": 192,
+            "bookmarks": 240,
+            "quotes": null,
+            "coins": null,
+            "danmaku": null
+          },
+          "evidence_url": "https://www.douyin.com/video/7696902379706289434",
+          "evidence_excerpt": "作者东方美学树(复仇版；kpop强心针来了！李秀满塑造了多少人的审美；点赞3444；评论97；收藏240；分享192；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人"
         }
       ]
     }
@@ -15557,23 +15715,23 @@
       "author_handle": "IdolCrush",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:12.154+08:00",
+      "updated_at": "2026-11-03T08:41:33.504+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者IdolCrush；OA NEON SHOW K-POP 4K个人直拍；播放112.1K；弹幕669；点赞7723；投币1606；收藏2518；分享375；评论558",
+      "evidence_excerpt": "作者IdolCrush；OA NEON SHOW K-POP 4K个人直拍；播放112.4K；弹幕669；点赞7735；投币1610；收藏2522；分享378；评论523",
       "metric_display": {
-        "video_views": "112.1K"
+        "video_views": "112.4K"
       },
       "views": null,
       "video_views": null,
-      "likes": 7723,
-      "comments": 558,
+      "likes": 7735,
+      "comments": 523,
       "reposts": null,
-      "shares": 375,
-      "bookmarks": 2518,
+      "shares": 378,
+      "bookmarks": 2522,
       "quotes": null,
-      "coins": 1606,
+      "coins": 1610,
       "danmaku": 669
     },
     {
@@ -15584,25 +15742,25 @@
       "author_handle": "IdolCrush",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:47.932+08:00",
+      "updated_at": "2026-11-03T08:42:06.057+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放250.1K；弹幕1138；点赞13.9K；投币3451；收藏4572；分享1517；评论1393；两分P稿件合计，不视为OA单段播放",
+      "evidence_excerpt": "作者IdolCrush；OA NEON出道舞台4K个人直拍（两分P稿件）；播放251.2K；弹幕1139；点赞13.9K；投币3458；收藏4589；分享1521；评论1395；两分P稿件合计，不视为OA单段播放",
       "metric_display": {
-        "video_views": "250.1K",
+        "video_views": "251.2K",
         "likes": "13.9K"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 1393,
+      "comments": 1395,
       "reposts": null,
-      "shares": 1517,
-      "bookmarks": 4572,
+      "shares": 1521,
+      "bookmarks": 4589,
       "quotes": null,
-      "coins": 3451,
-      "danmaku": 1138
+      "coins": 3458,
+      "danmaku": 1139
     },
     {
       "id": "BV1ZjJZ6LEDZ",
@@ -15612,14 +15770,14 @@
       "author_handle": "KPOP万事通",
       "author_scope": "非官方转载／二创账号",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:09:06.940+08:00",
+      "updated_at": "2026-11-03T08:42:25.377+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者KPOP万事通；OA Show Kpop怼脸横版直拍 Neon A2O Lite；播放1599；弹幕0；点赞51；投币5；收藏22；分享1；评论2",
+      "evidence_excerpt": "作者KPOP万事通；OA Show Kpop怼脸横版直拍 Neon A2O Lite；播放1619；弹幕0；点赞51；投币5；收藏22；分享1；评论2",
       "metric_display": {},
       "views": null,
-      "video_views": 1599,
+      "video_views": 1619,
       "likes": 51,
       "comments": 2,
       "reposts": null,
@@ -15637,15 +15795,15 @@
       "author_handle": "OA_Angelism",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:23.431+08:00",
+      "updated_at": "2026-11-03T08:41:42.283+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者OA_Angelism；OA公主的安利手册；转发24；评论33；点赞563；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示",
+      "evidence_excerpt": "作者OA_Angelism；OA公主的安利手册；转发24；评论33；点赞565；原帖操作条顺序为转发、评论、点赞；阅读/收藏总数未显示",
       "metric_display": {},
       "views": null,
       "video_views": null,
-      "likes": 563,
+      "likes": 565,
       "comments": 33,
       "reposts": 24,
       "shares": null,
@@ -15662,7 +15820,7 @@
       "author_handle": "OA_Angelism",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:57.528+08:00",
+      "updated_at": "2026-11-03T08:42:15.561+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
@@ -15687,7 +15845,7 @@
       "author_handle": "OA_Angelism",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:09:14.912+08:00",
+      "updated_at": "2026-11-03T08:42:33.996+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
@@ -15712,21 +15870,21 @@
       "author_handle": "我是王炸姐",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:32.946+08:00",
+      "updated_at": "2026-11-03T08:41:54.344+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者我是王炸姐；请允许长脸大美女的存在；点赞6.7万；评论2710；收藏1747；分享4619；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享",
+      "evidence_excerpt": "作者我是王炸姐；请允许长脸大美女的存在；点赞6.7万；评论2711；收藏1760；分享4629；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享",
       "metric_display": {
         "likes": "6.7万"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 2710,
+      "comments": 2711,
       "reposts": null,
-      "shares": 4619,
-      "bookmarks": 1747,
+      "shares": 4629,
+      "bookmarks": 1760,
       "quotes": null,
       "coins": null,
       "danmaku": null
@@ -15739,21 +15897,21 @@
       "author_handle": "凉仔",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:08:57.881+08:00",
+      "updated_at": "2026-11-03T08:42:15.945+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者凉仔；一眼美女长什么样？A2O让我印象深刻5女；点赞5.2万；评论432；收藏3392；分享2556；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人",
+      "evidence_excerpt": "作者凉仔；一眼美女长什么样？A2O让我印象深刻5女；点赞5.2万；评论434；收藏3436；分享2574；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人",
       "metric_display": {
         "likes": "5.2万"
       },
       "views": null,
       "video_views": null,
       "likes": null,
-      "comments": 432,
+      "comments": 434,
       "reposts": null,
-      "shares": 2556,
-      "bookmarks": 3392,
+      "shares": 2574,
+      "bookmarks": 3436,
       "quotes": null,
       "coins": null,
       "danmaku": null
@@ -15766,19 +15924,19 @@
       "author_handle": "东方美学树(复仇版",
       "author_scope": "粉丝／公众账号（非艺人官方）",
       "content_scope": "OA相关内容（非官方）",
-      "updated_at": "2026-11-02T09:09:16.766+08:00",
+      "updated_at": "2026-11-03T08:42:35.047+08:00",
       "metric_source": "云浏览器原站公开页面核验（非API）",
       "metric_status": "已核验可见指标；未显示指标为空",
       "evidence_type": "original_public_page_browser",
-      "evidence_excerpt": "作者东方美学树(复仇版；kpop强心针来了！李秀满塑造了多少人的审美；点赞3417；评论97；收藏237；分享192；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人",
+      "evidence_excerpt": "作者东方美学树(复仇版；kpop强心针来了！李秀满塑造了多少人的审美；点赞3444；评论97；收藏240；分享192；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人",
       "metric_display": {},
       "views": null,
       "video_views": null,
-      "likes": 3417,
+      "likes": 3444,
       "comments": 97,
       "reposts": null,
       "shares": 192,
-      "bookmarks": 237,
+      "bookmarks": 240,
       "quotes": null,
       "coins": null,
       "danmaku": null
