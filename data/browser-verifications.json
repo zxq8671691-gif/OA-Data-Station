@@ -2855,6 +2855,32 @@
         "danmaku": null
       },
       "evidence_excerpt": "作者东方美学树(复仇版；kpop强心针来了！李秀满塑造了多少人的审美；点赞3444；评论97；收藏240；分享192；无公开播放量；爱心/评论/星标/分享箭头分别对应点赞/评论/收藏/分享；含多人/团体内容，不归因于OA单人"
+    },
+    {
+      "platform": "Bilibili",
+      "id": "BV13DJo6PEpw",
+      "url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "observed_at": "2026-11-04T08:47:36.525+08:00",
+      "title": "OA NEON SHOW K-POP 4K个人直拍",
+      "author": "IdolCrush",
+      "author_scope": "非官方转载／二创账号",
+      "content_scope": "OA相关内容（非官方）",
+      "evidence_type": "original_public_page_browser",
+      "reviewed_by": "Codex云浏览器原站核验",
+      "metrics": {
+        "views": null,
+        "video_views": null,
+        "likes": 7760,
+        "comments": null,
+        "reposts": null,
+        "shares": 379,
+        "bookmarks": 2532,
+        "quotes": null,
+        "coins": 1615,
+        "danmaku": 669,
+        "video_views_display": "112.8K"
+      },
+      "evidence_excerpt": "作者IdolCrush；OA NEON SHOW K-POP 4K个人直拍；播放112.8K；弹幕669；点赞7760；投币1615；收藏2532；分享379。播放器显示“Unable to play media.”，立即停止本平台；评论数未读取，留空；未刷新、重试或访问其余样本。"
     }
   ],
   "runs": [
@@ -3200,7 +3226,36 @@
       "sample_count": 3,
       "attempted_count": 3,
       "observed_at": "2026-11-03T08:42:35.047+08:00"
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "Bilibili",
+      "status": "stopped_media_error",
+      "sample_count": 1,
+      "attempted_count": 1,
+      "observed_at": "2026-11-04T08:47:36.525+08:00",
+      "attempted_url": "https://www.bilibili.com/en/video/BV13DJo6PEpw/",
+      "reason": "首条原视频播放器显示“Unable to play media.”；保存同页已明确显示的公开计数，评论数未读取；立即停止本平台，不重试、不访问其余两条。不能据此认定风控或登录失效。"
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "微博",
+      "status": "stopped_auth_redirect",
+      "sample_count": 0,
+      "attempted_count": 1,
+      "observed_at": "2026-11-04T08:48:02.722+08:00",
+      "attempted_url": "https://weibo.com/8344619260/Rmo6EhLtD",
+      "reason": "云浏览器报告原帖进入passport.weibo.com访客/认证域；自动审批拒绝观察认证页面，原因是可能进入与“不重新登录、遇阻即停”冲突的认证流程。未取得原帖计数，不重试、不重新登录，保留历史快照；未读取认证域内容。"
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "抖音",
+      "status": "stopped_login_unavailable",
+      "sample_count": 0,
+      "attempted_count": 1,
+      "observed_at": "2026-11-04T08:48:24+08:00",
+      "attempted_url": "https://www.douyin.com/video/7698376293657627913",
+      "reason": "首条原链接页面顶部显示“Login”，内容区域显示“视频数据加载中”，无法确认现有登录会话有效；未取得作者和计数，停止本平台，不继续等待/刷新、不重试、不重新登录，保留历史快照。"
     }
   ]
 }
-
