@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-11-12T02:05:39.311Z",
+  "collected_at": "2026-11-13T01:56:10.624Z",
   "notice": "Keyword-search candidates only, NOT verified OA personal videos or current hottest videos. Needs manual review.",
   "candidates": [
     {
@@ -8,9 +8,9 @@
       "channel": "A2O WORLD",
       "published_at": "2026-10-12T12:30:28Z",
       "url": "https://www.youtube.com/watch?v=D968qfUZMUE",
-      "views": 44131806,
-      "likes": 669438,
-      "comments": 31790,
+      "views": 44969741,
+      "likes": 675353,
+      "comments": 31913,
       "already_in_archive": false
     },
     {
@@ -19,9 +19,9 @@
       "channel": "Mnet K-POP",
       "published_at": "2026-10-15T09:43:28Z",
       "url": "https://www.youtube.com/watch?v=XAU5AtvpnRM",
-      "views": 18859653,
-      "likes": 198553,
-      "comments": 18015,
+      "views": 19105416,
+      "likes": 200017,
+      "comments": 18065,
       "already_in_archive": false
     },
     {
@@ -30,9 +30,9 @@
       "channel": "M2",
       "published_at": "2026-10-13T09:55:16Z",
       "url": "https://www.youtube.com/watch?v=93j1fDGi_-8",
-      "views": 18599882,
-      "likes": 189704,
-      "comments": 17654,
+      "views": 18842239,
+      "likes": 190987,
+      "comments": 17725,
       "already_in_archive": false
     },
     {
@@ -41,9 +41,9 @@
       "channel": "STONE MUSIC",
       "published_at": "2026-10-13T09:00:16Z",
       "url": "https://www.youtube.com/watch?v=KGK2KZOFAPE",
-      "views": 16134160,
-      "likes": 167566,
-      "comments": 7322,
+      "views": 16531580,
+      "likes": 170063,
+      "comments": 7385,
       "already_in_archive": false
     },
     {
@@ -52,9 +52,9 @@
       "channel": "케이팝있쥬?",
       "published_at": "2026-10-22T14:52:53Z",
       "url": "https://www.youtube.com/watch?v=T5FachxZP3A",
-      "views": 7884083,
-      "likes": 70760,
-      "comments": 217,
+      "views": 8061086,
+      "likes": 71872,
+      "comments": 216,
       "already_in_archive": false
     },
     {
@@ -63,20 +63,9 @@
       "channel": "나보아",
       "published_at": "2026-11-01T09:48:34Z",
       "url": "https://www.youtube.com/watch?v=8sylgZxqdVc",
-      "views": 6711862,
-      "likes": 98382,
-      "comments": 2731,
-      "already_in_archive": false
-    },
-    {
-      "id": "ZNjYBuQoSRg",
-      "title": "A2O LITE &#39;NEON&#39; 릴댄 킬링파트 모아보기 | 릴레이댄스",
-      "channel": "M2",
-      "published_at": "2026-10-16T08:01:53Z",
-      "url": "https://www.youtube.com/watch?v=ZNjYBuQoSRg",
-      "views": 6595476,
-      "likes": 132277,
-      "comments": 1972,
+      "views": 6828233,
+      "likes": 99652,
+      "comments": 2779,
       "already_in_archive": false
     },
     {
@@ -85,9 +74,20 @@
       "channel": "M2",
       "published_at": "2026-10-15T09:24:52Z",
       "url": "https://www.youtube.com/watch?v=qelRQwlthj4",
-      "views": 6591226,
-      "likes": 151665,
-      "comments": 3873,
+      "views": 6668701,
+      "likes": 153243,
+      "comments": 3895,
+      "already_in_archive": false
+    },
+    {
+      "id": "ZNjYBuQoSRg",
+      "title": "A2O LITE &#39;NEON&#39; 릴댄 킬링파트 모아보기 | 릴레이댄스",
+      "channel": "M2",
+      "published_at": "2026-10-16T08:01:53Z",
+      "url": "https://www.youtube.com/watch?v=ZNjYBuQoSRg",
+      "views": 6648061,
+      "likes": 133233,
+      "comments": 1980,
       "already_in_archive": false
     },
     {
@@ -96,8 +96,8 @@
       "channel": "M2",
       "published_at": "2026-10-15T09:24:19Z",
       "url": "https://www.youtube.com/watch?v=n9HYtcN6W4w",
-      "views": 6578364,
-      "likes": 57789,
+      "views": 6621517,
+      "likes": 58040,
       "comments": 5161,
       "already_in_archive": true
     },
@@ -107,9 +107,9 @@
       "channel": "MBC WORLD",
       "published_at": "2026-10-26T09:00:39Z",
       "url": "https://www.youtube.com/watch?v=pKvx_bN74j4",
-      "views": 6027200,
-      "likes": 39912,
-      "comments": 1957,
+      "views": 6104653,
+      "likes": 40252,
+      "comments": 1969,
       "already_in_archive": false
     },
     {
@@ -118,9 +118,9 @@
       "channel": "M2",
       "published_at": "2026-10-16T08:01:36Z",
       "url": "https://www.youtube.com/watch?v=NcJK-PwxUO4",
-      "views": 5697652,
-      "likes": 80281,
-      "comments": 980,
+      "views": 5796579,
+      "likes": 81408,
+      "comments": 991,
       "already_in_archive": false
     },
     {
@@ -129,9 +129,9 @@
       "channel": "ALL THE K-POP",
       "published_at": "2026-10-21T09:34:27Z",
       "url": "https://www.youtube.com/watch?v=UAo11PQf5DA",
-      "views": 5565083,
-      "likes": 49788,
-      "comments": 3204,
+      "views": 5649958,
+      "likes": 50089,
+      "comments": 3208,
       "already_in_archive": false
     },
     {
@@ -140,9 +140,9 @@
       "channel": "KyL",
       "published_at": "2026-10-22T12:48:51Z",
       "url": "https://www.youtube.com/watch?v=25d5DpmXqhk",
-      "views": 5529772,
-      "likes": 98274,
-      "comments": 1126,
+      "views": 5646925,
+      "likes": 100184,
+      "comments": 1151,
       "already_in_archive": false
     },
     {
@@ -151,9 +151,9 @@
       "channel": "에이치아이피 HIP",
       "published_at": "2026-10-15T11:25:59Z",
       "url": "https://www.youtube.com/watch?v=Ck5YRksHvt0",
-      "views": 5511484,
-      "likes": 111411,
-      "comments": 1485,
+      "views": 5628818,
+      "likes": 113921,
+      "comments": 1515,
       "already_in_archive": false
     },
     {
@@ -162,9 +162,9 @@
       "channel": "M2",
       "published_at": "2026-10-16T08:00:30Z",
       "url": "https://www.youtube.com/watch?v=DcFl9z6qQAs",
-      "views": 5499457,
-      "likes": 85093,
-      "comments": 4458,
+      "views": 5546632,
+      "likes": 85614,
+      "comments": 4460,
       "already_in_archive": false
     },
     {
@@ -173,9 +173,9 @@
       "channel": "KBS Kpop",
       "published_at": "2026-10-23T11:00:11Z",
       "url": "https://www.youtube.com/watch?v=k259hkI6eto",
-      "views": 5059708,
-      "likes": 34747,
-      "comments": 2272,
+      "views": 5199019,
+      "likes": 35227,
+      "comments": 2292,
       "already_in_archive": false
     },
     {
@@ -184,9 +184,9 @@
       "channel": "SBSKPOP X INKIGAYO",
       "published_at": "2026-10-26T08:00:36Z",
       "url": "https://www.youtube.com/watch?v=nfTtZW_oOh4",
-      "views": 4851751,
-      "likes": 32298,
-      "comments": 1494,
+      "views": 4951187,
+      "likes": 32694,
+      "comments": 1505,
       "already_in_archive": false
     },
     {
@@ -195,8 +195,8 @@
       "channel": "Mnet K-POP",
       "published_at": "2026-10-22T10:15:50Z",
       "url": "https://www.youtube.com/watch?v=IkPNSIWP1oc",
-      "views": 4143638,
-      "likes": 53423,
+      "views": 4187357,
+      "likes": 53634,
       "comments": 3468,
       "already_in_archive": false
     },
@@ -206,9 +206,9 @@
       "channel": "M2",
       "published_at": "2026-10-16T08:01:26Z",
       "url": "https://www.youtube.com/watch?v=kOY8CgCyxBU",
-      "views": 3726716,
-      "likes": 79893,
-      "comments": 1096,
+      "views": 3764644,
+      "likes": 80821,
+      "comments": 1108,
       "already_in_archive": false
     },
     {
@@ -217,9 +217,9 @@
       "channel": "M2",
       "published_at": "2026-10-16T08:01:32Z",
       "url": "https://www.youtube.com/watch?v=z7RQ7y8eEFg",
-      "views": 3653686,
-      "likes": 68724,
-      "comments": 1544,
+      "views": 3682066,
+      "likes": 69322,
+      "comments": 1553,
       "already_in_archive": false
     },
     {
@@ -228,9 +228,9 @@
       "channel": "THE K-POP",
       "published_at": "2026-10-20T11:14:45Z",
       "url": "https://www.youtube.com/watch?v=c7REvlMKFro",
-      "views": 3399786,
-      "likes": 71995,
-      "comments": 8392,
+      "views": 3417757,
+      "likes": 72213,
+      "comments": 8456,
       "already_in_archive": true
     },
     {
@@ -239,9 +239,20 @@
       "channel": "Mhz 므흐즈: MBC RADIO",
       "published_at": "2026-10-21T05:16:25Z",
       "url": "https://www.youtube.com/watch?v=ZhJRckmkp2Y",
-      "views": 3086388,
-      "likes": 58247,
-      "comments": 3307,
+      "views": 3151839,
+      "likes": 59052,
+      "comments": 3323,
+      "already_in_archive": false
+    },
+    {
+      "id": "iwOZifCuwOk",
+      "title": "NEON - A2O LITE | SBS 261101 방송",
+      "channel": "SBSKPOP X INKIGAYO",
+      "published_at": "2026-11-01T06:47:59Z",
+      "url": "https://www.youtube.com/watch?v=iwOZifCuwOk",
+      "views": 2733838,
+      "likes": 35106,
+      "comments": 2789,
       "already_in_archive": false
     },
     {
@@ -250,21 +261,10 @@
       "channel": "THE K-POP",
       "published_at": "2026-10-20T11:24:00Z",
       "url": "https://www.youtube.com/watch?v=zzFt3QY6kC4",
-      "views": 2681315,
-      "likes": 32635,
-      "comments": 2322,
+      "views": 2688353,
+      "likes": 32679,
+      "comments": 2320,
       "already_in_archive": true
-    },
-    {
-      "id": "iwOZifCuwOk",
-      "title": "NEON - A2O LITE | SBS 261101 방송",
-      "channel": "SBSKPOP X INKIGAYO",
-      "published_at": "2026-11-01T06:47:59Z",
-      "url": "https://www.youtube.com/watch?v=iwOZifCuwOk",
-      "views": 2679427,
-      "likes": 34772,
-      "comments": 2789,
-      "already_in_archive": false
     },
     {
       "id": "tK6Ze7ngQQs",
@@ -272,9 +272,9 @@
       "channel": "Jaeguchi",
       "published_at": "2026-10-12T19:43:55Z",
       "url": "https://www.youtube.com/watch?v=tK6Ze7ngQQs",
-      "views": 2545371,
-      "likes": 14582,
-      "comments": 730,
+      "views": 2615216,
+      "likes": 14863,
+      "comments": 737,
       "already_in_archive": false
     },
     {
@@ -283,9 +283,9 @@
       "channel": "예능 뭐볼래",
       "published_at": "2026-11-08T12:10:17Z",
       "url": "https://www.youtube.com/watch?v=p8-9HjPBJxw",
-      "views": 1480190,
-      "likes": 24128,
-      "comments": 193,
+      "views": 1564890,
+      "likes": 25254,
+      "comments": 201,
       "already_in_archive": false
     },
     {
@@ -294,9 +294,9 @@
       "channel": "enterpocket",
       "published_at": "2026-11-06T16:45:26Z",
       "url": "https://www.youtube.com/watch?v=52yfKdgzP-M",
-      "views": 1189237,
-      "likes": 16920,
-      "comments": 588,
+      "views": 1309705,
+      "likes": 18516,
+      "comments": 625,
       "already_in_archive": false
     },
     {
@@ -305,20 +305,9 @@
       "channel": "K-POPトピック",
       "published_at": "2026-11-06T09:29:28Z",
       "url": "https://www.youtube.com/watch?v=jK_juGACeWU",
-      "views": 565907,
-      "likes": 9701,
-      "comments": 86,
-      "already_in_archive": false
-    },
-    {
-      "id": "JilariznNeA",
-      "title": "[앵콜캠4K] 에이투오 라이트 &#39;NEON&#39; 인기가요 1위 앵콜 직캠 (A2O LITE Encore Fancam) @SBS Inkigayo 261101",
-      "channel": "SBSKPOP X INKIGAYO",
-      "published_at": "2026-11-06T11:30:14Z",
-      "url": "https://www.youtube.com/watch?v=JilariznNeA",
-      "views": 454685,
-      "likes": 6829,
-      "comments": 636,
+      "views": 591048,
+      "likes": 10089,
+      "comments": 88,
       "already_in_archive": false
     },
     {
@@ -327,9 +316,20 @@
       "channel": "TEEPR 推一波",
       "published_at": "2026-11-05T12:00:14Z",
       "url": "https://www.youtube.com/watch?v=V5XdJIop9hc",
-      "views": 443344,
-      "likes": 4187,
-      "comments": 511,
+      "views": 467414,
+      "likes": 4339,
+      "comments": 520,
+      "already_in_archive": false
+    },
+    {
+      "id": "JilariznNeA",
+      "title": "[앵콜캠4K] 에이투오 라이트 &#39;NEON&#39; 인기가요 1위 앵콜 직캠 (A2O LITE Encore Fancam) @SBS Inkigayo 261101",
+      "channel": "SBSKPOP X INKIGAYO",
+      "published_at": "2026-11-06T11:30:14Z",
+      "url": "https://www.youtube.com/watch?v=JilariznNeA",
+      "views": 466569,
+      "likes": 6927,
+      "comments": 639,
       "already_in_archive": false
     },
     {
@@ -338,9 +338,9 @@
       "channel": "덕칼럼",
       "published_at": "2026-11-08T09:31:23Z",
       "url": "https://www.youtube.com/watch?v=D5nHboRPzy8",
-      "views": 243032,
-      "likes": 2770,
-      "comments": 701,
+      "views": 262475,
+      "likes": 2935,
+      "comments": 787,
       "already_in_archive": false
     },
     {
@@ -349,8 +349,8 @@
       "channel": "K홀릭",
       "published_at": "2026-11-03T03:30:13Z",
       "url": "https://www.youtube.com/watch?v=-cXC4_GpJAk",
-      "views": 237969,
-      "likes": 1973,
+      "views": 240471,
+      "likes": 1987,
       "comments": 53,
       "already_in_archive": false
     },
@@ -360,20 +360,9 @@
       "channel": "소소히",
       "published_at": "2026-11-02T21:31:22Z",
       "url": "https://www.youtube.com/watch?v=k5qsZflCzoM",
-      "views": 237130,
-      "likes": 2375,
+      "views": 237476,
+      "likes": 2377,
       "comments": 70,
-      "already_in_archive": false
-    },
-    {
-      "id": "LoiT2UgbfSo",
-      "title": "[1HR LOOP🔥] A2O LITE - NEON [Music Bank] | KBS WORLD TV 261030",
-      "channel": "KBS WORLD Latino",
-      "published_at": "2026-11-04T10:00:36Z",
-      "url": "https://www.youtube.com/watch?v=LoiT2UgbfSo",
-      "views": 182161,
-      "likes": 1018,
-      "comments": 79,
       "already_in_archive": false
     },
     {
@@ -382,9 +371,9 @@
       "channel": "K-Pop in Context",
       "published_at": "2026-11-06T12:00:33Z",
       "url": "https://www.youtube.com/watch?v=1DC4OJutQ7o",
-      "views": 174416,
-      "likes": 5437,
-      "comments": 79,
+      "views": 199960,
+      "likes": 6116,
+      "comments": 93,
       "already_in_archive": false
     },
     {
@@ -393,8 +382,8 @@
       "channel": "에투라 모먼트",
       "published_at": "2026-11-02T11:00:11Z",
       "url": "https://www.youtube.com/watch?v=a7qp-5IXmes",
-      "views": 150808,
-      "likes": 649,
+      "views": 154731,
+      "likes": 658,
       "comments": 30,
       "already_in_archive": false
     },
@@ -404,9 +393,9 @@
       "channel": "KOCOWA TV",
       "published_at": "2026-11-02T16:15:10Z",
       "url": "https://www.youtube.com/watch?v=qM_V9R96YBc",
-      "views": 124273,
-      "likes": 2151,
-      "comments": 36,
+      "views": 127962,
+      "likes": 2180,
+      "comments": 38,
       "already_in_archive": false
     },
     {
@@ -415,9 +404,20 @@
       "channel": "KPOP COOKIE 🍪",
       "published_at": "2026-11-06T19:55:36Z",
       "url": "https://www.youtube.com/watch?v=pavnHhp9vIU",
-      "views": 98387,
-      "likes": 2989,
-      "comments": 83,
+      "views": 105959,
+      "likes": 3190,
+      "comments": 89,
+      "already_in_archive": false
+    },
+    {
+      "id": "Y65wmw42qfY",
+      "title": "인사하다 갑자기 아재 포즈로 머리 넘긴 에투라 아이찡ㅋㅋ #A2OLITE #에이투오라이트 #아이찡 #더쇼",
+      "channel": "이거핫하다는데?",
+      "published_at": "2026-11-10T00:30:13Z",
+      "url": "https://www.youtube.com/watch?v=Y65wmw42qfY",
+      "views": 104069,
+      "likes": 266,
+      "comments": 23,
       "already_in_archive": false
     },
     {
@@ -426,20 +426,9 @@
       "channel": "drakorlogia",
       "published_at": "2026-11-05T12:00:31Z",
       "url": "https://www.youtube.com/watch?v=avihbBNGlgY",
-      "views": 91007,
-      "likes": 3258,
+      "views": 92462,
+      "likes": 3290,
       "comments": 74,
-      "already_in_archive": false
-    },
-    {
-      "id": "QzrgxXCyoJ4",
-      "title": "Don&#39;t Just Look at Her. Listen: A2O LITE&#39;s M COUNTDOWN Encore",
-      "channel": "Why Is Korea Mad",
-      "published_at": "2026-11-05T17:00:26Z",
-      "url": "https://www.youtube.com/watch?v=QzrgxXCyoJ4",
-      "views": 64053,
-      "likes": 1166,
-      "comments": 38,
       "already_in_archive": false
     },
     {
@@ -448,31 +437,31 @@
       "channel": "韓流図書館",
       "published_at": "2026-11-10T09:40:17Z",
       "url": "https://www.youtube.com/watch?v=iBpN_nhZgZU",
-      "views": 62125,
-      "likes": 848,
+      "views": 71503,
+      "likes": 927,
       "comments": 14,
       "already_in_archive": false
     },
     {
-      "id": "FWsfXbZOYGA",
-      "title": "[K-Fancam] A2O LITE 오아 직캠 &#39;NEON&#39; (A2O LITE OA Fancam) @뮤직뱅크(Music Bank) 261030",
-      "channel": "KBS Kpop",
-      "published_at": "2026-10-31T01:10:19Z",
-      "url": "https://www.youtube.com/watch?v=FWsfXbZOYGA",
-      "views": 43083,
-      "likes": 812,
-      "comments": 95,
+      "id": "QzrgxXCyoJ4",
+      "title": "Don&#39;t Just Look at Her. Listen: A2O LITE&#39;s M COUNTDOWN Encore",
+      "channel": "Why Is Korea Mad",
+      "published_at": "2026-11-05T17:00:26Z",
+      "url": "https://www.youtube.com/watch?v=QzrgxXCyoJ4",
+      "views": 66982,
+      "likes": 1214,
+      "comments": 38,
       "already_in_archive": false
     },
     {
-      "id": "RNqGemaaLQ8",
-      "title": "천사 같다는 오아 릴레이댄스 솔로 파트 #A2OLITE #에이투오라이트 #NEON",
-      "channel": "아이돌세상",
-      "published_at": "2026-11-05T07:30:30Z",
-      "url": "https://www.youtube.com/watch?v=RNqGemaaLQ8",
-      "views": 42877,
-      "likes": 420,
-      "comments": 0,
+      "id": "0xRXgg8QEBg",
+      "title": "인이어 빠져도 표정 하나 안 변한 13살, A2O LITE 오아 데뷔 무대",
+      "channel": "시티웨이브",
+      "published_at": "2026-11-12T06:29:43Z",
+      "url": "https://www.youtube.com/watch?v=0xRXgg8QEBg",
+      "views": 47322,
+      "likes": 409,
+      "comments": 5,
       "already_in_archive": false
     },
     {
@@ -481,9 +470,31 @@
       "channel": "@MonsterClub",
       "published_at": "2026-11-06T03:50:44Z",
       "url": "https://www.youtube.com/watch?v=Un26R3sgSEQ",
-      "views": 40661,
-      "likes": 768,
-      "comments": 13,
+      "views": 47277,
+      "likes": 894,
+      "comments": 14,
+      "already_in_archive": false
+    },
+    {
+      "id": "RNqGemaaLQ8",
+      "title": "천사 같다는 오아 릴레이댄스 솔로 파트 #A2OLITE #에이투오라이트 #NEON",
+      "channel": "아이돌세상",
+      "published_at": "2026-11-05T07:30:30Z",
+      "url": "https://www.youtube.com/watch?v=RNqGemaaLQ8",
+      "views": 44792,
+      "likes": 431,
+      "comments": 0,
+      "already_in_archive": false
+    },
+    {
+      "id": "FWsfXbZOYGA",
+      "title": "[K-Fancam] A2O LITE 오아 직캠 &#39;NEON&#39; (A2O LITE OA Fancam) @뮤직뱅크(Music Bank) 261030",
+      "channel": "KBS Kpop",
+      "published_at": "2026-10-31T01:10:19Z",
+      "url": "https://www.youtube.com/watch?v=FWsfXbZOYGA",
+      "views": 44013,
+      "likes": 815,
+      "comments": 95,
       "already_in_archive": false
     },
     {
@@ -492,20 +503,9 @@
       "channel": "K홀릭",
       "published_at": "2026-11-01T03:00:06Z",
       "url": "https://www.youtube.com/watch?v=VLl-UYjc4bY",
-      "views": 30617,
+      "views": 30648,
       "likes": 526,
       "comments": 1,
-      "already_in_archive": false
-    },
-    {
-      "id": "OfA53UhTvQI",
-      "title": "ILLIT Goes Viral for Dancing to A2O Lite&#39;s &quot;Neon&quot;",
-      "channel": "KPOP COOKIE 🍪",
-      "published_at": "2026-11-07T18:14:25Z",
-      "url": "https://www.youtube.com/watch?v=OfA53UhTvQI",
-      "views": 27012,
-      "likes": 572,
-      "comments": 23,
       "already_in_archive": false
     },
     {
@@ -514,9 +514,20 @@
       "channel": "Apinews",
       "published_at": "2026-11-10T14:47:25Z",
       "url": "https://www.youtube.com/watch?v=9J0KLfInFXM",
-      "views": 21237,
-      "likes": 289,
-      "comments": 19,
+      "views": 28781,
+      "likes": 353,
+      "comments": 22,
+      "already_in_archive": false
+    },
+    {
+      "id": "OfA53UhTvQI",
+      "title": "ILLIT Goes Viral for Dancing to A2O Lite&#39;s &quot;Neon&quot;",
+      "channel": "KPOP COOKIE 🍪",
+      "published_at": "2026-11-07T18:14:25Z",
+      "url": "https://www.youtube.com/watch?v=OfA53UhTvQI",
+      "views": 28062,
+      "likes": 581,
+      "comments": 23,
       "already_in_archive": false
     },
     {
@@ -525,9 +536,20 @@
       "channel": "KPOPNEWS TH ข่าวเคป๊อป",
       "published_at": "2026-11-05T04:44:47Z",
       "url": "https://www.youtube.com/watch?v=hAncnRiBLq8",
-      "views": 20029,
-      "likes": 579,
-      "comments": 2,
+      "views": 20649,
+      "likes": 590,
+      "comments": 3,
+      "already_in_archive": false
+    },
+    {
+      "id": "R1L8FrCrFc0",
+      "title": "지독한 수만리, 어떻게 저리 예쁜 애를 데려왔지? A2O LITE 오아",
+      "channel": "시티웨이브",
+      "published_at": "2026-10-31T11:29:43Z",
+      "url": "https://www.youtube.com/watch?v=R1L8FrCrFc0",
+      "views": 18939,
+      "likes": 250,
+      "comments": 1,
       "already_in_archive": false
     },
     {
@@ -536,9 +558,9 @@
       "channel": "Sonnie",
       "published_at": "2026-11-05T16:46:52Z",
       "url": "https://www.youtube.com/watch?v=RHw4Kl1cF1w",
-      "views": 16150,
-      "likes": 449,
-      "comments": 177,
+      "views": 16331,
+      "likes": 453,
+      "comments": 179,
       "already_in_archive": false
     },
     {
@@ -547,20 +569,20 @@
       "channel": "디스패치 / Dispatch",
       "published_at": "2026-11-06T15:00:29Z",
       "url": "https://www.youtube.com/watch?v=LNET075kZXE",
-      "views": 12849,
-      "likes": 625,
-      "comments": 12,
+      "views": 13202,
+      "likes": 630,
+      "comments": 13,
       "already_in_archive": false
     },
     {
-      "id": "AvQ90YsXipA",
-      "title": "뮤뱅 뒷캠 누가 찍었나 했더니 감독님 잠깐만 나와봐요ㅋㅋ #A2OLITE",
-      "channel": "덕또입",
-      "published_at": "2026-11-01T05:15:18Z",
-      "url": "https://www.youtube.com/watch?v=AvQ90YsXipA",
-      "views": 10788,
-      "likes": 160,
-      "comments": 1,
+      "id": "mnFcSH8pWnA",
+      "title": "올리비아 핫세 닮은꼴로 난리 난 A2O 오아 #오아 #A2OLITE #kpop",
+      "channel": "gayul",
+      "published_at": "2026-10-31T10:38:29Z",
+      "url": "https://www.youtube.com/watch?v=mnFcSH8pWnA",
+      "views": 12626,
+      "likes": 75,
+      "comments": 6,
       "already_in_archive": false
     },
     {
@@ -569,7 +591,7 @@
       "channel": "KoreanDramaOrg",
       "published_at": "2026-11-07T12:00:17Z",
       "url": "https://www.youtube.com/watch?v=7kgd7m0QEgI",
-      "views": 9516,
+      "views": 9547,
       "likes": 299,
       "comments": 2,
       "already_in_archive": false
@@ -580,8 +602,8 @@
       "channel": "Ott 쇼츠",
       "published_at": "2026-11-06T12:25:35Z",
       "url": "https://www.youtube.com/watch?v=7nqX5QXjf6s",
-      "views": 8011,
-      "likes": 47,
+      "views": 8303,
+      "likes": 49,
       "comments": 9,
       "already_in_archive": false
     },
@@ -591,30 +613,8 @@
       "channel": "K팝콘",
       "published_at": "2026-11-02T09:17:43Z",
       "url": "https://www.youtube.com/watch?v=NLTVNROu9t0",
-      "views": 6745,
+      "views": 6746,
       "likes": 28,
-      "comments": 0,
-      "already_in_archive": false
-    },
-    {
-      "id": "5pfkKAsoD3o",
-      "title": "아이찡 인트로부터 라다 고음까지｜A2O LITE NEON 직캠 모음",
-      "channel": "유튭역",
-      "published_at": "2026-11-05T06:44:12Z",
-      "url": "https://www.youtube.com/watch?v=5pfkKAsoD3o",
-      "views": 4436,
-      "likes": 46,
-      "comments": 1,
-      "already_in_archive": false
-    },
-    {
-      "id": "aXfhdmd3m30",
-      "title": "NEON - A2O &amp; A2O LITE | KPOP INTRO DANCE COVER BY ITZY, NEXZ, NMIXX AND KICKFLIP",
-      "channel": "U&I WITH KPOP",
-      "published_at": "2026-11-05T05:00:15Z",
-      "url": "https://www.youtube.com/watch?v=aXfhdmd3m30",
-      "views": 4197,
-      "likes": 91,
       "comments": 0,
       "already_in_archive": false
     },
@@ -624,9 +624,31 @@
       "channel": "gayul",
       "published_at": "2026-11-09T09:30:26Z",
       "url": "https://www.youtube.com/watch?v=Ggvp7iii8Q0",
-      "views": 4182,
-      "likes": 39,
-      "comments": 2,
+      "views": 5154,
+      "likes": 58,
+      "comments": 7,
+      "already_in_archive": false
+    },
+    {
+      "id": "5pfkKAsoD3o",
+      "title": "아이찡 인트로부터 라다 고음까지｜A2O LITE NEON 직캠 모음",
+      "channel": "유튭역",
+      "published_at": "2026-11-05T06:44:12Z",
+      "url": "https://www.youtube.com/watch?v=5pfkKAsoD3o",
+      "views": 4469,
+      "likes": 45,
+      "comments": 1,
+      "already_in_archive": false
+    },
+    {
+      "id": "aXfhdmd3m30",
+      "title": "NEON - A2O &amp; A2O LITE | KPOP INTRO DANCE COVER BY ITZY, NEXZ, NMIXX AND KICKFLIP",
+      "channel": "U&I WITH KPOP",
+      "published_at": "2026-11-05T05:00:15Z",
+      "url": "https://www.youtube.com/watch?v=aXfhdmd3m30",
+      "views": 4222,
+      "likes": 91,
+      "comments": 0,
       "already_in_archive": false
     },
     {
@@ -635,7 +657,7 @@
       "channel": "Team Lite",
       "published_at": "2026-11-06T08:06:04Z",
       "url": "https://www.youtube.com/watch?v=IvTLndJ406E",
-      "views": 3217,
+      "views": 3231,
       "likes": 125,
       "comments": 2,
       "already_in_archive": false
@@ -646,9 +668,20 @@
       "channel": "I-Dol-Re",
       "published_at": "2026-11-07T11:00:33Z",
       "url": "https://www.youtube.com/watch?v=oadniVXRfF8",
-      "views": 2747,
+      "views": 2753,
       "likes": 26,
       "comments": 2,
+      "already_in_archive": false
+    },
+    {
+      "id": "YrERBmADAAE",
+      "title": "표정 비결 묻자 즉석에서 시연한 A2O LITE 오아 #A2OLITE #오아 #NEON",
+      "channel": "케이팝실록",
+      "published_at": "2026-11-12T01:00:31Z",
+      "url": "https://www.youtube.com/watch?v=YrERBmADAAE",
+      "views": 1647,
+      "likes": 25,
+      "comments": 0,
       "already_in_archive": false
     },
     {
@@ -657,7 +690,7 @@
       "channel": "Fancam History",
       "published_at": "2026-11-03T11:35:01Z",
       "url": "https://www.youtube.com/watch?v=SwRsXKgu69Y",
-      "views": 1567,
+      "views": 1570,
       "likes": 28,
       "comments": 2,
       "already_in_archive": false
@@ -668,42 +701,31 @@
       "channel": "클립저장중",
       "published_at": "2026-11-03T08:30:04Z",
       "url": "https://www.youtube.com/watch?v=26pgnV79XqA",
-      "views": 1479,
+      "views": 1480,
       "likes": 11,
       "comments": 0,
       "already_in_archive": false
     },
     {
-      "id": "rQGxoMJ-aFM",
-      "title": "아이찡이 2위? A2O LITE 뮤뱅 직캠 1위는 #shorts",
-      "channel": "아이돌 TOP5",
-      "published_at": "2026-11-04T06:00:37Z",
-      "url": "https://www.youtube.com/watch?v=rQGxoMJ-aFM",
-      "views": 1227,
-      "likes": 2,
-      "comments": 1,
-      "already_in_archive": false
-    },
-    {
-      "id": "XKMraW05meo",
-      "title": "[A2O LITE ] [NEON] Why You Are Obsessed-The Real &quot;SM&quot; Music",
-      "channel": "KB Lune's World ",
-      "published_at": "2026-11-09T04:51:21Z",
-      "url": "https://www.youtube.com/watch?v=XKMraW05meo",
-      "views": 947,
-      "likes": 14,
-      "comments": 5,
-      "already_in_archive": false
-    },
-    {
-      "id": "YrERBmADAAE",
-      "title": "표정 비결 묻자 즉석에서 시연한 A2O LITE 오아 #A2OLITE #오아 #NEON",
-      "channel": "케이팝실록",
-      "published_at": "2026-11-12T01:00:31Z",
-      "url": "https://www.youtube.com/watch?v=YrERBmADAAE",
-      "views": 341,
-      "likes": 3,
+      "id": "Qfd5SBru-EI",
+      "title": "⚔️IVE vs ILLIT vs A2O LITE @Show! Music Core EP.969 2026.11.07 #IVE #ILLIT #A2OLITE #musiccore #kpop",
+      "channel": "moojjah KPOP🏆",
+      "published_at": "2026-11-07T06:53:40Z",
+      "url": "https://www.youtube.com/watch?v=Qfd5SBru-EI",
+      "views": 1184,
+      "likes": 37,
       "comments": 0,
+      "already_in_archive": false
+    },
+    {
+      "id": "DCWm-eP-_Pw",
+      "title": "Every A2O LITE Member Explained",
+      "channel": "Kpop Explained",
+      "published_at": "2026-11-11T09:22:18Z",
+      "url": "https://www.youtube.com/watch?v=DCWm-eP-_Pw",
+      "views": 756,
+      "likes": 19,
+      "comments": 2,
       "already_in_archive": false
     },
     {
@@ -712,7 +734,7 @@
       "channel": "Trendy Bear",
       "published_at": "2026-11-11T04:33:12Z",
       "url": "https://www.youtube.com/watch?v=p9eqmR4xmHM",
-      "views": 184,
+      "views": 214,
       "likes": 3,
       "comments": 0,
       "already_in_archive": false
@@ -723,19 +745,8 @@
       "channel": "케이팝실록",
       "published_at": "2026-11-10T01:00:28Z",
       "url": "https://www.youtube.com/watch?v=FlSurD-LPZw",
-      "views": 168,
+      "views": 185,
       "likes": 1,
-      "comments": 0,
-      "already_in_archive": false
-    },
-    {
-      "id": "DCWm-eP-_Pw",
-      "title": "Every A2O LITE Member Explained",
-      "channel": "Kpop Explained",
-      "published_at": "2026-11-11T09:22:18Z",
-      "url": "https://www.youtube.com/watch?v=DCWm-eP-_Pw",
-      "views": 94,
-      "likes": 6,
       "comments": 0,
       "already_in_archive": false
     }
