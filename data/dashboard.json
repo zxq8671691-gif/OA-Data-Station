@@ -2,9 +2,9 @@
   "meta": {
     "name": "OA 数据总览",
     "subtitle": "OA 数据实时更新 · 公共档案",
-    "edition": "2026-11-19",
-    "updated_at": "2026-11-19T15:02:18.661Z",
-    "verified_at": "2026-11-19T15:02:18.661Z",
+    "edition": "2026-11-20",
+    "updated_at": "2026-11-19T17:14:03.698Z",
+    "verified_at": "2026-11-19T17:14:03.698Z",
     "timezone": "Asia/Shanghai",
     "notice": "每日一轮公开数据核验；X暂停。播放、帖文浏览及互动分开；K/M/万保留约数，未显示指标为空。快照不代表全网总量。",
     "source_audit_at": "2026-10-21",
@@ -66,7 +66,7 @@
     {
       "id": "oa_views",
       "label": "OA直拍累计观看",
-      "value": 2011811,
+      "value": 2013239,
       "unit": "次",
       "scope": "OA个人",
       "description": "仅已核验OA个人直拍；首次快照没有24小时增量",
@@ -75,7 +75,7 @@
     {
       "id": "oa_likes",
       "label": "OA直拍累计点赞",
-      "value": 33241,
+      "value": 33250,
       "unit": "次",
       "scope": "OA个人",
       "description": "仅官方 OA 单人直拍合计；已由 YouTube 官方API核验",
@@ -97,8 +97,8 @@
       "icon": "▶",
       "scope": "已收录OA个人视频累计观看（不代表全网）",
       "metric": "views",
-      "value": 2514394,
-      "last_updated": "2026-11-19T15:02:18.661Z",
+      "value": 2515980,
+      "last_updated": "2026-11-19T17:14:03.698Z",
       "status": "已核验 5/5 条",
       "source": "https://youtu.be/p1JBFI77kWo"
     },
@@ -201,8 +201,8 @@
       "views": 217989,
       "likes": 4970,
       "comments": 530,
-      "views_24h": 1210,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 1051,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "show-kpop",
@@ -220,11 +220,11 @@
       "url": "https://www.youtube.com/watch?v=eB6vt-ne3A4",
       "thumbnail": "/assets/yt_eB6vt-ne3A4.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 215923,
-      "likes": 2657,
+      "views": 216746,
+      "likes": 2662,
       "comments": 198,
-      "views_24h": 5195,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 5326,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "show-kpop",
@@ -242,11 +242,11 @@
       "url": "https://www.youtube.com/watch?v=-TGCURaf8f8",
       "thumbnail": "/assets/yt_-TGCURaf8f8.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 288334,
+      "views": 288417,
       "likes": 8920,
-      "comments": 1439,
-      "views_24h": 877,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "comments": 1440,
+      "views_24h": 809,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "show-kpop",
@@ -263,13 +263,13 @@
       "verified": true,
       "thumbnail": "/assets/yt_p1JBFI77kWo.jpg",
       "url": "https://www.youtube.com/watch?v=p1JBFI77kWo",
-      "views": 1577899,
-      "likes": 25614,
+      "views": 1578504,
+      "likes": 25618,
       "comments": 2141,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "views_24h": 4097,
+      "views_24h": 4020,
       "thumbnail_source": "YouTube视频封面",
       "event_id": "mcountdown",
       "content_scope": "solo_fancam"
@@ -285,13 +285,13 @@
       "verified": true,
       "thumbnail": "/assets/yt_iXQsuYOyvos.jpg",
       "url": "https://www.youtube.com/watch?v=iXQsuYOyvos",
-      "views": 214249,
-      "likes": 4407,
+      "views": 214324,
+      "likes": 4409,
       "comments": 212,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "views_24h": 447,
+      "views_24h": 461,
       "thumbnail_source": "YouTube视频封面",
       "event_id": "debut",
       "content_scope": "solo_teaser"
@@ -308,11 +308,11 @@
       "url": "https://www.youtube.com/watch?v=zzFt3QY6kC4",
       "thumbnail": "/assets/yt_zzFt3QY6kC4.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 2728245,
-      "likes": 32945,
+      "views": 2729271,
+      "likes": 32950,
       "comments": 2314,
-      "views_24h": 7578,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 7623,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "the-show",
@@ -330,11 +330,11 @@
       "url": "https://www.youtube.com/watch?v=BkaGqUxvN6w",
       "thumbnail": "/assets/yt_BkaGqUxvN6w.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 375194,
-      "likes": 4752,
+      "views": 375214,
+      "likes": 4753,
       "comments": 292,
-      "views_24h": 718,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 532,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "the-show",
@@ -352,11 +352,11 @@
       "url": "https://www.youtube.com/watch?v=c7REvlMKFro",
       "thumbnail": "/assets/yt_c7REvlMKFro.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 3508741,
-      "likes": 73353,
-      "comments": 8453,
-      "views_24h": 11662,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views": 3510465,
+      "likes": 73364,
+      "comments": 8451,
+      "views_24h": 11400,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "the-show",
@@ -374,11 +374,11 @@
       "url": "https://www.youtube.com/watch?v=d2TTCQsHZfY",
       "thumbnail": "/assets/yt_d2TTCQsHZfY.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 639604,
-      "likes": 14546,
+      "views": 640319,
+      "likes": 14550,
       "comments": 1003,
-      "views_24h": 4440,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 4550,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "the-show",
@@ -396,11 +396,11 @@
       "url": "https://www.youtube.com/watch?v=n9HYtcN6W4w",
       "thumbnail": "/assets/yt_n9HYtcN6W4w.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 6907338,
-      "likes": 59691,
+      "views": 6913676,
+      "likes": 59716,
       "comments": 5179,
-      "views_24h": 42660,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 42507,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "mcountdown",
@@ -417,13 +417,13 @@
       "verified": true,
       "thumbnail": "/assets/yt_29Bn6d82Qgc.jpg",
       "url": "https://www.youtube.com/watch?v=29Bn6d82Qgc",
-      "views": 208626,
+      "views": 208699,
       "likes": 3980,
       "comments": 488,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
-      "views_24h": 384,
+      "views_24h": 434,
       "thumbnail_source": "YouTube视频封面",
       "event_id": "radio",
       "content_scope": "group_stage"
@@ -440,11 +440,11 @@
       "url": "https://www.youtube.com/watch?v=4LSlCfqF7Sc",
       "thumbnail": "/assets/yt_4LSlCfqF7Sc.jpg",
       "thumbnail_source": "YouTube视频封面",
-      "views": 1079916,
-      "likes": 21371,
+      "views": 1080491,
+      "likes": 21380,
       "comments": 800,
-      "views_24h": 4816,
-      "updated_at": "2026-11-19T15:02:18.661Z",
+      "views_24h": 4714,
+      "updated_at": "2026-11-19T17:14:03.698Z",
       "source_tier": "官方发布",
       "metric_source": "YouTube Data API v3 / videos.list",
       "event_id": "showcase",
@@ -759,13 +759,6 @@
   "history": {
     "videos": {
       "pbmb_TsEugU": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 187279,
-          "likes": 4574,
-          "comments": 517
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -2508,16 +2501,16 @@
           "views": 217989,
           "likes": 4970,
           "comments": 530
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 217989,
+          "likes": 4970,
+          "comments": 530
         }
       ],
       "eB6vt-ne3A4": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 89585,
-          "likes": 1588,
-          "comments": 162
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -4260,16 +4253,16 @@
           "views": 215923,
           "likes": 2657,
           "comments": 198
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 216746,
+          "likes": 2662,
+          "comments": 198
         }
       ],
       "-TGCURaf8f8": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 260084,
-          "likes": 8402,
-          "comments": 1431
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -6012,16 +6005,16 @@
           "views": 288334,
           "likes": 8920,
           "comments": 1439
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 288417,
+          "likes": 8920,
+          "comments": 1440
         }
       ],
       "p1JBFI77kWo": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 1414756,
-          "likes": 23867,
-          "comments": 2077
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -7764,16 +7757,16 @@
           "views": 1577899,
           "likes": 25614,
           "comments": 2141
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 1578504,
+          "likes": 25618,
+          "comments": 2141
         }
       ],
       "iXQsuYOyvos": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 194820,
-          "likes": 3954,
-          "comments": 206
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -9516,16 +9509,16 @@
           "views": 214249,
           "likes": 4407,
           "comments": 212
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 214324,
+          "likes": 4409,
+          "comments": 212
         }
       ],
       "zzFt3QY6kC4": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 2549151,
-          "likes": 31647,
-          "comments": 2310
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -11268,16 +11261,16 @@
           "views": 2728245,
           "likes": 32945,
           "comments": 2314
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 2729271,
+          "likes": 32950,
+          "comments": 2314
         }
       ],
       "BkaGqUxvN6w": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 357041,
-          "likes": 4628,
-          "comments": 298
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -13020,16 +13013,16 @@
           "views": 375194,
           "likes": 4752,
           "comments": 292
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 375214,
+          "likes": 4753,
+          "comments": 292
         }
       ],
       "c7REvlMKFro": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 3090721,
-          "likes": 68147,
-          "comments": 8224
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -14772,16 +14765,16 @@
           "views": 3508741,
           "likes": 73353,
           "comments": 8453
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 3510465,
+          "likes": 73364,
+          "comments": 8451
         }
       ],
       "d2TTCQsHZfY": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 550212,
-          "likes": 13122,
-          "comments": 987
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -16524,16 +16517,16 @@
           "views": 639604,
           "likes": 14546,
           "comments": 1003
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 640319,
+          "likes": 14550,
+          "comments": 1003
         }
       ],
       "n9HYtcN6W4w": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 5893028,
-          "likes": 54141,
-          "comments": 5091
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -18276,16 +18269,16 @@
           "views": 6907338,
           "likes": 59691,
           "comments": 5179
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 6913676,
+          "likes": 59716,
+          "comments": 5179
         }
       ],
       "29Bn6d82Qgc": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 193487,
-          "likes": 3820,
-          "comments": 488
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -20028,16 +20021,16 @@
           "views": 208626,
           "likes": 3980,
           "comments": 488
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 208699,
+          "likes": 3980,
+          "comments": 488
         }
       ],
       "4LSlCfqF7Sc": [
-        {
-          "at": "2026-10-29T15:00:41.953Z",
-          "date": "2026-10-29",
-          "views": 935983,
-          "likes": 17829,
-          "comments": 763
-        },
         {
           "at": "2026-10-29T16:58:30.230Z",
           "date": "2026-10-30",
@@ -21779,6 +21772,13 @@
           "date": "2026-11-19",
           "views": 1079916,
           "likes": 21371,
+          "comments": 800
+        },
+        {
+          "at": "2026-11-19T17:14:03.698Z",
+          "date": "2026-11-20",
+          "views": 1080491,
+          "likes": 21380,
           "comments": 800
         }
       ]
